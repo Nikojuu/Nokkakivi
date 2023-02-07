@@ -1,0 +1,175 @@
+/* //////////////////////////////////////////////CSS RESET////////////////////////////////////////////// */
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul[role="list"],
+ol[role="list"] {
+  list-style: none;
+}
+
+/* Set core root defaults */
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
+/* Set core body defaults */
+body {
+  min-height: 100vh;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+/* Make images easier to work with */
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+  html:focus-within {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+:root {
+  --color-primary: #ff8b73;
+  --color-secondary: #0e197d;
+
+  --color-test-1: rgba(135, 255, 126, 0.94);
+  --color-test-2: rgba(255, 200, 0, 0.8);
+
+  --shadow-dark: 0 2rem 6rem rgba(0, 0, 0, 0.3);
+  --shadow-light: 0 2rem 5em rgba(0, 0, 0, 0.06);
+}
+html {
+  font-size: 62.5%; /*  // 1rem === 10px */
+  font-family: "Ubuntu", sans-serif;
+}
+.container {
+  display: grid;
+
+  grid-template-columns:
+    [full-start] minmax(6rem, 1fr) repeat(
+      8,
+      [col-start] minmax(min-content, 14rem) [col-end]
+    )
+    minmax(6rem, 1fr) [full-end];
+  grid-template-rows: min-content;
+}
+.header-container {
+  grid-column: full-start / full-end;
+  height: 100vh;
+  display: flex;
+  padding-top: 10rem;
+  justify-content: space-around;
+  align-content: space-around;
+  background-image: linear-gradient(
+      to top,
+      rgba(107, 211, 78),
+      rgba(255, 195, 132, 0.86)
+    ),
+    url(../img/vlcsnap-2016-02-21-18h34m33s53.png);
+  background-size: cover;
+  background-position: center;
+
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
+
+  clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
+}
+.nav-bar {
+  grid-column: full-start / full-end;
+  height: 12rem;
+  background-color: red;
+  position: fixed;
+  margin-bottom: 12rem;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
+}
+.heading-1-container {
+  padding-top: 10rem;
+}
+.heading-1 {
+  font-size: 8rem;
+  color: black;
+  padding-bottom: 5rem;
+  font-family: "Paytone One", sans-serif;
+  font-weight: 700;
+  background-color: #ff8b73;
+}
+.paragraph {
+  font-size: 4rem;
+  color: black;
+  line-height: 7rem;
+  background-color: #ff8b73;
+}
+.header-img {
+  rotate: -5deg;
+  filter: drop-shadow(var(--shadow-dark));
+  margin-right: 16rem;
+  margin-top: 8rem;
+  flex: 1 0 50%;
+}
+img {
+  clip-path: polygon(0% 8%, 100% 8%, 100% 100%, 1% 98%);
+}
+.info {
+  grid-column: 1 /-1;
+  height: 50rem;
+  background-color: #ff8b73;
+}
+
+.testimonials {
+  grid-column: 1 /-1;
+  height: 50rem;
+  background-color: #0e197d;
+}
+
+.footer {
+  grid-column: 1 /-1;
+  height: 50rem;
+  background-color: yellow;
+}
