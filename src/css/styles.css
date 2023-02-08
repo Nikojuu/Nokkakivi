@@ -83,12 +83,69 @@ select {
   --shadow-dark: 0 2rem 6rem rgba(0, 0, 0, 0.3);
   --shadow-light: 0 2rem 5em rgba(0, 0, 0, 0.06);
 }
+/* ///////////////////////////////KEYFRAMES////////////////////////// */
+@keyframes moveInLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-10rem);
+  }
+
+  80% {
+    transform: translateX(1rem);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+@keyframes moveInBottom {
+  0% {
+    opacity: 0;
+    transform: translateY(10rem);
+  }
+
+  50% {
+    opacity: 0;
+    transform: translateY(5rem);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.visually-hidden {
+  border: 0;
+  padding: 0;
+  margin: 0;
+  position: absolute !important;
+  height: 1px;
+  width: 1px;
+  overflow: hidden;
+  clip: rect(
+    1px 1px 1px 1px
+  ); /* IE6, IE7 - a 0 height clip, off to the bottom right of the visible 1px box */
+  clip: rect(
+    1px,
+    1px,
+    1px,
+    1px
+  ); /*maybe deprecated but we need to support legacy browsers */
+  clip-path: inset(
+    50%
+  ); /*modern browsers, clip-path works inwards from each corner*/
+  white-space: nowrap; /* added line to stop words getting smushed together (as they go onto seperate lines and some screen readers do not understand line feeds as a space */
+}
+
 html {
   font-size: 62.5%; /*  // 1rem === 10px */
   font-family: "Ubuntu", sans-serif;
 }
 .container {
   display: grid;
+  position: relative;
 
   grid-template-columns:
     [full-start] minmax(6rem, 1fr) repeat(
@@ -96,21 +153,41 @@ html {
       [col-start] minmax(min-content, 14rem) [col-end]
     )
     minmax(6rem, 1fr) [full-end];
-  grid-template-rows: min-content;
+  grid-template-rows: 1fr;
 }
-.header-container {
+.nav-bar {
+  height: 12rem;
+  background: linear-gradient(
+    17deg,
+    rgba(116, 180, 58, 1) 0%,
+    rgba(238, 238, 238, 1) 48%,
+    rgba(252, 176, 69, 1) 100%
+  );
+
+  position: fixed;
+  margin-bottom: 12rem;
+  top: 0;
+  left: 0rem;
+  right: 0;
+  z-index: 1;
+}
+
+.navdiv {
+  height: 12rem;
+  z-index: 100;
   grid-column: full-start / full-end;
-  height: 100vh;
-  display: flex;
-  padding-top: 10rem;
-  justify-content: space-around;
-  align-content: space-around;
+}
+.section-header {
+  grid-column: full-start / full-end;
+
+  height: 95vh;
   background-image: linear-gradient(
       to top,
-      rgba(107, 211, 78),
-      rgba(255, 195, 132, 0.86)
+      rgba(144, 242, 0, 0.52),
+      rgba(255, 255, 255, 0.86),
+      rgba(255, 255, 255)
     ),
-    url(../img/vlcsnap-2016-02-21-18h34m33s53.png);
+    url(../img/puisto-tausta.jpg);
   background-size: cover;
   background-position: center;
 
@@ -118,54 +195,137 @@ html {
 
   clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
 }
-.nav-bar {
-  grid-column: full-start / full-end;
-  height: 12rem;
-  background-color: red;
-  position: fixed;
-  margin-bottom: 12rem;
-  top: 0;
-  left: 0;
-  right: 0;
-  z-index: 1;
+
+.header-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
 }
-.heading-1-container {
-  padding-top: 10rem;
+.header-text {
+  flex: 0 0 35%;
+  display: flex;
+  flex-direction: column;
+
+  align-items: center;
 }
-.heading-1 {
+.heading-primary {
+  padding-bottom: 15rem;
+
+  animation-name: moveInLeft;
+  animation-duration: 1s;
+  animation-timing-function: ease-out;
+}
+.heading-secondary {
+  margin-top: 65rem;
+  text-align: center;
   font-size: 8rem;
-  color: black;
-  padding-bottom: 5rem;
-  font-family: "Paytone One", sans-serif;
+  text-transform: uppercase;
   font-weight: 700;
-  background-color: #ff8b73;
+  background-image: linear-gradient(to right, red, yellow);
+
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+
+  letter-spacing: 2px;
+}
+.heading-img {
+  width: 80rem;
+}
+.animation {
+  animation-name: moveInBottom;
+  animation-duration: 1s;
+  animation-timing-function: ease-out;
 }
 .paragraph {
+  color: rgb(66, 65, 65);
+
   font-size: 4rem;
-  color: black;
+
   line-height: 7rem;
-  background-color: #ff8b73;
 }
-.header-img {
+.secondary-paragraph {
+  color: rgb(66, 65, 65);
+  font-size: 4rem;
+  flex: 0 0 26%;
+}
+.paragraph-kesatyo {
+  color: #fff;
+  margin-top: 3rem;
+  background-color: rgba(34, 5, 5, 0.81);
+  box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.4);
+  border-style: double;
+
+  border-width: 1rem;
+}
+.header__img-container {
   rotate: -5deg;
   filter: drop-shadow(var(--shadow-dark));
-  margin-right: 16rem;
+
   margin-top: 8rem;
-  flex: 1 0 50%;
+
+  flex: 0 0 35%;
 }
-img {
+.header-img {
   clip-path: polygon(0% 8%, 100% 8%, 100% 100%, 1% 98%);
+  object-fit: cover;
+  padding-bottom: 15rem;
+  margin-top: -5rem;
 }
-.info {
+.about {
   grid-column: 1 /-1;
-  height: 50rem;
-  background-color: #ff8b73;
+  height: 157rem;
+  background-color: #f7f7f7;
+  margin-top: -40rem;
+}
+.about-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  margin-top: 25rem;
+}
+.img-container {
+  flex: 0 0 50%;
+  position: relative;
+  width: 50%;
+}
+.composition__photo {
+  width: 50%;
+  box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.4);
+
+  position: absolute;
+  transition: all 0.4s;
+  border-radius: 1rem;
+
+  filter: brightness(1.3);
+}
+.composition__photo:hover {
+  outline: 1px solid rgba(17, 15, 3, 0.3);
+  transform: scale(1.05) translateY(-0.5rem);
+  box-shadow: 0 2.5rem 4rem rgba(0, 0, 0, 0.5);
+  z-index: 20;
+}
+
+.img-container:hover .img-container:not(:hover) {
+  transform: scale(0.95);
+}
+.composition__photo--1 {
+  left: 7%;
+  top: -11rem;
+}
+.composition__photo--2 {
+  right: -1%;
+}
+.composition__photo--3 {
+  left: 20%;
+  top: 20rem;
+  z-index: 1;
 }
 
 .testimonials {
   grid-column: 1 /-1;
-  height: 50rem;
-  background-color: #0e197d;
+  height: 70rem;
+  background-color: rgb(66, 65, 65);
 }
 
 .footer {
