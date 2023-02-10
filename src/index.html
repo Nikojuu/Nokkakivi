@@ -21,13 +21,13 @@
     <title>Nokkakivi</title>
   </head>
   <body>
-    <div class="container">
-      <div class="navdiv">
-        <nav class="nav-bar">fffffffffffffffffff</nav>
+    <div class="container-grid">
+      <div class="container-nav">
+        <nav class="navigation-bar">fffffffffffffffffff</nav>
       </div>
       <section class="section-header">
-        <header class="header-container">
-          <div class="header-text">
+        <header class="container-header">
+          <div class="header-content">
             <h1 class="heading-primary">
               <span class="visually-hidden">Tervetuloa Nokkakiveen!</span>
 
@@ -38,47 +38,54 @@
               />
             </h1>
             <p class="paragraph animation">
-              Huvipuisto avaa taas ovet keväällä! Avaamme jälleen
-              7.6.2023!Nokkakivi on paras paikka nokkakivi on kultainen! no ei
-              kuultainen
+              Huvipuisto avaa taas ovet keväällä! Avaamme jälleen 7.6.2023!
             </p>
-            <p class="paragraph paragraph-kesatyo animation">
+            <p class="paragraph paragraph-summerjob animation">
               Kesätyöpaikanhaku 2023 on nyt avoinna! Hakuaika 28.2.2023 asti
             </p>
           </div>
-          <figure class="header__img-container">
-            <img class="header-img" src="/src/img/IMG_1776.jpg" alt="" />
+          <figure class="container-header__img">
+            <img
+              class="header-img"
+              src="/src/img/IMG_1776.jpg"
+              alt="Header picture"
+            />
           </figure>
         </header>
       </section>
 
-      <section class="about">
-        <h2 class="heading-secondary">Pidä hauskaa koko päivä!</h2>
-        <div class="about-container">
-          <p class="secondary-paragraph">
-            Takaamme hauskan päivän hauskuustakuulla käy vuoristoradassa juo
-            kahvia nauti eväistä ja pidä hauskaa meillä se onnnistuu
+      <section class="section-about">
+        <h2 class="heading-secondary margin-top-huge">
+          Pidä hauskaa koko päivä!
+        </h2>
+        <div class="container-about">
+          <p class="paragraph-secondary">
+            "En malta odottaa että pääsen taas nokkikseen! "-Mirva vietä päivä
+            vuoristoradassa juo kahvia nauti eväistä ja pidä hauskaa meillä se
+            onnnistuu
           </p>
-          <div class="img-container">
+          <div class="container-img">
             <img
               src="img/about1.jpg"
               alt="Photo 1"
-              class="composition__photo composition__photo--3"
+              class="composition-photo composition-photo--3"
             />
             <img
               src="img/about2.jpg"
               alt="Photo 2"
-              class="composition__photo composition__photo--2"
+              class="composition-photo composition-photo--2"
             />
             <img
               src="img/about3.jpg"
               alt="Photo 3"
-              class="composition__photo composition__photo--1"
+              class="composition-photo composition-photo--1"
             />
           </div>
         </div>
       </section>
-      <section class="testimonials">
+
+      <section class="section-calendar">
+        <!-- ///////////////////////TILANJAKAJA///////////////////////////////////////// -->
         <svg
           class="separator"
           width="100%"
@@ -93,23 +100,69 @@
             />
           </g>
         </svg>
+        <h2 class="heading-secondary">Aukioloajat</h2>
+        <div class="container-calendar">
+          <figure class="nokkis-figure">
+            <p class="open-text">
+              Olemme tänään auki tervetuloa huvittelemaan!
+            </p>
+            <img
+              src="/src/img/nokkakiven_puisto_nokkislogo_color.svg"
+              alt="nokkis-aukiolo-kuva"
+            />
+          </figure>
+          <div class="calendar-info">
+            <p class="paragraph-secondary">
+              Tervetuloa Nokkakiveen! 7.6.2023-22.6-2023 olemme auki klo 11-17
+              ja loppukesän klo 11-18!! Maanantaisin meillä on huoltopäivä joten
+              olemme suljettu.
+            </p>
+          </div>
+          <!-- ///////////////////////////////////////////////////KALENTERI///////////////////////////////////////// -->
+          <div class="calendar">
+            <div class="month">
+              <img
+                class="calendar-img"
+                src="../src/img/nokkakiven_puisto_tekstilogo_color.svg"
+                alt=""
+              />
+              <i class="prev">&lt;</i>
+              <div class="date">
+                <h1></h1>
+                <p></p>
+              </div>
+              <i class="next"> &gt;</i>
+            </div>
+            <div class="weekdays">
+              <div>su</div>
+              <div>ma</div>
+              <div>ti</div>
+              <div>ke</div>
+              <div>to</div>
+              <div>pe</div>
+              <div>la</div>
+            </div>
+            <div class="days"></div>
+          </div>
+        </div>
       </section>
       <footer class="footer">
-        <svg
-          class="separator"
-          width="100%"
-          height="120"
-          viewBox="0.1 0.1 180 40"
-          preserveAspectRatio="none"
-        >
-          <g transform="translate(-18.298844,-77.973964)">
+        <!-- ///////////////////////TILANJAKAJA///////////////////////////////////////// -->
+        <div class="custom-shape-divider-top-1676036447">
+          <svg
+            data-name="Layer 1"
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 1200 120"
+            preserveAspectRatio="none"
+          >
             <path
-              style="fill: rgb(66, 65, 65)"
-              d="M 18.441597,78.106256 H 198.58126 v 39.288614 c 0,0 -43.10672,-27.825245 -73.47599,-19.687823 -30.369264,8.137423 -46.832208,12.548653 -46.832208,12.548653 0,0 -32.775418,8.05972 -46.735258,0 C 17.577964,102.19598 18.441597,78.106256 18.441597,78.106256 Z"
-            />
-          </g>
-        </svg>
+              d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z"
+              class="shape-fill"
+            ></path>
+          </svg>
+        </div>
       </footer>
     </div>
+    <script src="/src/js/index.js"></script>
   </body>
 </html>
