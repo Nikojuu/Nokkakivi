@@ -7,33 +7,62 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Paytone+One&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,700;1,900&display=swap"
       rel="stylesheet"
     />
 
-    <link rel="stylesheet" href="/src/css/styles.css" />
     <title>Nokkakivi</title>
+    <link rel="stylesheet" href="src/css/styles.css" />
+    <script src="src/js/index.js" defer></script>
   </head>
   <body>
     <div class="container-grid">
-      <div class="container-nav">
-        <nav class="navigation-bar">fffffffffffffffffff</nav>
-      </div>
+      <nav class="navigation-bar">
+        <div class="logo">
+          <a href="/">
+            <img src="/src/img/nokkakiven_puisto_logo1_color.svg" alt="Logo"
+          /></a>
+        </div>
+        <ul>
+          <li>
+            <a href="#"> Laitteet ja pelit</a>
+            <div class="dropdown-menu">
+              <ul>
+                <li><a href="#">Laitteet</a></li>
+                <li><a href="#">Ulkopelit</a></li>
+                <li><a href="#">Laitevuokraus</a></li>
+                <li><a href="#">Arcadepelit</a></li>
+              </ul>
+            </div>
+          </li>
+          <li><a href="#"> Ruoka ja kioskit</a></li>
+          <li>
+            <a href="#kalenteri"> Aukiolo</a>
+          </li>
+          <li><a href="#"> Hinnasto</a></li>
+          <li>
+            <a href="#"> Info</a>
+            <div class="dropdown-menu">
+              <ul>
+                <li><a href="#kalenteri">Aukiolo</a></li>
+                <li><a href="#">Hinnasto</a></li>
+                <li><a href="#">Saapuminen</a></li>
+                <li><a href="#">Hyvä tietää</a></li>
+                <li><a href="#">Avoimet työpaikat</a></li>
+              </ul>
+            </div>
+          </li>
+        </ul>
+      </nav>
       <section class="section-header">
         <header class="container-header">
           <div class="header-content">
-            <h1 class="heading-primary">
+            <h1 class="heading-primary-logo">
               <span class="visually-hidden">Tervetuloa Nokkakiveen!</span>
 
               <img
                 class="heading-img"
-                src="/src/img/nokkakiven_puisto_tekstilogo_color.svg"
+                src="src/img/nokkakiven_puisto_tekstilogo_color.svg"
                 alt="Nokkakiven puisto"
               />
             </h1>
@@ -47,15 +76,28 @@
           <figure class="container-header__img">
             <img
               class="header-img"
-              src="/src/img/IMG_1776.jpg"
+              src="src/img/IMG_1776.jpg"
               alt="Header picture"
             />
           </figure>
         </header>
-      </section>
 
+        <div class="custom-shape-divider-bottom-1676110006">
+          <svg
+            data-name="Layer 1"
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 1200 120"
+            preserveAspectRatio="none"
+          >
+            <path
+              d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z"
+              class="shape-fill-1"
+            ></path>
+          </svg>
+        </div>
+      </section>
       <section class="section-about">
-        <h2 class="heading-secondary margin-top-huge">
+        <h2 class="heading-secondary margin-top-medium">
           Pidä hauskaa koko päivä!
         </h2>
         <div class="container-about">
@@ -66,17 +108,17 @@
           </p>
           <div class="container-img">
             <img
-              src="/src/img/about1.jpg"
+              src="src/img/about1.jpg"
               alt="Photo 1"
               class="composition-photo composition-photo--3"
             />
             <img
-              src="/src/img/about2.jpg"
+              src="src/img/about2.jpg"
               alt="Photo 2"
               class="composition-photo composition-photo--2"
             />
             <img
-              src="/src/img/about2.jpg"
+              src="src/img/about3.jpg"
               alt="Photo 3"
               class="composition-photo composition-photo--1"
             />
@@ -84,7 +126,7 @@
         </div>
       </section>
 
-      <section class="section-calendar">
+      <section class="section-calendar" id="kalenteri">
         <!-- ///////////////////////TILANJAKAJA///////////////////////////////////////// -->
         <svg
           class="separator"
@@ -100,14 +142,14 @@
             />
           </g>
         </svg>
-        <h2 class="heading-secondary">Aukioloajat</h2>
+        <h2 class="heading-secondary margin-top-medium">Aukioloajat</h2>
         <div class="container-calendar">
           <figure class="nokkis-figure">
             <p class="open-text">
               Olemme tänään auki tervetuloa huvittelemaan!
             </p>
             <img
-              src="/src/img/nokkakiven_puisto_nokkislogo_color.svg"
+              src="src/img/nokkakiven_puisto_nokkislogo_color.svg"
               alt="nokkis-aukiolo-kuva"
             />
           </figure>
@@ -123,7 +165,7 @@
             <div class="month">
               <img
                 class="calendar-img"
-                src="../src/img/nokkakiven_puisto_tekstilogo_color.svg"
+                src="src/img/nokkakiven_puisto_tekstilogo_color.svg"
                 alt=""
               />
               <i class="prev">&lt;</i>
@@ -146,6 +188,38 @@
           </div>
         </div>
       </section>
+
+      <section class="food-snacks">
+        <div class="custom-shape-divider-top-1676036447 juu">
+          <svg
+            data-name="Layer 1"
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 1200 120"
+            preserveAspectRatio="none"
+          >
+            <path
+              d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z"
+              class="shape-fill"
+            ></path>
+          </svg>
+        </div>
+        <div class="food-container">
+
+          
+            <div class="item"><img class="kioski-img" src="src/img/hodari.jpg" alt="kioskit">
+              
+              
+              <span class="kioskit-heading">Kioskit</span>
+              <p class="paragraph-primary"> Kioskeistamme saat kahvia teetä hodareita pikkupurtavaa ja tietysti kylmää limsaa ja vettä janoon!!</p></div>
+            <div class="item"><img class="kioski-img" src="src/img/karkki.jpg" alt="kioskit">
+              <span class="kioskit-heading">Karkkikauppa</span><p class="paragraph-primary">Hullujen huoneiden yhteydessä karkkikauppa josta saa varmasti jokaiselle jotain makean nälkään</p></div>
+            <div class="item"><img class="kioski-img" src="src/img/popcorn.jpg" alt="kioskit"><span class="kioskit-heading">Hattaraa!!</span>
+              <p class="paragraph-primary">Perinteisiä huvipuisto herkkuja kuten popkornia ja hattaraa ilmanhan ei huvipäivää voi viettää!</p></div>
+            <div class="item"><img class="kioski-img" src="src/img/jaatelo.jpg" alt="kioskit">
+              <span class="kioskit-heading">Jäätelökioskit</span><p class="paragraph-primary">Mikäs muukaan kesäpäivänä maistuisi paremmalta kuin pehmis tai jäätelö!</p></div>
+        
+      </section>
+
       <footer class="footer">
         <!-- ///////////////////////TILANJAKAJA///////////////////////////////////////// -->
         <div class="custom-shape-divider-top-1676036447">
@@ -163,6 +237,5 @@
         </div>
       </footer>
     </div>
-    <script src="/src/js/index.js"></script>
   </body>
 </html>

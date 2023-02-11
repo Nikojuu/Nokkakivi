@@ -113,3 +113,72 @@ html {
   left: 4rem;
   margin-top: 3rem;
 }
+
+.navigation-bar {
+  grid-column: full-start / full-end;
+  background-image: linear-gradient(to left, #b7ff1a, #ffde5e, #b7ff1a);
+  box-shadow: var(--shadow-dark);
+  border-bottom: white solid;
+  border-top: white solid;
+  border-radius: 2rem;
+  height: 10rem;
+  width: 100%;
+  position: fixed;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 0 5%;
+
+  text-shadow: 2px 3px 1px #000;
+  font-family: "Alfa Slab One", cursive, sans-serif;
+  font-size: 2rem;
+}
+.logo {
+  width: 12rem;
+}
+
+.navigation-bar ul {
+  list-style: none;
+  display: flex;
+}
+.navigation-bar ul li {
+  padding: 10px 30px;
+  position: relative;
+}
+.navigation-bar ul li a {
+  color: #ff5151;
+  text-decoration: none;
+  text-transform: uppercase;
+
+  transition: all 0.3s;
+}
+.navigation-bar ul li a:hover {
+  color: black;
+
+  background-color: rgba(0, 0, 0, 0.1);
+}
+.dropdown-menu {
+  display: none;
+}
+.navigation-bar ul li:hover .dropdown-menu {
+  display: block;
+  position: absolute;
+  left: 1;
+  top: 150%;
+
+  border: #000 solid;
+  border-width: 1px;
+  background-image: linear-gradient(#ffe65c, #000);
+  border-radius: 5px;
+}
+
+.navigation-bar ul li:hover .dropdown-menu ul {
+  display: block;
+  margin: 10px;
+  font-size: 1.5rem;
+}
+.navigation-bar ul li:hover .dropdown-menu ul li {
+  width: 15rem;
+  padding: 10px;
+}

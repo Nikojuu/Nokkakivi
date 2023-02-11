@@ -1,3 +1,6 @@
+
+
+/////////////////////////////////////////////KALENTERI
 const date = new Date();
 
 const renderCalendar = () => {
@@ -40,13 +43,16 @@ const renderCalendar = () => {
     "Lokakuu",
     "Marraskuu",
     "Joulukuu"];
+///////////////OPEN DAYS:::::::::::PUISTO AVOINNA MUOKKAA TÄHÄN AUKIOLOT:::::::////////////////
+////////////////////////////////OLTAVA TÄSMÄLLEEN SAMASSA MUODOSSA TAI EI TOIMI///////////////////////
+    const openDays = ["11.2.2023","12.2.2023","10.2.2023","7.6.2023", "8.6.2023", "9.6.2023", "10.6.2023", "11.6.2023","13.6.2023", "14.6.2023", "15.6.2023", "16.6.2023", "17.6.2023", "18.6.2023", "20.6.2023", "21.6.2023", "22.6.2023", "25.6.2023", "27.6.2023", "28.6.2023", "29.6.2023", "30.6.2023", "1.7.2023", "2.7.2023", "4.7.2023", "5.7.2023", "6.7.2023", "7.7.2023", "8.7.2023", "9.7.2023", "11.7.2023", "12.7.2023", "13.7.2023", "14.7.2023", "15.7.2023", "16.7.2023", "18.7.2023", "19.7.2023", "20.7.2023", "21.7.2023", "22.7.2023", "23.7.2023", "25.7.2023", "26.7.2023", "27.7.2023", "28.7.2023", "29.7.2023", "30.7.2023", "1.8.2023", "2.8.2023", "3.8.2023", "4.8.2023", "5.8.2023", "8.8.2023", "12.8.2023", "13.8.2023", "19.8.2023", "26.8.2023"];
 
-    const openDays = ["7.6.2023", "8.6.2023", "9.6.2023", "10.6.2023", "11.6.2023","13.6.2023", "14.6.2023", "15.6.2023", "16.6.2023", "17.6.2023", "18.6.2023", "20.6.2023", "21.6.2023", "22.6.2023", "25.6.2023", "27.6.2023", "28.6.2023", "29.6.2023", "30.6.2023", "1.7.2023", "2.7.2023", "4.7.2023", "5.7.2023", "6.7.2023", "7.7.2023", "8.7.2023", "9.7.2023", "11.7.2023", "12.7.2023", "13.7.2023", "14.7.2023", "15.7.2023", "16.7.2023", "18.7.2023", "19.7.2023", "20.7.2023", "21.7.2023", "22.7.2023", "23.7.2023", "25.7.2023", "26.7.2023", "27.7.2023", "28.7.2023", "29.7.2023", "30.7.2023", "1.8.2023", "2.8.2023", "3.8.2023", "4.8.2023", "5.8.2023", "8.8.2023", "12.8.2023", "13.8.2023", "19.8.2023", "26.8.2023"];
 
+    ////////////////////////GIVES NAME OF THE MONTH IN HTML//////////////////////////
   document.querySelector(".date h1").innerHTML = months[date.getMonth()];
   
 
-
+/////////////////////SETS TIME IN FINNISH//////////////////////////////
   const options = {
   year: 'numeric',
   month: 'long',
@@ -57,7 +63,8 @@ const dateFi = new Date();
 const dateString = new Intl.DateTimeFormat('fi-FI', options).format(dateFi);
 
 document.querySelector(".date p").innerHTML = dateString;
-
+/////////////////LOOPS THAT RENDER PREVIOUS MONTH DAYS :: TODAY ::  IF TODAY= OPEN DAYS RENDERS OPEN POPUP
+ //RENER GREEN OPEN DAYS:: RENDER NUMBERS OF DAYS IN MONTH //////////////////////////
   let days = "";
 
   for (let x = firstDayIndex; x > 0; x--) {
@@ -77,13 +84,7 @@ document.querySelector(".date p").innerHTML = dateString;
       days += `<div class="today">${i}</div>`;
       
 
-    }else if (
-      i === new Date().getDate() &&
-      date.getMonth() === new Date().getMonth() && openDays.includes(`${i}.${date.getMonth() + 1}.${date.getFullYear()}`)) {
-        document.querySelector(".open__text").style.display = "block"
-
     }
-    
     
     else if (openDays.includes(`${i}.${date.getMonth() + 1}.${date.getFullYear()}`)) {
       days += `<div class="open">${i}</div>`;
@@ -95,7 +96,19 @@ document.querySelector(".date p").innerHTML = dateString;
       
     }
   }
+/////////////////////////TELLS IF TODAY IS OPEN OR NOT TEKSTIÄÄ VOI MUUTTAA HTML KALENTERI OSIOSSA OPEN-TEXT/////////////////////////////////////////
+  let today = new Date().getDate();
+  let month = new Date().getMonth() + 1;
+  let year = new Date().getFullYear();
+  let currentDay = `${today}.${month}.${year}`;
+  
+  if (openDays.includes(currentDay)) {
+    document.querySelector(".open-text").style.display = "block";
+  }
 
+
+
+/////////////////////////RENDERS COUPLE NEXT MONTHS DAYS/////////////////////////////////////////
   for (let j = 1; j <= nextDays; j++) {
     const nextDate = `${j}.${date.getMonth() + 2}.${date.getFullYear()}`;
     if (openDays.includes(nextDate)) {
@@ -107,7 +120,7 @@ document.querySelector(".date p").innerHTML = dateString;
   monthDays.innerHTML = days;
 
 };
-
+/////////////////////NEXT AND PREV MONTH ON CLICK////////////////////////////////////
 document.querySelector(".prev").addEventListener("click", () => {
   date.setMonth(date.getMonth() - 1);
   renderCalendar();
@@ -120,3 +133,7 @@ document.querySelector(".next").addEventListener("click", () => {
 });
 
 renderCalendar();
+/////////////////////////// ////////////////////////////////////////////
+//////////////////////////// NAVIGATION SCRIPT//////////////////////////
+/////////////////////////// ////////////////////////////////////////////
+
