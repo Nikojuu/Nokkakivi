@@ -10,17 +10,20 @@
       href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,700;1,900&display=swap"
       rel="stylesheet"
     />
+    <link rel="icon" type="image/png" href="src/img/favicon.ico" />
 
     <title>Nokkakivi</title>
     <link rel="stylesheet" href="./src/css/styles.css" />
     <script src="src/js/index.js" defer></script>
   </head>
   <body>
+    <!-- ///////////////////////////////////WHOLEPAGE GRID CONTAINER/////////////////////////////////////////////////////// -->
     <div class="container-grid">
+      <!-- ///////////////////////////////////NAVIGATION/////////////////////////////////////////////////////// -->
       <nav class="navigation-bar">
         <div class="logo">
           <a href="/">
-            <img src="/src/img/nokkakiven_puisto_logo1_color.svg" alt="Logo"
+            <img src="src/img/nokkakiven_puisto_logo1_color.svg" alt="Logo"
           /></a>
         </div>
         <ul>
@@ -44,8 +47,7 @@
             <a href="#"> Info</a>
             <div class="dropdown-menu">
               <ul>
-                <li><a href="#kalenteri">Aukiolo</a></li>
-                <li><a href="#">Hinnasto</a></li>
+                <li><a href="#">yhteystiedot</a></li>
                 <li><a href="#">Saapuminen</a></li>
                 <li><a href="#">Hyvä tietää</a></li>
                 <li><a href="#">Avoimet työpaikat</a></li>
@@ -54,6 +56,8 @@
           </li>
         </ul>
       </nav>
+      <!-- ///////////////////////////////////////////////////////////////////////////////////////// -->
+      <!-- //////////////////////////////////HEADER CONTENT////////////////////////////////////////////////////// -->
       <section class="section-header">
         <header class="container-header">
           <div class="header-content">
@@ -81,7 +85,8 @@
             />
           </figure>
         </header>
-
+        <!-- /////////////////////////////////////////////////////////////////////////////////////// -->
+        <!-- /////////////////////////////////TILANJAKAJA////////////////////////////////////////////////////// -->
         <div class="custom-shape-divider-bottom-1676110006">
           <svg
             data-name="Layer 1"
@@ -95,37 +100,73 @@
             ></path>
           </svg>
         </div>
+        <!-- //////////////////////////////////////////////////////////////////////////////////////// -->
       </section>
+
+      <!-- //////////////////////////////////SECTION-ABOUY/////////////////////////////////////////////////////// -->
       <section class="section-about">
         <h2 class="heading-secondary margin-top-medium">
           Pidä hauskaa koko päivä!
         </h2>
+
         <div class="container-about">
-          <p class="paragraph-secondary">
-            "En malta odottaa että pääsen taas nokkikseen! "-Mirva vietä päivä
-            vuoristoradassa juo kahvia nauti eväistä ja pidä hauskaa meillä se
-            onnnistuu
-          </p>
-          <div class="container-img">
-            <img
-              src="src/img/about1.jpg"
-              alt="Photo 1"
-              class="composition-photo composition-photo--3"
-            />
-            <img
-              src="src/img/about2.jpg"
-              alt="Photo 2"
-              class="composition-photo composition-photo--2"
-            />
-            <img
-              src="src/img/about3.jpg"
-              alt="Photo 3"
-              class="composition-photo composition-photo--1"
-            />
+          <div class="col-about-1">
+            <p class="paragraph-secondary margin-top-medium">
+              Tule viettämään kesän hauskin päivä Nokkakivessä, uskallatko
+              vuoristorataan? jännitystä löytyy myös mysteerisissä hulluissa
+              huoneissa. tai käy perinteisessä narunvedossa!!!
+            </p>
+          </div>
+          <div class="col-about-2">
+            <div class="img-container">
+              <img
+                src="src/img/about1.jpg"
+                alt="Photo 1"
+                class="composition-photo composition-photo--3"
+              />
+              <img
+                src="src/img/about2.jpg"
+                alt="Photo 2"
+                class="composition-photo composition-photo--2"
+              />
+              <img
+                src="src/img/about3.jpg"
+                alt="Photo 3"
+                class="composition-photo composition-photo--1"
+              />
+            </div>
+          </div>
+
+          <div class="col-about-3">
+            <div class="img-container">
+              <img
+                src="src/img/pelihalli1.jpg"
+                alt="Photo 1"
+                class="composition-photo composition-photo--3"
+              />
+              <img
+                src="src/img/pelihalli2.jpg"
+                alt="Photo 2"
+                class="composition-photo composition-photo--2"
+              />
+              <img
+                src="src/img/about4.jpg"
+                alt="Photo 3"
+                class="composition-photo composition-photo--1"
+              />
+            </div>
+          </div>
+          <div class="col-about-4">
+            <p class="paragraph-secondary">
+              Meillä on myös hieno kokoelma Arcade pelejä jotka ovat ilmaiseksi
+              pelattavissa aina Laukaanhovin auki ollessa jossa kannattaa
+              samalla käydä vaatekaupassa tai syömässä ravintolassa!
+            </p>
           </div>
         </div>
       </section>
-
+      <!-- ///////////////////////////////////////////////////////////////////////////////////////// -->
+      <!-- //////////////////////////////////SECTION-CALENDAR/////////////////////////////////////////////////////// -->
       <section class="section-calendar" id="kalenteri">
         <!-- ///////////////////////TILANJAKAJA///////////////////////////////////////// -->
         <svg
@@ -142,6 +183,7 @@
             />
           </g>
         </svg>
+        <!-- ////////////////////////////////////////////////////////////////////////////////////// -->
         <h2 class="heading-secondary margin-top-medium">Aukioloajat</h2>
         <div class="container-calendar">
           <figure class="nokkis-figure">
@@ -188,8 +230,11 @@
           </div>
         </div>
       </section>
+      <!-- //////////////////////////////////////////////////SECTION FOOD AND SNACKS///////////////////////////////////////// -->
 
       <section class="food-snacks">
+        <!-- ///////////////////////////////////////////////////TILANJAKAJA///////////////////////////////////////// -->
+
         <div class="custom-shape-divider-top-1676036447 juu">
           <svg
             data-name="Layer 1"
@@ -203,26 +248,51 @@
             ></path>
           </svg>
         </div>
-        <div class="food-container">
+        <h2 class="heading-secondary margin-top-medium">ruoka ja kioskit</h2>
 
-          
-            <div class="item"><img class="kioski-img" src="src/img/hodari.jpg" alt="kioskit">
-              
-              
-              <span class="kioskit-heading">Kioskit</span>
-              <p class="paragraph-primary"> Kioskeistamme saat kahvia teetä hodareita pikkupurtavaa ja tietysti kylmää limsaa ja vettä janoon!!</p></div>
-            <div class="item"><img class="kioski-img" src="src/img/karkki.jpg" alt="kioskit">
-              <span class="kioskit-heading">Karkkikauppa</span><p class="paragraph-primary">Hullujen huoneiden yhteydessä karkkikauppa josta saa varmasti jokaiselle jotain makean nälkään</p></div>
-            <div class="item"><img class="kioski-img" src="src/img/popcorn.jpg" alt="kioskit"><span class="kioskit-heading">Hattaraa!!</span>
-              <p class="paragraph-primary">Perinteisiä huvipuisto herkkuja kuten popkornia ja hattaraa ilmanhan ei huvipäivää voi viettää!</p></div>
-            <div class="item"><img class="kioski-img" src="src/img/jaatelo.jpg" alt="kioskit">
-              <span class="kioskit-heading">Jäätelökioskit</span><p class="paragraph-primary "">Mikäs muukaan kesäpäivänä maistuisi paremmalta kuin pehmis tai jäätelö!</p></div>
-        
+        <div class="food-container">
+          <div class="item">
+            <img class="kioski-img" src="src/img/hodari.jpg" alt="kioskit" />
+
+            <span class="kioskit-heading">Kioskit</span>
+            <p class="paragraph-primary">
+              Kioskeistamme saat kahvia teetä hodareita pikkupurtavaa ja
+              tietysti kylmää limsaa ja vettä janoon!!
+            </p>
+          </div>
+
+          <div class="item">
+            <img class="kioski-img" src="src/img/karkki.jpg" alt="kioskit" />
+            <span class="kioskit-heading">Karkkikauppa</span>
+            <p class="paragraph-primary">
+              Hullujen huoneiden yhteydessä karkkikauppa josta saa varmasti
+              jokaiselle jotain makean nälkään
+            </p>
+          </div>
+
+          <div class="item">
+            <img class="kioski-img" src="src/img/popcorn.jpg" alt="kioskit" />
+            <span class="kioskit-heading">Hattaraa!!</span>
+            <p class="paragraph-primary">
+              Perinteisiä huvipuisto herkkuja kuten popkornia ja hattaraa
+              ilmanhan ei huvipäivää voi viettää!
+            </p>
+          </div>
+
+          <div class="item">
+            <img class="kioski-img" src="src/img/jaatelo.jpg" alt="kioskit" />
+            <span class="kioskit-heading">Jäätelökioskit</span>
+            <p class="paragraph-primary">
+              Mikäs muukaan kesäpäivänä maistuisi paremmalta kuin pehmis tai
+              jäätelö!
+            </p>
+          </div>
+        </div>
       </section>
 
-      <footer class="footer">
-        <!-- ///////////////////////TILANJAKAJA///////////////////////////////////////// -->
-        <div class="custom-shape-divider-top-1676036447">
+      <!-- ///////////////////////TILANJAKAJA///////////////////////////////////////// -->
+      <div class="footer-wrapper">
+        <div class="divider">
           <svg
             data-name="Layer 1"
             xmlns="http://www.w3.org/2000/svg"
@@ -231,11 +301,126 @@
           >
             <path
               d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z"
-              class="shape-fill"
+              class="shape-fill-1"
             ></path>
           </svg>
         </div>
-      </footer>
+        <!-- ///////////////////////////////////////////////////FOOTER///////////////////////////////////////// -->
+
+        <!-- ///////////////////////////////////NAVIGATIO
+        
+        N/////////////////////////////////////////////////////// -->
+        <!-- ///////////////////////////////////NAVIGATION/////////////////////////////////////////////////////// -->
+        <!-- ///////////////////////////////////NAVIGATION/////////////////////////////////////////////////////// -->
+
+        <footer class="footer">
+          <div class="container-footer">
+            <div class="row">
+              <div class="footer-col">
+                <div class="logo-footer">
+                  <a href="/">
+                    <img
+                      class="logo-svg"
+                      src="src/img/nokkakiven_puisto_logo2_color.svg"
+                      alt="Logo"
+                  /></a>
+                </div>
+              </div>
+              <div class="footer-col">
+                <h4>huvipuisto</h4>
+                <ul>
+                  <li>
+                    <a href="#">laitteet</a>
+                  </li>
+                  <li>
+                    <a href="#">ruoka ja kioskit</a>
+                  </li>
+                  <li>
+                    <a href="#">arcadepelit</a>
+                  </li>
+                  <li>
+                    <a href="#">aukiolo</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="footer-col">
+                <h4>info</h4>
+                <ul>
+                  <li>
+                    <a href="#">hinnasto</a>
+                  </li>
+                  <li>
+                    <a href="#">saapuminen</a>
+                  </li>
+                  <li>
+                    <a href="#">Avoimet työpaikat</a>
+                  </li>
+                  <li>
+                    <a href="#"> </a>
+                  </li>
+                </ul>
+              </div>
+              <div class="footer-col">
+                <h4>contact</h4>
+                <div class="social-links">
+                  <a href="https://www.facebook.com/Nokkakivi/"
+                    ><svg class="social-icons">
+                      <use href="/src/img/symbol-defs.svg#icon-facebook"></use>
+                    </svg>
+                  </a>
+                  <!-- ////////////////////UNCOMMENT FOR TWITTER ICON  ///////////////////////// -->
+                  <!-- <a href="#"
+                  ><svg class="social-icons">
+                    <use href="/src/img/symbol-defs.svg#icon-twitter"></use>
+                  </svg>
+                </a> -->
+                  <a href="https://www.instagram.com/nokkakivi/"
+                    ><svg class="social-icons">
+                      <use href="/src/img/symbol-defs.svg#icon-instagram"></use>
+                    </svg>
+                  </a>
+
+                  <!-- ////////////////////UNCOMMENT FOR YOUTUBE ICON  ///////////////////////// -->
+                  <!-- <a href="#"
+                  ><svg class="social-icons">
+                    <use href="/src/img/symbol-defs.svg#icon-youtube"></use>
+                  </svg>
+                </a> -->
+                </div>
+                <ul class="contact-info">
+                  <li>
+                    <span
+                      ><svg class="social-icons info-icons">
+                        <use
+                          href="/src/img/symbol-defs.svg#icon-location"
+                        ></use></svg
+                    ></span>
+                    <a href="#">sijainti</a>
+                  </li>
+                  <li>
+                    <span
+                      ><svg class="social-icons info-icons">
+                        <use
+                          href="/src/img/symbol-defs.svg#icon-mail4"
+                        ></use></svg
+                    ></span>
+                    <p>info@nokkakivi.fi</p>
+                  </li>
+                  <li>
+                    <span
+                      ><svg class="social-icons info-icons">
+                        <use
+                          href="/src/img/symbol-defs.svg#icon-phone"
+                        ></use></svg
+                    ></span>
+                    <p>Puh: 045-270 5920</p>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </footer>
+      </div>
     </div>
   </body>
 </html>
