@@ -20,6 +20,9 @@
     <!-- ///////////////////////////////////WHOLEPAGE GRID CONTAINER/////////////////////////////////////////////////////// -->
     <div class="container-grid">
       <!-- ///////////////////////////////////NAVIGATION/////////////////////////////////////////////////////// -->
+
+      <label for="toggle">&#9776;</label>
+      <input type="checkbox" id="toggle" />
       <nav class="navigation-bar">
         <div class="logo">
           <a href="/">
@@ -28,7 +31,13 @@
         </div>
         <ul>
           <li>
-            <a href="#"> Laitteet ja pelit</a>
+            <a href="#">
+              Laitteet ja pelit
+              <span>
+                <svg class="nav-arrow">
+                  <use href="/src/img/symbol-defs.svg#icon-chevron-right"></use>
+                </svg> </span
+            ></a>
             <div class="dropdown-menu">
               <ul>
                 <li><a href="#">Laitteet</a></li>
@@ -44,7 +53,14 @@
           </li>
           <li><a href="#"> Hinnasto</a></li>
           <li>
-            <a href="#"> Info</a>
+            <a href="#">
+              Info
+              <span>
+                <svg class="nav-arrow">
+                  <use href="/src/img/symbol-defs.svg#icon-chevron-right"></use>
+                </svg>
+              </span>
+            </a>
             <div class="dropdown-menu">
               <ul>
                 <li><a href="#">yhteystiedot</a></li>
@@ -56,6 +72,7 @@
           </li>
         </ul>
       </nav>
+
       <!-- ///////////////////////////////////////////////////////////////////////////////////////// -->
       <!-- //////////////////////////////////HEADER CONTENT////////////////////////////////////////////////////// -->
       <section class="section-header">
@@ -70,12 +87,14 @@
                 alt="Nokkakiven puisto"
               />
             </h1>
-            <p class="paragraph animation">
-              Huvipuisto avaa taas ovet keväällä! Avaamme jälleen 7.6.2023!
-            </p>
-            <p class="paragraph paragraph-summerjob animation">
-              Kesätyöpaikanhaku 2023 on nyt avoinna! Hakuaika 28.2.2023 asti
-            </p>
+            <div class="heading-paragraph-container">
+              <p class="paragraph animation">
+                Huvipuisto avaa taas ovet keväällä! Avaamme jälleen 7.6.2023!
+              </p>
+              <p class="paragraph paragraph-summerjob animation">
+                Kesätyöpaikanhaku 2023 on nyt avoinna! Hakuaika 28.2.2023 asti
+              </p>
+            </div>
           </div>
           <figure class="container-header__img">
             <img
@@ -111,7 +130,7 @@
 
         <div class="container-about">
           <div class="col-about-1">
-            <p class="paragraph-secondary margin-top-medium">
+            <p class="paragraph-secondary">
               Tule viettämään kesän hauskin päivä Nokkakivessä, uskallatko
               vuoristorataan? jännitystä löytyy myös mysteerisissä hulluissa
               huoneissa. tai käy perinteisessä narunvedossa!!!
@@ -185,7 +204,7 @@
         </svg>
         <!-- ////////////////////////////////////////////////////////////////////////////////////// -->
         <h2 class="heading-secondary margin-top-medium">Aukioloajat</h2>
-        <div class="container-calendar">
+        <div class="container-calendar margin-top-medium">
           <figure class="nokkis-figure">
             <p class="open-text">
               Olemme tänään auki tervetuloa huvittelemaan!
@@ -202,32 +221,32 @@
               olemme suljettu.
             </p>
           </div>
-          <!-- ///////////////////////////////////////////////////KALENTERI///////////////////////////////////////// -->
-          <div class="calendar">
-            <div class="month">
-              <img
-                class="calendar-img"
-                src="src/img/nokkakiven_puisto_tekstilogo_color.svg"
-                alt=""
-              />
-              <i class="prev">&lt;</i>
-              <div class="date">
-                <h1></h1>
-                <p></p>
-              </div>
-              <i class="next"> &gt;</i>
+        </div>
+        <!-- ///////////////////////////////////////////////////KALENTERI///////////////////////////////////////// -->
+        <div class="calendar">
+          <div class="month">
+            <img
+              class="calendar-img"
+              src="src/img/nokkakiven_puisto_tekstilogo_color.svg"
+              alt=""
+            />
+            <i class="prev">&lt;</i>
+            <div class="date">
+              <h1></h1>
+              <p></p>
             </div>
-            <div class="weekdays">
-              <div>su</div>
-              <div>ma</div>
-              <div>ti</div>
-              <div>ke</div>
-              <div>to</div>
-              <div>pe</div>
-              <div>la</div>
-            </div>
-            <div class="days"></div>
+            <i class="next"> &gt;</i>
           </div>
+          <div class="weekdays">
+            <div>su</div>
+            <div>ma</div>
+            <div>ti</div>
+            <div>ke</div>
+            <div>to</div>
+            <div>pe</div>
+            <div>la</div>
+          </div>
+          <div class="days"></div>
         </div>
       </section>
       <!-- //////////////////////////////////////////////////SECTION FOOD AND SNACKS///////////////////////////////////////// -->
@@ -254,7 +273,7 @@
           <div class="item">
             <img class="kioski-img" src="src/img/hodari.jpg" alt="kioskit" />
 
-            <span class="kioskit-heading">Kioskit</span>
+            <h3 class="kioskit-heading">Kioskit</h3>
             <p class="paragraph-primary">
               Kioskeistamme saat kahvia teetä hodareita pikkupurtavaa ja
               tietysti kylmää limsaa ja vettä janoon!!
@@ -263,7 +282,7 @@
 
           <div class="item">
             <img class="kioski-img" src="src/img/karkki.jpg" alt="kioskit" />
-            <span class="kioskit-heading">Karkkikauppa</span>
+            <h3 class="kioskit-heading">Karkkikauppa</h3>
             <p class="paragraph-primary">
               Hullujen huoneiden yhteydessä karkkikauppa josta saa varmasti
               jokaiselle jotain makean nälkään
@@ -272,7 +291,7 @@
 
           <div class="item">
             <img class="kioski-img" src="src/img/popcorn.jpg" alt="kioskit" />
-            <span class="kioskit-heading">Hattaraa!!</span>
+            <h3 class="kioskit-heading">Hattaraa!!</h3>
             <p class="paragraph-primary">
               Perinteisiä huvipuisto herkkuja kuten popkornia ja hattaraa
               ilmanhan ei huvipäivää voi viettää!
@@ -281,7 +300,7 @@
 
           <div class="item">
             <img class="kioski-img" src="src/img/jaatelo.jpg" alt="kioskit" />
-            <span class="kioskit-heading">Jäätelökioskit</span>
+            <h3 class="kioskit-heading">Jäätelökioskit</h3>
             <p class="paragraph-primary">
               Mikäs muukaan kesäpäivänä maistuisi paremmalta kuin pehmis tai
               jäätelö!
@@ -305,13 +324,11 @@
             ></path>
           </svg>
         </div>
-        <!-- ///////////////////////////////////////////////////FOOTER///////////////////////////////////////// -->
-
-        <!-- ///////////////////////////////////NAVIGATIO
-        
-        N/////////////////////////////////////////////////////// -->
-        <!-- ///////////////////////////////////NAVIGATION/////////////////////////////////////////////////////// -->
-        <!-- ///////////////////////////////////NAVIGATION/////////////////////////////////////////////////////// -->
+        <!-- ///////////////////////////////////////////////////FOOTER///////////////////////////////////////// 
+        <!-- //////////////////////////////
+       /////////////////////////////////////////////////////// -->
+        <!-- ////////////////////////////////////////////////////////////////////////////////////////// -->
+        <!-- ////////////////////////////////////////////////////////////////////////////////////////// -->
 
         <footer class="footer">
           <div class="container-footer">
@@ -361,7 +378,7 @@
                 </ul>
               </div>
               <div class="footer-col">
-                <h4>contact</h4>
+                <h4>Yhteystiedot</h4>
                 <div class="social-links">
                   <a href="https://www.facebook.com/Nokkakivi/"
                     ><svg class="social-icons">
