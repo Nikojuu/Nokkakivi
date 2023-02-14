@@ -145,3 +145,13 @@ links.forEach(link => {
     toggle.checked = false;
   });
 });
+
+const label = document.querySelector('label');
+
+toggle.addEventListener('change', () => {
+  if (toggle.checked) {
+    label.innerHTML = "&#10006;";
+  } else {
+    label.innerHTML = "&#9776;";
+  }
+});

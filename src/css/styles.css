@@ -210,6 +210,7 @@ html {
   transition: all 0.5s;
   min-height: 10rem;
   min-width: 10rem;
+  position: relative;
 }
 .logo img {
   min-width: 12rem;
@@ -280,7 +281,7 @@ label {
   position: fixed;
   top: 2rem;
   right: 2rem;
-  color: red;
+  color: #000;
   line-height: 50px;
   width: 26px;
   display: none;
@@ -291,29 +292,48 @@ label {
 }
 @media only screen and (max-width: 950px) {
   label {
+    position: fixed;
+
     display: block;
     cursor: pointer;
+    font-size: 6rem;
+    width: 8rem;
+    height: 8rem;
+
+    background-color: #fff;
+    border-radius: 50%;
+    padding-left: 1.5rem;
+    padding-top: 0.8rem;
   }
+
   .navigation-bar {
     display: none;
   }
   .logo img {
     min-width: 23rem;
   }
+
   #toggle:checked + .navigation-bar {
     display: flex;
     flex-direction: column;
     height: 100vh;
-    padding-top: 16rem;
+    padding-top: 2rem;
     width: 100%;
+    max-width: 100%;
     align-items: start;
-    font-size: 3rem;
+    font-size: 2.5rem;
   }
+
   #toggle:checked + .navigation-bar ul {
     flex-direction: column;
   }
   #toggle:checked + .navigation-bar ul li:hover .dropdown-menu {
     position: relative;
+  }
+}
+@media only screen and (max-width: 48em) {
+  #toggle:checked + .navigation-bar {
+    font-size: 1.5rem;
   }
 }
 
