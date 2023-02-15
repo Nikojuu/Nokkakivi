@@ -1,0 +1,815 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" type="image/png" href="src/img/favicon.ico" />
+
+    <title>Nokkakivi</title>
+    <link rel="stylesheet" href="../src/css/styles.css" />
+    <script src="../src/js/index.js" defer></script>
+  </head>
+  <body>
+    <!-- ///////////////////////////////////WHOLEPAGE GRID CONTAINER/////////////////////////////////////////////////////// -->
+    <div class="container-grid">
+      <!-- ///////////////////////////////////NAVIGATION/////////////////////////////////////////////////////// -->
+
+      <label for="toggle">&#9776;</label>
+      <input type="checkbox" id="toggle" />
+      <nav class="navigation-bar">
+        <div class="logo">
+          <a href="/">
+            <img
+              src="../src/img/nokkakiven_puisto_logo1_color.svg"
+              alt="Logo"
+            />
+          </a>
+        </div>
+        <ul>
+          <li>
+            <a href="#">
+              Laitteet ja pelit
+              <span>
+                <svg class="nav-arrow">
+                  <use
+                    xlink:href="../src/img/symbol-defs.svg#icon-chevron-right"
+                  ></use>
+                </svg> </span
+            ></a>
+            <div class="dropdown-menu">
+              <ul>
+                <li><a href="#">Laitteet</a></li>
+                <li><a href="#">Ulkopelit</a></li>
+                <li><a href="#">Laitevuokraus</a></li>
+                <li><a href="#">Arcadepelit</a></li>
+              </ul>
+            </div>
+          </li>
+          <li><a href="#"> Ruoka ja kioskit</a></li>
+          <li>
+            <a href="#kalenteri"> Aukiolo</a>
+          </li>
+          <li><a href="#"> Hinnasto</a></li>
+          <li>
+            <a href="#">
+              Info
+              <span>
+                <svg class="nav-arrow">
+                  <use
+                    xlink:href="../src/img/symbol-defs.svg#icon-chevron-right"
+                  ></use>
+                </svg>
+              </span>
+            </a>
+            <div class="dropdown-menu">
+              <ul>
+                <li><a href="#">yhteystiedot</a></li>
+                <li><a href="#">Saapuminen</a></li>
+                <li><a href="#">Hyvä tietää</a></li>
+                <li><a href="#">Avoimet työpaikat</a></li>
+              </ul>
+            </div>
+          </li>
+        </ul>
+      </nav>
+      <!-- ////////////////////////////////////////////////////////////////////////////////////////// -->
+      <!-- //////////////////////HEADER/////////////////////////////////////////////////////////// -->
+      <div class="header-container">
+        <h1 class="heading-primary">Laitteet ja pelit</h1>
+        <img
+          class="heading-background"
+          src="../src/img/huvipuisto.svg"
+          alt=""
+        />
+      </div>
+      <!-- //////////////////////RIDES SECTION///////////////////////////////////////// -->
+      <div class="container">
+        <h3 class="heading-tertiary">Huvipuistolaitteet</h3>
+        <div class="product-grid">
+          <div class="card stacked">
+            <img
+              src="../src/img/laitteet/cyclon.jpg"
+              alt="cyclon"
+              class="card__img"
+            />
+            <div class="card__content">
+              <h4 class="card__title">Cyclon</h4>
+
+              <div>
+                <svg class="height-limit">
+                  <use xlink:href="../src/img/symbol-defs.svg#icon-child"></use>
+                </svg>
+                <p class="card__pituusraja">120cm</p>
+              </div>
+
+              <p class="card__description">
+                Cyclon vuoristorata tarjoaa vauhdikkaita hetkiä hurjapäille!
+              </p>
+
+              <div>
+                <svg class="height-limit">
+                  <use
+                    xlink:href="../src/img/symbol-defs.svg#icon-escalator_warning"
+                  ></use>
+                </svg>
+
+                <p class="card__pituusraja">100cm</p>
+              </div>
+            </div>
+          </div>
+          <div class="card stacked">
+            <img
+              src="../src/img/laitteet/saturn.jpg"
+              alt="cyclon"
+              class="card__img"
+            />
+            <div class="card__content">
+              <h4 class="card__title">Saturn</h4>
+              <div>
+                <svg class="height-limit">
+                  <use xlink:href="../src/img/symbol-defs.svg#icon-child"></use>
+                </svg>
+                <p class="card__pituusraja">Alle 100cm</p>
+              </div>
+              <p class="card__description">
+                Saturn tarjoaa leppoisan kyydin pienille avaruuslentäjille!
+              </p>
+              <div>
+                <svg class="height-limit">
+                  <use
+                    xlink:href="../src/img/symbol-defs.svg#icon-escalator_warning"
+                  ></use>
+                </svg>
+
+                <p class="card__pituusraja">Alle 100cm</p>
+              </div>
+            </div>
+          </div>
+          <div class="card stacked">
+            <img
+              src="../src/img/laitteet/ketkula.jpg"
+              alt="cyclon"
+              class="card__img"
+            />
+            <div class="card__content">
+              <h4 class="card__title">Ketkula</h4>
+              <div>
+                <svg class="height-limit">
+                  <use xlink:href="../src/img/symbol-defs.svg#icon-child"></use>
+                </svg>
+                <p class="card__pituusraja">100cm</p>
+              </div>
+              <p class="card__description">
+                Supersuosituissa Ketkulan hulluissa huoneissa tapahtuu kaikkea
+                hauskaa"
+              </p>
+              <div>
+                <svg class="height-limit">
+                  <use
+                    xlink:href="../src/img/symbol-defs.svg#icon-escalator_warning"
+                  ></use>
+                </svg>
+
+                <p class="card__pituusraja">Alle 100cm</p>
+              </div>
+            </div>
+          </div>
+          <div class="card stacked">
+            <img
+              src="../src/img/laitteet/miami.jpg"
+              alt="cyclon"
+              class="card__img"
+            />
+            <div class="card__content">
+              <h4 class="card__title">Miami</h4>
+              <div>
+                <svg class="height-limit">
+                  <use xlink:href="../src/img/symbol-defs.svg#icon-child"></use>
+                </svg>
+                <p class="card__pituusraja">140cm</p>
+              </div>
+              <p class="card__description">
+                Miami on klassikko joka ei paljoa esittelyjä kaipaa
+                vauhdikkaaseen menoon!
+              </p>
+              <div>
+                <svg class="height-limit">
+                  <use
+                    xlink:href="../src/img/symbol-defs.svg#icon-escalator_warning"
+                  ></use>
+                </svg>
+
+                <p class="card__pituusraja">120cm</p>
+              </div>
+            </div>
+          </div>
+          <div class="card stacked">
+            <img
+              src="../src/img/laitteet/roundup.jpg"
+              alt="cyclon"
+              class="card__img"
+            />
+            <div class="card__content">
+              <h4 class="card__title">Round up</h4>
+              <div>
+                <svg class="height-limit">
+                  <use xlink:href="../src/img/symbol-defs.svg#icon-child"></use>
+                </svg>
+                <p class="card__pituusraja">140cm</p>
+              </div>
+              <p class="card__description">
+                Legendaarinen "painekattila" pyörii niin kovasti että selkäsi on
+                kuin liimattuna seinään!
+              </p>
+              <div>
+                <svg class="height-limit">
+                  <use
+                    xlink:href="../src/img/symbol-defs.svg#icon-escalator_warning"
+                  ></use>
+                </svg>
+
+                <p class="card__pituusraja">140cm</p>
+              </div>
+            </div>
+          </div>
+          <div class="card stacked">
+            <img
+              src="../src/img/laitteet/pilvenpyora.jpg"
+              alt="cyclon"
+              class="card__img"
+            />
+            <div class="card__content">
+              <h4 class="card__title">Pilvenpyörä</h4>
+              <div>
+                <svg class="height-limit">
+                  <use xlink:href="../src/img/symbol-defs.svg#icon-child"></use>
+                </svg>
+                <p class="card__pituusraja">120cm</p>
+              </div>
+              <p class="card__description">
+                joka kesän suosikki Pilvenpyörä antaa tasaiset mutta vauhdikkaat
+                kyydit!
+              </p>
+              <div>
+                <svg class="height-limit">
+                  <use
+                    xlink:href="../src/img/symbol-defs.svg#icon-escalator_warning"
+                  ></use>
+                </svg>
+
+                <p class="card__pituusraja">100cm</p>
+              </div>
+            </div>
+          </div>
+          <div class="card stacked">
+            <img
+              src="../src/img/laitteet/maailmanpyora.jpg"
+              alt="cyclon"
+              class="card__img"
+            />
+            <div class="card__content">
+              <h4 class="card__title">Maailmanpyörä</h4>
+              <div>
+                <svg class="height-limit">
+                  <use xlink:href="../src/img/symbol-defs.svg#icon-child"></use>
+                </svg>
+                <p class="card__pituusraja">140cm</p>
+              </div>
+              <p class="card__description">
+                näitkö amerikkalaisessa elokuvassa tai TV-sarjassa
+                maailmanpyörän? sen on mitä todennäköisimmin samaa maillia!
+              </p>
+              <div>
+                <svg class="height-limit">
+                  <use
+                    xlink:href="../src/img/symbol-defs.svg#icon-escalator_warning"
+                  ></use>
+                </svg>
+
+                <p class="card__pituusraja">120cm</p>
+              </div>
+            </div>
+          </div>
+          <div class="card stacked">
+            <img
+              src="../src/img/laitteet/pienoisjuna.jpg"
+              alt="cyclon"
+              class="card__img"
+            />
+            <div class="card__content">
+              <h4 class="card__title">Minijuna</h4>
+              <div>
+                <svg class="height-limit">
+                  <use xlink:href="../src/img/symbol-defs.svg#icon-child"></use>
+                </svg>
+                <p class="card__pituusraja">Alle 100cm</p>
+              </div>
+              <p class="card__description">
+                Jännittävä pikkuväen junaseikkailu villin lännen maisemissa!
+              </p>
+              <div>
+                <svg class="height-limit">
+                  <use
+                    xlink:href="../src/img/symbol-defs.svg#icon-escalator_warning"
+                  ></use>
+                </svg>
+
+                <p class="card__pituusraja">Alle 100cm</p>
+              </div>
+            </div>
+          </div>
+          <div class="card stacked">
+            <img
+              src="../src/img/laitteet/skyfighter.jpg"
+              alt="cyclon"
+              class="card__img"
+            />
+            <div class="card__content">
+              <h4 class="card__title">Lentokonekaruselli</h4>
+              <div>
+                <svg class="height-limit">
+                  <use xlink:href="../src/img/symbol-defs.svg#icon-child"></use>
+                </svg>
+                <p class="card__pituusraja">Alle 100cm</p>
+              </div>
+              <p class="card__description">
+                Skyfighter!! pienet lentäjät pääsevät ammuskelemaan
+                lentokoneissa!
+              </p>
+              <div>
+                <svg class="height-limit">
+                  <use
+                    xlink:href="../src/img/symbol-defs.svg#icon-escalator_warning"
+                  ></use>
+                </svg>
+
+                <p class="card__pituusraja">Alle 100cm</p>
+              </div>
+            </div>
+          </div>
+          <div class="card stacked">
+            <img
+              src="../src/img/laitteet/mustekala.jpg"
+              alt="cyclon"
+              class="card__img"
+            />
+            <div class="card__content">
+              <h4 class="card__title">Mustekala</h4>
+              <div>
+                <svg class="height-limit">
+                  <use xlink:href="../src/img/symbol-defs.svg#icon-child"></use>
+                </svg>
+                <p class="card__pituusraja">Alle 100cm</p>
+              </div>
+              <p class="card__description">
+                Pienen väen suosikki! Mustekalaan pääsee myös vanhemmat
+                halutessaan!
+              </p>
+              <div>
+                <svg class="height-limit">
+                  <use
+                    xlink:href="../src/img/symbol-defs.svg#icon-escalator_warning"
+                  ></use>
+                </svg>
+
+                <p class="card__pituusraja">Alle 100cm</p>
+              </div>
+            </div>
+          </div>
+          <div class="card stacked">
+            <img
+              src="../src/img/laitteet/pensassokkelo.jpg"
+              alt="cyclon"
+              class="card__img"
+            />
+            <div class="card__content">
+              <h4 class="card__title">Pensas labyrintti</h4>
+              <div>
+                <svg class="height-limit">
+                  <use xlink:href="../src/img/symbol-defs.svg#icon-child"></use>
+                </svg>
+                <p class="card__pituusraja">Alle 100cm</p>
+              </div>
+              <p class="card__description">Onnea labyrintin selvittämiseen!</p>
+              <div>
+                <svg class="height-limit">
+                  <use
+                    xlink:href="../src/img/symbol-defs.svg#icon-escalator_warning"
+                  ></use>
+                </svg>
+
+                <p class="card__pituusraja">Alle 100cm</p>
+              </div>
+            </div>
+          </div>
+          <div class="card stacked">
+            <img
+              src="../src/img/laitteet/miniautot.jpg"
+              alt="cyclon"
+              class="card__img"
+            />
+            <div class="card__content">
+              <h4 class="card__title">Mini autot</h4>
+              <div>
+                <svg class="height-limit">
+                  <use xlink:href="../src/img/symbol-defs.svg#icon-child"></use>
+                </svg>
+                <p class="card__pituusraja">Alle 100cm</p>
+              </div>
+              <p class="card__description">
+                F1 Radalla pääset näyttämään rallitaitosi vaikkei ajokorttia
+                vielä olisi!
+              </p>
+              <div>
+                <svg class="height-limit">
+                  <use
+                    xlink:href="../src/img/symbol-defs.svg#icon-escalator_warning"
+                  ></use>
+                </svg>
+
+                <p class="card__pituusraja">Alle 100cm</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="card stacked">
+            <img
+              src="../src/img/laitteet/lastenmp.jpg"
+              alt="cyclon"
+              class="card__img"
+            />
+            <div class="card__content">
+              <h4 class="card__title">Lasten maailmanpyörä</h4>
+              <div>
+                <svg class="height-limit">
+                  <use xlink:href="../src/img/symbol-defs.svg#icon-child"></use>
+                </svg>
+                <p class="card__pituusraja">Alle 100cm</p>
+              </div>
+              <p class="card__description">
+                Mini versio maailmanpyörästä jos iso on vielä liian pelottava
+                tai pituus ei riitä!
+              </p>
+              <div>
+                <svg class="height-limit">
+                  <use
+                    xlink:href="../src/img/symbol-defs.svg#icon-escalator_warning"
+                  ></use>
+                </svg>
+
+                <p class="card__pituusraja">Alle 100cm</p>
+              </div>
+            </div>
+          </div>
+          <div class="card stacked">
+            <img
+              src="../src/img/laitteet/tormis.JPG"
+              alt="cyclon"
+              class="card__img"
+            />
+            <div class="card__content">
+              <h4 class="card__title">Törmäilyautot</h4>
+              <div>
+                <svg class="height-limit">
+                  <use xlink:href="../src/img/symbol-defs.svg#icon-child"></use>
+                </svg>
+                <p class="card__pituusraja">120cm</p>
+              </div>
+              <p class="card__description">
+                "Törmiksissä" pääset näyttämään todelliset ajotaitosi!
+              </p>
+              <div>
+                <svg class="height-limit">
+                  <use
+                    xlink:href="../src/img/symbol-defs.svg#icon-escalator_warning"
+                  ></use>
+                </svg>
+
+                <p class="card__pituusraja">100cm</p>
+              </div>
+            </div>
+          </div>
+          <div class="card stacked">
+            <img
+              src="../src/img/laitteet/hullugully.jpg"
+              alt="cyclon"
+              class="card__img"
+            />
+            <div class="card__content">
+              <h4 class="card__title">Hully Gully</h4>
+              <div>
+                <svg class="height-limit">
+                  <use xlink:href="../src/img/symbol-defs.svg#icon-child"></use>
+                </svg>
+                <p class="card__pituusraja">100cm</p>
+              </div>
+              <p class="card__description">
+                Hullu Gully pyörittää niin isoja kuin pieniäkin matkustajia!
+              </p>
+              <div>
+                <svg class="height-limit">
+                  <use
+                    xlink:href="../src/img/symbol-defs.svg#icon-escalator_warning"
+                  ></use>
+                </svg>
+
+                <p class="card__pituusraja">Alle 100cm</p>
+              </div>
+            </div>
+          </div>
+          <div class="card stacked">
+            <img
+              src="../src/img/laitteet/kanootti.jpg"
+              alt="cyclon"
+              class="card__img"
+            />
+            <div class="card__content">
+              <h4 class="card__title">Kanoottijoki</h4>
+              <div>
+                <svg class="height-limit">
+                  <use xlink:href="../src/img/symbol-defs.svg#icon-child"></use>
+                </svg>
+                <p class="card__pituusraja">Alle 100cm</p>
+              </div>
+              <p class="card__description">
+                Lasten suosikki! Melo intiaanikylän läpi kulkevan joen!
+              </p>
+              <div>
+                <svg class="height-limit">
+                  <use
+                    xlink:href="../src/img/symbol-defs.svg#icon-escalator_warning"
+                  ></use>
+                </svg>
+
+                <p class="card__pituusraja">Alle 100cm</p>
+              </div>
+            </div>
+          </div>
+          <div class="card stacked">
+            <img
+              src="../src/img/laitteet/vauhtivirveli.jpg"
+              alt="cyclon"
+              class="card__img"
+            />
+            <div class="card__content">
+              <h4 class="card__title">Vauhtivirveli</h4>
+              <div>
+                <svg class="height-limit">
+                  <use xlink:href="../src/img/symbol-defs.svg#icon-child"></use>
+                </svg>
+                <p class="card__pituusraja">120cm</p>
+              </div>
+              <p class="card__description">
+                Tämä Tivoliklassikko saattaa pyörittää todella kovaakin!!!
+              </p>
+              <div>
+                <svg class="height-limit">
+                  <use
+                    xlink:href="../src/img/symbol-defs.svg#icon-escalator_warning"
+                  ></use>
+                </svg>
+
+                <p class="card__pituusraja">100cm</p>
+              </div>
+            </div>
+          </div>
+          <div class="card stacked">
+            <img
+              src="../src/img/laitteet/morkometsa.jpg"
+              alt="cyclon"
+              class="card__img"
+            />
+            <div class="card__content">
+              <h4 class="card__title">Mörkömetsä</h4>
+              <div>
+                <svg class="height-limit">
+                  <use xlink:href="../src/img/symbol-defs.svg#icon-child"></use>
+                </svg>
+                <p class="card__pituusraja">Alle 100cm</p>
+              </div>
+              <p class="card__description">
+                Jännittävä metsäseikkailu! Halutessasi voit ostaa kioskeista
+                kartan jonka selvittäjille on luvassa palkinto!
+              </p>
+              <div>
+                <svg class="height-limit">
+                  <use
+                    xlink:href="../src/img/symbol-defs.svg#icon-escalator_warning"
+                  ></use>
+                </svg>
+
+                <p class="card__pituusraja">Alle 100cm</p>
+              </div>
+            </div>
+          </div>
+          <div class="card stacked">
+            <img
+              src="../src/img/laitteet/kummitusjuna.jpg"
+              alt="cyclon"
+              class="card__img"
+            />
+            <div class="card__content">
+              <h4 class="card__title">Kummitusjuna</h4>
+              <div>
+                <svg class="height-limit">
+                  <use xlink:href="../src/img/symbol-defs.svg#icon-child"></use>
+                </svg>
+                <p class="card__pituusraja">100cm</p>
+              </div>
+              <p class="card__description">
+                Tuskin kukaan voi sanoa vastaan jos väitän että suomen
+                karmasevin kummitusjuna!
+              </p>
+              <div>
+                <svg class="height-limit">
+                  <use
+                    xlink:href="../src/img/symbol-defs.svg#icon-escalator_warning"
+                  ></use>
+                </svg>
+
+                <p class="card__pituusraja">Alle 100cm</p>
+              </div>
+            </div>
+          </div>
+          <div class="card stacked">
+            <img
+              src="../src/img/laitteet/peppikaruselli.jpg"
+              alt="cyclon"
+              class="card__img"
+            />
+            <div class="card__content">
+              <h4 class="card__title">Peppikaruselli</h4>
+              <div>
+                <svg class="height-limit">
+                  <use xlink:href="../src/img/symbol-defs.svg#icon-child"></use>
+                </svg>
+                <p class="card__pituusraja">Alle 100cm</p>
+              </div>
+              <p class="card__description">
+                Nostalgisessä hevoskarusellissa pääset ratsastamaan hepoilla!
+              </p>
+              <div>
+                <svg class="height-limit">
+                  <use
+                    xlink:href="../src/img/symbol-defs.svg#icon-escalator_warning"
+                  ></use>
+                </svg>
+
+                <p class="card__pituusraja">Alle 100cm</p>
+              </div>
+            </div>
+          </div>
+          <div class="card stacked">
+            <img
+              src="../src/img/laitteet/scrambler.JPG"
+              alt="cyclon"
+              class="card__img"
+            />
+            <div class="card__content">
+              <h4 class="card__title">Scrambler</h4>
+              <div>
+                <svg class="height-limit">
+                  <use xlink:href="../src/img/symbol-defs.svg#icon-child"></use>
+                </svg>
+                <p class="card__pituusraja">120cm</p>
+              </div>
+              <p class="card__description">
+                Scrambler on nokkakiven vauhdikkain pyörittäjä!Tämä ei jätä
+                kylmäksi!
+              </p>
+              <div>
+                <svg class="height-limit">
+                  <use
+                    xlink:href="../src/img/symbol-defs.svg#icon-escalator_warning"
+                  ></use>
+                </svg>
+
+                <p class="card__pituusraja">100cm</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- ///////////////////////////////////////////////////FOOTER///////////////////////////////////////// 
+    
+      <!-- ////////////////////////////////////////////////////////////////////////////////////////// -->
+      <!-- ////////////////////////////////////////////////////////////////////////////////////////// -->
+
+      <footer class="footer">
+        <div class="container-footer">
+          <div class="row">
+            <div class="footer-col">
+              <div class="logo-footer">
+                <a href="/">
+                  <img
+                    class="logo-svg"
+                    src="../src/img/nokkakiven_puisto_logo2_color.svg"
+                    alt="Logo"
+                /></a>
+              </div>
+            </div>
+            <div class="footer-col">
+              <h4>huvipuisto</h4>
+              <ul>
+                <li>
+                  <a href="#">laitteet</a>
+                </li>
+                <li>
+                  <a href="#">ruoka ja kioskit</a>
+                </li>
+                <li>
+                  <a href="#">arcadepelit</a>
+                </li>
+                <li>
+                  <a href="#">aukiolo</a>
+                </li>
+              </ul>
+            </div>
+            <div class="footer-col">
+              <h4>info</h4>
+              <ul>
+                <li>
+                  <a href="#">hinnasto</a>
+                </li>
+                <li>
+                  <a href="#">saapuminen</a>
+                </li>
+                <li>
+                  <a href="#">Avoimet työpaikat</a>
+                </li>
+                <li>
+                  <a href="#"> </a>
+                </li>
+              </ul>
+            </div>
+            <div class="footer-col">
+              <h4>Yhteystiedot</h4>
+              <div class="social-links">
+                <a href="https://www.facebook.com/Nokkakivi/"
+                  ><svg class="social-icons">
+                    <use href="../src/img/symbol-defs.svg#icon-facebook"></use>
+                  </svg>
+                </a>
+                <!-- ////////////////////UNCOMMENT FOR TWITTER ICON  ///////////////////////// -->
+                <!-- <a href="#"
+                  ><svg class="social-icons">
+                    <use href="../src/img/symbol-defs.svg#icon-twitter"></use>
+                  </svg>
+                </a> -->
+                <a href="https://www.instagram.com/nokkakivi/"
+                  ><svg class="social-icons">
+                    <use href="../src/img/symbol-defs.svg#icon-instagram"></use>
+                  </svg>
+                </a>
+
+                <!-- ////////////////////UNCOMMENT FOR YOUTUBE ICON  ///////////////////////// -->
+                <!-- <a href="#"
+                  ><svg class="social-icons">
+                    <use href="../src/img/symbol-defs.svg#icon-youtube"></use>
+                  </svg>
+                </a> -->
+              </div>
+              <ul class="contact-info">
+                <li>
+                  <span
+                    ><svg class="social-icons info-icons">
+                      <use
+                        href="../src/img/symbol-defs.svg#icon-location"
+                      ></use></svg
+                  ></span>
+                  <a href="#">sijainti</a>
+                </li>
+                <li>
+                  <span
+                    ><svg class="social-icons info-icons">
+                      <use
+                        href="../src/img/symbol-defs.svg#icon-mail4"
+                      ></use></svg
+                  ></span>
+                  <p>info@nokkakivi.fi</p>
+                </li>
+                <li>
+                  <span
+                    ><svg class="social-icons info-icons">
+                      <use
+                        href="../src/img/symbol-defs.svg#icon-phone"
+                      ></use></svg
+                  ></span>
+                  <p>Puh: 045-270 5920</p>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>

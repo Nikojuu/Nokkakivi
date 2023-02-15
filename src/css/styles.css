@@ -417,6 +417,22 @@ label {
   }
 }
 /* //////////////////////////////PARAGRAPH STYLES H1-H5 ,P///////////////////////////////////////// */
+.heading-primary {
+  font-family: "Alfa Slab One", cursive, sans-serif;
+  color: white;
+  font-size: 7rem;
+  position: absolute;
+  top: 70%;
+  text-shadow: -6px 15px #000;
+  left: 50%;
+  z-index: 10;
+  transform: translate(-50%, -50%);
+}
+@media only screen and (max-width: 950px) {
+  .heading-primary {
+    font-size: 5rem;
+  }
+}
 
 .heading-secondary {
   font-family: "Alfa Slab One", cursive, sans-serif;
@@ -491,20 +507,20 @@ label {
     border: none;
   }
 }
-.kioskit-heading {
+.heading-tertiary {
   font-family: "Alfa Slab One", cursive, sans-serif;
   text-transform: uppercase;
   font-weight: 400;
   font-size: 3rem;
   position: relative;
-  color: var(--color-primary-yellow);
-  text-shadow: -3px -2px 4px #080808;
+  color: #000;
+  text-shadow: rgb(252 255 38) -3px -2px 0px;
 }
 .item h3::before {
   content: "";
   position: absolute;
   left: 0;
-  z-index: 1000000;
+  z-index: 999;
   bottom: -10px;
   background-color: #e91e63;
   height: 2px;
@@ -903,6 +919,7 @@ footer * {
   grid-column: full-start / full-end;
 }
 .footer {
+  grid-column: full-start / full-end;
   z-index: 1;
   background-color: var(--color-primary-grey);
   padding: 30rem 0;
@@ -1015,12 +1032,6 @@ ul {
   }
 }
 
-/* 
-.rides-container{
-  display: grid;
-  automaattisesti laskee columnit responsive
-  grid-template-columns:repeat(auto-fit,minmax 15rem, 1fr);
-} */
 .custom-shape-divider-bottom-1676110006 {
   width: 100%;
   overflow: hidden;
@@ -1038,4 +1049,104 @@ ul {
 
 .custom-shape-divider-bottom-1676110006 .shape-fill-1 {
   fill: #f7f7f7;
+}
+/* //////////////////////////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////////////////////////
+
+////////////////////////////////  RIDES (ENTIRE PAGE)/////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////////////////// 
+
+*/
+.stacked {
+  display: grid;
+}
+.stacked > * {
+  grid-column: 1 / 2;
+  grid-row: 1 / 2;
+}
+.header-container {
+  grid-column: 1 / -1;
+  height: 30vw;
+  background-color: #d90448;
+  position: relative;
+  overflow: hidden;
+}
+
+.heading-background {
+  position: absolute;
+  width: 100%;
+  opacity: 0.2;
+  height: 125%;
+}
+.container {
+  grid-column: 2 / 10;
+  margin: 5rem;
+  text-align: center;
+}
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(27em, 1fr));
+  gap: 2.8rem;
+  margin-top: 5rem;
+  text-align: left;
+}
+.card {
+  aspect-ratio: 1 / 1.5;
+}
+.card__content {
+  background-color: white;
+  align-self: end;
+  margin: 0.5rem 0.5rem 2rem;
+  padding: 0.5rem;
+  box-shadow: 0 0.25rem 1rem rgba(0, 0, 0, 0.1);
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  z-index: 10;
+}
+
+.card__content :nth-child(2),
+.card__content :nth-child(4) {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.card__title {
+  font-family: "Alfa Slab One", cursive, sans-serif;
+  font-size: 2rem;
+  padding: 6px;
+  line-height: 1.1;
+  color: rgb(0, 0, 0);
+  position: relative;
+}
+
+.card__pituusraja {
+  text-align: center;
+  font-size: 1.75rem;
+  background-color: #000000;
+  padding: 3px;
+  border-radius: 5px;
+  color: #fff;
+}
+.card__img {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  border-radius: 3px;
+  transition: all 0.4s;
+}
+.card__img:hover {
+  rotate: 2deg;
+  transform: scale(1.1);
+}
+.card__description {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.2;
+}
+.height-limit {
+  fill: #000;
+  width: 25px;
+  height: 25px;
+  margin-bottom: 3px;
 }
