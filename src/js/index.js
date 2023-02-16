@@ -1,7 +1,7 @@
 
 
 /////////////////////////////////////////////KALENTERI
-if (window.location.pathname === '/index.html' || window.location.pathname ==='/') {
+if (window.location.pathname.endsWith('/index.html') || window.location.pathname ==='/') {
 const date = new Date();
 
 const renderCalendar = () => {

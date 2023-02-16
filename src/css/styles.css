@@ -534,6 +534,11 @@ label {
   background-color: #f7f7f7;
   position: relative;
 }
+@media only screen and (min-width: 87.5em) {
+  .section-about {
+    padding: 0 10rem;
+  }
+}
 .container-about {
   display: grid;
   grid-template-columns: 1fr 1fr;
