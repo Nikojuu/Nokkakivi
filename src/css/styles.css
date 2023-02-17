@@ -1073,7 +1073,7 @@ ul {
 .header-container {
   grid-column: 1 / -1;
   height: 30vw;
-  background-color: #d90448;
+  background-color: #e91e63;
   position: relative;
   overflow: hidden;
 }
@@ -1100,10 +1100,11 @@ ul {
   aspect-ratio: 1 / 1.5;
 }
 .card__content {
-  background-color: white;
+  background-color: #202020;
+  border-radius: 5px;
   align-self: end;
   margin: 0.5rem 0.5rem 2rem;
-  padding: 0.5rem;
+  padding: 0.5rem 2rem;
   box-shadow: 0 0.25rem 1rem rgba(0, 0, 0, 0.1);
   display: grid;
   grid-template-columns: 2fr 1fr;
@@ -1118,40 +1119,126 @@ ul {
 }
 .card__title {
   font-family: "Alfa Slab One", cursive, sans-serif;
-  font-size: 2rem;
+  font-size: 2.2rem;
   padding: 6px;
   line-height: 1.1;
-  color: rgb(0, 0, 0);
+
+  color: #e91e63;
   position: relative;
+  text-shadow: #000 3px 3px 0px;
 }
 
 .card__pituusraja {
   text-align: center;
   font-size: 1.75rem;
-  background-color: #000000;
+  background-color: #e91e63;
   padding: 3px;
   border-radius: 5px;
   color: #fff;
+  height: 6rem;
+  width: 9rem;
 }
 .card__img {
   width: 100%;
   aspect-ratio: 1 / 1;
   object-fit: cover;
   border-radius: 3px;
-  transition: all 0.4s;
+  transition: transform 0.3s;
 }
 .card__img:hover {
-  rotate: 2deg;
-  transform: scale(1.1);
+  transform: translateY(-16px);
 }
 .card__description {
-  font-size: 18px;
+  font-size: 16px;
   font-weight: 400;
   line-height: 1.2;
+  color: #fff;
 }
+
 .height-limit {
-  fill: #000;
+  fill: #e91e63;
   width: 25px;
   height: 25px;
   margin-bottom: 3px;
+}
+.info {
+  display: none;
+}
+
+/* ////////////////////////////MODAL POPUP///////////////////////////////////// */
+.modal {
+  z-index: 1000;
+  display: none;
+  position: fixed;
+
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.modal-content {
+  position: absolute;
+  width: 40vw;
+
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+}
+@media only screen and (max-width: 68.5em) {
+  .modal-content {
+    width: 60vw;
+    padding: 0;
+  }
+}
+.modal-img {
+  object-fit: cover;
+  border-radius: 10px;
+}
+.modal-title {
+  font-family: "Alfa Slab One", cursive, sans-serif;
+  position: relative;
+  font-size: 4rem;
+  margin-top: 0;
+  color: #e91e63;
+}
+.modal-title::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 10px;
+  background-color: #e91e63;
+  height: 3px;
+  box-sizing: border-box;
+  width: 100%;
+}
+.modal-description {
+  margin-bottom: 0;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.1;
+}
+
+.modal-heightlimits__container {
+  display: flex;
+  margin: 2rem 0;
+}
+.pituus__yksin {
+  margin-right: 3rem;
+  display: flex;
+  flex-direction: column;
+
+  align-items: center;
+}
+.pituus__vanhempi {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.modal-text-container {
+  padding: 3rem 2rem;
+  position: relative;
 }

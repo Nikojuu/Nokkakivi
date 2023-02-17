@@ -1,7 +1,7 @@
 
 
 /////////////////////////////////////////////KALENTERI
-if (window.location.pathname.endsWith('/index.html') || window.location.pathname ==='/') {
+if (window.location.pathname.endsWith('/index.html') || window.location.pathname ==='/' || window.location.pathname ==='/Nokkakivi/') {
 const date = new Date();
 
 const renderCalendar = () => {
@@ -139,7 +139,7 @@ renderCalendar();
 //////////////////////////// NAVIGATION SCRIPT//////////////////////////
 /////////////////////////// ////////////////////////////////////////////
 
-const links = document.querySelectorAll('.navigation-bar a');
+const links = document.querySelectorAll('.navigation-bar');
 const toggle = document.getElementById('toggle');
 
 links.forEach(link => {
@@ -152,8 +152,47 @@ const label = document.querySelector('label');
 
 toggle.addEventListener('change', () => {
   if (toggle.checked) {
-    label.innerHTML = "&#10006;";
+    label.innerHTML = "&times;";
   } else {
     label.innerHTML = "&#9776;";
   }
+});
+
+/////////////////////////// ////////////////////////////////////////////
+////////////////////////////RIDESLIST-POPUP//////////////////////////
+/////////////////////////// ////////////////////////////////////////////
+const cards = document.querySelectorAll('.card');
+const modal = document.querySelector('.modal');
+const modalTitle = modal.querySelector('.modal-title');
+
+const modalImg = modal.querySelector('.modal-img');
+const modalInfo = modal.querySelector(".modal-info")
+const modalHeightalone = modal.querySelector('[data-attr="modal-alone"]')
+const modalHeightParent = modal.querySelector('[data-attr="modal-parent"]')
+
+cards.forEach(card => {
+  card.addEventListener('click', () => {
+    // Get the data for the clicked card
+    const title = card.querySelector('.card__title').textContent;
+    
+    const imgSrc = card.getAttribute('data-img');
+    const info = card.querySelector('.info').textContent;
+    const aloneHeight = card.querySelector('.card__pituusraja[data-attr="alone"]').textContent;
+    const parentHeight = card.querySelector('.card__pituusraja[data-attr="parent"]').textContent;
+    
+    // Set the content of the modal window
+    modalTitle.textContent = title;
+    
+    modalImg.setAttribute('src', imgSrc);
+    modalInfo.textContent = info;
+    modalHeightalone.textContent = aloneHeight;
+    modalHeightParent.textContent = parentHeight;
+    // Display the modal window
+    modal.style.display = 'block';
+  });
+});
+
+modal.addEventListener('click', () => {
+  // Hide the modal window when it is clicked
+  modal.style.display = 'none';
 });

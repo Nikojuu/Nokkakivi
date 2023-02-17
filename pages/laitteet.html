@@ -89,11 +89,19 @@
           alt=""
         />
       </div>
+
       <!-- //////////////////////RIDES SECTION///////////////////////////////////////// -->
       <div class="container">
         <h3 class="heading-tertiary">Huvipuistolaitteet</h3>
+        <!-- /////////////////////MODAL POPUP!///////////////////////////////////////// -->
+
+        <!-- //HUONOT ISOT KUVAT: Saturn, -->
+        <div class="container-modal"></div>
         <div class="product-grid">
-          <div class="card stacked">
+          <div
+            class="card stacked selected-card"
+            data-img="../src/img/laitteet/cyclon-large.jpg"
+          >
             <img
               src="../src/img/laitteet/cyclon.jpg"
               alt="cyclon"
@@ -106,11 +114,11 @@
                 <svg class="height-limit">
                   <use xlink:href="../src/img/symbol-defs.svg#icon-child"></use>
                 </svg>
-                <p class="card__pituusraja">120cm</p>
+                <p class="card__pituusraja" data-attr="alone">120cm</p>
               </div>
 
               <p class="card__description">
-                Cyclon vuoristorata tarjoaa vauhdikkaita hetkiä hurjapäille!
+                Cyclon vuoristorata tarjoaa vauhdikkaita hetkiä!!
               </p>
 
               <div>
@@ -120,11 +128,19 @@
                   ></use>
                 </svg>
 
-                <p class="card__pituusraja">100cm</p>
+                <p class="card__pituusraja" data-attr="parent">100cm</p>
               </div>
+              <p class="info">
+                Cyclon on Nokkakiven ainut mutta hyvä vuoristorata lyhyiden
+                jonojen ansiosta jotkut ovat viettäneet tässä koko päivän! rata
+                on 10metriä korkea ja pituutta sillä on 350metriä!
+              </p>
             </div>
           </div>
-          <div class="card stacked">
+          <div
+            class="card stacked"
+            data-img="../src/img/laitteet/saturn-large.jpg"
+          >
             <img
               src="../src/img/laitteet/saturn.jpg"
               alt="cyclon"
@@ -136,7 +152,7 @@
                 <svg class="height-limit">
                   <use xlink:href="../src/img/symbol-defs.svg#icon-child"></use>
                 </svg>
-                <p class="card__pituusraja">Alle 100cm</p>
+                <p class="card__pituusraja" data-attr="alone">Alle 100cm</p>
               </div>
               <p class="card__description">
                 Saturn tarjoaa leppoisan kyydin pienille avaruuslentäjille!
@@ -148,14 +164,22 @@
                   ></use>
                 </svg>
 
-                <p class="card__pituusraja">Alle 100cm</p>
+                <p class="card__pituusraja" data-attr="parent">Alle 100cm</p>
               </div>
+              <p class="info">
+                Saturnissa on 12 avaruusalusta jokaiseen mahtuu 4 matkustajaa,
+                Avaruusalukset lähtevät pyörimään ja nousevat noin 2 metrin
+                korkeuteen.
+              </p>
             </div>
           </div>
-          <div class="card stacked">
+          <div
+            class="card stacked"
+            data-img="../src/img/laitteet/ketkula-large.jpg"
+          >
             <img
               src="../src/img/laitteet/ketkula.jpg"
-              alt="cyclon"
+              alt="ketkula"
               class="card__img"
             />
             <div class="card__content">
@@ -164,11 +188,11 @@
                 <svg class="height-limit">
                   <use xlink:href="../src/img/symbol-defs.svg#icon-child"></use>
                 </svg>
-                <p class="card__pituusraja">100cm</p>
+                <p class="card__pituusraja" data-attr="alone">100cm</p>
               </div>
               <p class="card__description">
                 Supersuosituissa Ketkulan hulluissa huoneissa tapahtuu kaikkea
-                hauskaa"
+                kummallista!
               </p>
               <div>
                 <svg class="height-limit">
@@ -177,14 +201,23 @@
                   ></use>
                 </svg>
 
-                <p class="card__pituusraja">Alle 100cm</p>
+                <p class="card__pituusraja" data-attr="parent">Alle 100cm</p>
               </div>
+              <p class="info">
+                Tule seikkailemaan hupitalon sokkeloihin, joiden varrella kaikki
+                ei ole sitä miltä näyttää.Kohde sijaitsee Laukaanhovin toisessa
+                Kerroksessa. Täällä sijaitsee myös Nokkakiven lelu- ja
+                karkkikauppa!
+              </p>
             </div>
           </div>
-          <div class="card stacked">
+          <div
+            class="card stacked"
+            data-img="../src/img/laitteet/miami-large.jpg"
+          >
             <img
               src="../src/img/laitteet/miami.jpg"
-              alt="cyclon"
+              alt="Miami"
               class="card__img"
             />
             <div class="card__content">
@@ -193,7 +226,7 @@
                 <svg class="height-limit">
                   <use xlink:href="../src/img/symbol-defs.svg#icon-child"></use>
                 </svg>
-                <p class="card__pituusraja">140cm</p>
+                <p class="card__pituusraja" data-attr="alone">140cm</p>
               </div>
               <p class="card__description">
                 Miami on klassikko joka ei paljoa esittelyjä kaipaa
@@ -206,14 +239,23 @@
                   ></use>
                 </svg>
 
-                <p class="card__pituusraja">120cm</p>
+                <p class="card__pituusraja" data-attr="parent">120cm</p>
               </div>
+              <p class="info">
+                Miami on Nokkakiven huvipuiston yksi vauhdikkaimmista
+                laitteista. Sen kyytiin mahtuu 18 matkustajaa. Laite pyörii niin
+                hurjasti molempiin suuntiin, että alas tultaessa saatat tuntea
+                painottomuutta.
+              </p>
             </div>
           </div>
-          <div class="card stacked">
+          <div
+            class="card stacked"
+            data-img="../src/img/laitteet/round-up-large.jpg"
+          >
             <img
               src="../src/img/laitteet/roundup.jpg"
-              alt="cyclon"
+              alt="Round-up"
               class="card__img"
             />
             <div class="card__content">
@@ -222,7 +264,7 @@
                 <svg class="height-limit">
                   <use xlink:href="../src/img/symbol-defs.svg#icon-child"></use>
                 </svg>
-                <p class="card__pituusraja">140cm</p>
+                <p class="card__pituusraja" data-attr="alone">140cm</p>
               </div>
               <p class="card__description">
                 Legendaarinen "painekattila" pyörii niin kovasti että selkäsi on
@@ -235,14 +277,23 @@
                   ></use>
                 </svg>
 
-                <p class="card__pituusraja">140cm</p>
+                <p class="card__pituusraja" data-attr="parent">140cm</p>
               </div>
+              <p class="info">
+                ehkäpä Nokkakiven hurjin laite. Laite tunnetaan myös nimellä
+                Painekattila, ja juuri tämä on se sama legendaarinen yksilö,
+                joka on pyörinyt muissakin maamme huvipuistoissa. Painekattila
+                on nimensä veroinen.
+              </p>
             </div>
           </div>
-          <div class="card stacked">
+          <div
+            class="card stacked"
+            data-img="../src/img/laitteet/pilvenpyora-large.jpg"
+          >
             <img
               src="../src/img/laitteet/pilvenpyora.jpg"
-              alt="cyclon"
+              alt="pilvenpyora"
               class="card__img"
             />
             <div class="card__content">
@@ -251,7 +302,7 @@
                 <svg class="height-limit">
                   <use xlink:href="../src/img/symbol-defs.svg#icon-child"></use>
                 </svg>
-                <p class="card__pituusraja">120cm</p>
+                <p class="card__pituusraja" data-attr="alone">120cm</p>
               </div>
               <p class="card__description">
                 joka kesän suosikki Pilvenpyörä antaa tasaiset mutta vauhdikkaat
@@ -264,14 +315,20 @@
                   ></use>
                 </svg>
 
-                <p class="card__pituusraja">100cm</p>
+                <p class="card__pituusraja" data-attr="parent">100cm</p>
               </div>
+              <p class="info">
+                Pilvenpyörä (Paratrooper) on huvipuistolaitteiden klassikko. Se
+                antaa tasaiset mutta vauhdikkaat kyydit, jossa on aitoa
+                lentämisen tuntua. Vaunuja on yhteensä 10, joihin mahtuu joko
+                kaksi aikuista tai yksi aikuinen ja kaksi lasta.
+              </p>
             </div>
           </div>
-          <div class="card stacked">
+          <div class="card stacked" data-img="../src/img/laitteet/mp-large.jpg">
             <img
               src="../src/img/laitteet/maailmanpyora.jpg"
-              alt="cyclon"
+              alt="maailmanpyora"
               class="card__img"
             />
             <div class="card__content">
@@ -280,7 +337,7 @@
                 <svg class="height-limit">
                   <use xlink:href="../src/img/symbol-defs.svg#icon-child"></use>
                 </svg>
-                <p class="card__pituusraja">140cm</p>
+                <p class="card__pituusraja" data-attr="alone">140cm</p>
               </div>
               <p class="card__description">
                 näitkö amerikkalaisessa elokuvassa tai TV-sarjassa
@@ -293,14 +350,24 @@
                   ></use>
                 </svg>
 
-                <p class="card__pituusraja">120cm</p>
+                <p class="card__pituusraja" data-attr="parent">120cm</p>
               </div>
+              <p class="info">
+                Laite tarjoaa rauhallisen kyydin huipulle, mutta istuminen
+                keinuvissa vaunuissa on aivan erilainen elämys kuin
+                eurooppalaistyylisten pyörien lähes umpiseinäisissä vaunuissa.
+                Vaunuja on 12, ja niiden kyytiin mahtuu joko kaksi aikuista, tai
+                aikuinen ja kaksi lasta.
+              </p>
             </div>
           </div>
-          <div class="card stacked">
+          <div
+            class="card stacked"
+            data-img="../src/img/laitteet/pienoisjuna-large.jpg"
+          >
             <img
               src="../src/img/laitteet/pienoisjuna.jpg"
-              alt="cyclon"
+              alt="minijuna"
               class="card__img"
             />
             <div class="card__content">
@@ -309,7 +376,7 @@
                 <svg class="height-limit">
                   <use xlink:href="../src/img/symbol-defs.svg#icon-child"></use>
                 </svg>
-                <p class="card__pituusraja">Alle 100cm</p>
+                <p class="card__pituusraja" data-attr="alone">Alle 100cm</p>
               </div>
               <p class="card__description">
                 Jännittävä pikkuväen junaseikkailu villin lännen maisemissa!
@@ -321,23 +388,32 @@
                   ></use>
                 </svg>
 
-                <p class="card__pituusraja">Alle 100cm</p>
+                <p class="card__pituusraja" data-attr="parent">Alle 100cm</p>
               </div>
+              <p class="info">
+                Pienoisjuna (Canonball Express) on pikkuväen suosikki. Juna
+                kiertää rauhallista vauhtia villin lännen maisemassa. Junaa
+                ajetaan joko kahdella tai kolmella vaunulla, joihin mahtuu 4...6
+                lasta.
+              </p>
             </div>
           </div>
-          <div class="card stacked">
+          <div
+            class="card stacked"
+            data-img="../src/img/laitteet/lentokonekaruselli-large.jpg"
+          >
             <img
               src="../src/img/laitteet/skyfighter.jpg"
-              alt="cyclon"
+              alt="lentokone karuselli"
               class="card__img"
             />
             <div class="card__content">
-              <h4 class="card__title">Lentokonekaruselli</h4>
+              <h4 class="card__title">Lentokone karuselli</h4>
               <div>
                 <svg class="height-limit">
                   <use xlink:href="../src/img/symbol-defs.svg#icon-child"></use>
                 </svg>
-                <p class="card__pituusraja">Alle 100cm</p>
+                <p class="card__pituusraja" data-attr="alone">Alle 100cm</p>
               </div>
               <p class="card__description">
                 Skyfighter!! pienet lentäjät pääsevät ammuskelemaan
@@ -350,11 +426,20 @@
                   ></use>
                 </svg>
 
-                <p class="card__pituusraja">Alle 100cm</p>
+                <p class="card__pituusraja" data-attr="parent">Alle 100cm</p>
               </div>
+              <p class="info">
+                Lentokonekaruselli (Sky Fighter) on pienten lentäjäsankareiden
+                oma laite. Siinä on yhteensä kahdeksan lentokonetta, joihin
+                mahtuu kaksi lasta kuhunkin. Lentokoneet lähtevät pyörimään ja
+                nousevat noin metrin korkeuteen.
+              </p>
             </div>
           </div>
-          <div class="card stacked">
+          <div
+            class="card stacked"
+            data-img="../src/img/laitteet/mustekala-large.jpg"
+          >
             <img
               src="../src/img/laitteet/mustekala.jpg"
               alt="cyclon"
@@ -366,7 +451,7 @@
                 <svg class="height-limit">
                   <use xlink:href="../src/img/symbol-defs.svg#icon-child"></use>
                 </svg>
-                <p class="card__pituusraja">Alle 100cm</p>
+                <p class="card__pituusraja" data-attr="alone">Alle 100cm</p>
               </div>
               <p class="card__description">
                 Pienen väen suosikki! Mustekalaan pääsee myös vanhemmat
@@ -379,14 +464,23 @@
                   ></use>
                 </svg>
 
-                <p class="card__pituusraja">Alle 100cm</p>
+                <p class="card__pituusraja" data-attr="parent">Alle 100cm</p>
               </div>
+              <p class="info">
+                Mustekalakaruselli on todellinen koko perheen laite. Sen kyytiin
+                pääsevät niin aikuiset kuin alle 100cm mittaiset taaperotkin.
+                Sen kyytiin mahtuu 32 matkustajaa. Karuselli nousee 2...3 kertaa
+                vinoasentoon ajon aikana.
+              </p>
             </div>
           </div>
-          <div class="card stacked">
+          <div
+            class="card stacked"
+            data-img="../src/img/laitteet/pensaslabyrintti-large.jpg"
+          >
             <img
               src="../src/img/laitteet/pensassokkelo.jpg"
-              alt="cyclon"
+              alt="pensaslabyrintti"
               class="card__img"
             />
             <div class="card__content">
@@ -395,7 +489,7 @@
                 <svg class="height-limit">
                   <use xlink:href="../src/img/symbol-defs.svg#icon-child"></use>
                 </svg>
-                <p class="card__pituusraja">Alle 100cm</p>
+                <p class="card__pituusraja" data-attr="alone">Alle 100cm</p>
               </div>
               <p class="card__description">Onnea labyrintin selvittämiseen!</p>
               <div>
@@ -405,14 +499,21 @@
                   ></use>
                 </svg>
 
-                <p class="card__pituusraja">Alle 100cm</p>
+                <p class="card__pituusraja" data-attr="parent">Alle 100cm</p>
               </div>
+              <p class="info">
+                Tehtävänä labyrintissä on löytää reitti keskustaan, sekä neljä
+                puutarhatonttua, jotka on kätketty reitin varrelle.
+              </p>
             </div>
           </div>
-          <div class="card stacked">
+          <div
+            class="card stacked"
+            data-img="../src/img/laitteet/miniautot-large.jpg"
+          >
             <img
               src="../src/img/laitteet/miniautot.jpg"
-              alt="cyclon"
+              alt="miniautot"
               class="card__img"
             />
             <div class="card__content">
@@ -421,7 +522,7 @@
                 <svg class="height-limit">
                   <use xlink:href="../src/img/symbol-defs.svg#icon-child"></use>
                 </svg>
-                <p class="card__pituusraja">Alle 100cm</p>
+                <p class="card__pituusraja" data-attr="alone">Alle 100cm</p>
               </div>
               <p class="card__description">
                 F1 Radalla pääset näyttämään rallitaitosi vaikkei ajokorttia
@@ -434,15 +535,25 @@
                   ></use>
                 </svg>
 
-                <p class="card__pituusraja">Alle 100cm</p>
+                <p class="card__pituusraja" data-attr="parent">Alle 100cm</p>
               </div>
+              <p class="info">
+                Nyt perheen pienimmilläkin on mahdollisuus ajaa autoa
+                lomareissulla. Autot kulkevat maksimissaan hidasta
+                hölkkävauhtia, ja vaativat vain kaasupolkimen ja ratin
+                käyttöä.Nokkakiven F1-radalla on vähän ohituspaikkoja, mutta
+                taitava kuski käyttää tilaisuudet hyväkseen!
+              </p>
             </div>
           </div>
 
-          <div class="card stacked">
+          <div
+            class="card stacked"
+            data-img="../src/img/laitteet/lastenmp-large.jpg"
+          >
             <img
               src="../src/img/laitteet/lastenmp.jpg"
-              alt="cyclon"
+              alt="lasten maailmanpyora"
               class="card__img"
             />
             <div class="card__content">
@@ -451,7 +562,7 @@
                 <svg class="height-limit">
                   <use xlink:href="../src/img/symbol-defs.svg#icon-child"></use>
                 </svg>
-                <p class="card__pituusraja">Alle 100cm</p>
+                <p class="card__pituusraja" data-attr="alone">Alle 100cm</p>
               </div>
               <p class="card__description">
                 Mini versio maailmanpyörästä jos iso on vielä liian pelottava
@@ -464,14 +575,23 @@
                   ></use>
                 </svg>
 
-                <p class="card__pituusraja">Alle 100cm</p>
+                <p class="card__pituusraja" data-attr="parent">Alle 100cm</p>
               </div>
+              <p class="info">
+                Lasten maailmanpyörä on oiva laite niille, joille iso
+                maailmanpyörä on vielä liian pelottava tai pituus ei vielä riitä
+                sen kyytiin. Vaunuja on viisi, joihin mahtuu neljä lasta
+                kuhunkin.
+              </p>
             </div>
           </div>
-          <div class="card stacked">
+          <div
+            class="card stacked"
+            data-img="../src/img/laitteet/tormis-large.jpg"
+          >
             <img
               src="../src/img/laitteet/tormis.JPG"
-              alt="cyclon"
+              alt="Törmäilyautorata"
               class="card__img"
             />
             <div class="card__content">
@@ -480,7 +600,7 @@
                 <svg class="height-limit">
                   <use xlink:href="../src/img/symbol-defs.svg#icon-child"></use>
                 </svg>
-                <p class="card__pituusraja">120cm</p>
+                <p class="card__pituusraja" data-attr="alone">120cm</p>
               </div>
               <p class="card__description">
                 "Törmiksissä" pääset näyttämään todelliset ajotaitosi!
@@ -492,14 +612,22 @@
                   ></use>
                 </svg>
 
-                <p class="card__pituusraja">100cm</p>
+                <p class="card__pituusraja" data-attr="parent">100cm</p>
               </div>
+              <p class="info">
+                Törmäilyautorata on Nokkakiven huvipuiston suosituin laite.
+                Autoja on 11, ja niihin mahtuu maksimissaan kaksi matkustajaa.
+                Nimestä huolimatta kovavauhtiset, tahalliset törmäilyt on
+                kielletty, sillä autot painavat yli 200 kiloa. Liikenneruuhkat
+                ja tahattomat lievät törmäilyt kuuluvat toki asiaan. Radalla on
+                ajettava aina vastapäivään.
+              </p>
             </div>
           </div>
-          <div class="card stacked">
+          <div class="card stacked" data-img="../src/img/laitteet/hg-large.jpg">
             <img
               src="../src/img/laitteet/hullugully.jpg"
-              alt="cyclon"
+              alt="hully gully"
               class="card__img"
             />
             <div class="card__content">
@@ -508,7 +636,7 @@
                 <svg class="height-limit">
                   <use xlink:href="../src/img/symbol-defs.svg#icon-child"></use>
                 </svg>
-                <p class="card__pituusraja">100cm</p>
+                <p class="card__pituusraja" data-attr="alone">100cm</p>
               </div>
               <p class="card__description">
                 Hullu Gully pyörittää niin isoja kuin pieniäkin matkustajia!
@@ -520,14 +648,23 @@
                   ></use>
                 </svg>
 
-                <p class="card__pituusraja">Alle 100cm</p>
+                <p class="card__pituusraja" data-attr="parent">Alle 100cm</p>
               </div>
+              <p class="info">
+                Hully Gully-karuselli sopii niin lapsille, kuin aikuisillekin,
+                tosin isokokoisilla matkustajilla voi olla vaikeuksia mahtua sen
+                kyytiin. Karuselli nousee pyöriessään epäkeskosti vinoasentoon,
+                eli sen liike muistuttaa pöydällä lappeellaan pyörivää kolikkoa.
+              </p>
             </div>
           </div>
-          <div class="card stacked">
+          <div
+            class="card stacked"
+            data-img="../src/img/laitteet/kanoottijoki-large.jpg"
+          >
             <img
               src="../src/img/laitteet/kanootti.jpg"
-              alt="cyclon"
+              alt="Kanoottijoki"
               class="card__img"
             />
             <div class="card__content">
@@ -536,7 +673,7 @@
                 <svg class="height-limit">
                   <use xlink:href="../src/img/symbol-defs.svg#icon-child"></use>
                 </svg>
-                <p class="card__pituusraja">Alle 100cm</p>
+                <p class="card__pituusraja" data-attr="alone">Alle 100cm</p>
               </div>
               <p class="card__description">
                 Lasten suosikki! Melo intiaanikylän läpi kulkevan joen!
@@ -548,14 +685,24 @@
                   ></use>
                 </svg>
 
-                <p class="card__pituusraja">Alle 100cm</p>
+                <p class="card__pituusraja" data-attr="parent">Alle 100cm</p>
               </div>
+              <p class="info">
+                Kanoottijoki avattiin kesällä 2010, ja siitä tuli heti suosituin
+                lastenlaite. Jokea pitkin melotaan kanooteissa, joihin mahtuu
+                kahdesta kolmeen lasta. Joki virtaa hiljalleen, mutta lisää
+                vauhtia saa myös itse melomalla. Joki virtaa intiaanikylän
+                ympärillä, ja matkan varrella mennään jopa intiaaniteltan läpi!
+              </p>
             </div>
           </div>
-          <div class="card stacked">
+          <div
+            class="card stacked"
+            data-img="../src/img/laitteet/tilt-large.jpg"
+          >
             <img
               src="../src/img/laitteet/vauhtivirveli.jpg"
-              alt="cyclon"
+              alt="vauhtivirveli"
               class="card__img"
             />
             <div class="card__content">
@@ -564,7 +711,7 @@
                 <svg class="height-limit">
                   <use xlink:href="../src/img/symbol-defs.svg#icon-child"></use>
                 </svg>
-                <p class="card__pituusraja">120cm</p>
+                <p class="card__pituusraja" data-attr="alone">120cm</p>
               </div>
               <p class="card__description">
                 Tämä Tivoliklassikko saattaa pyörittää todella kovaakin!!!
@@ -576,14 +723,25 @@
                   ></use>
                 </svg>
 
-                <p class="card__pituusraja">100cm</p>
+                <p class="card__pituusraja" data-attr="parent">100cm</p>
               </div>
+              <p class="info">
+                Vauhtivirveli (Tilt-A-Whirl) on todellinen huvipuisto- ja
+                tivoliklassikko. Siinä seitsemän vaunua liikkuu pitkin
+                aaltoilevaa rataa, ja pyörii samalla akselinsa ympäri. Yhteen
+                vaunuun mahtuu kerrallaan 4...5 ihmistä, joten pyöriminen on
+                kiinni matkustajien painopisteestä, eli jokainen ajo on
+                erilainen.
+              </p>
             </div>
           </div>
-          <div class="card stacked">
+          <div
+            class="card stacked"
+            data-img="../src/img/laitteet/morkometsa-large.jpg"
+          >
             <img
               src="../src/img/laitteet/morkometsa.jpg"
-              alt="cyclon"
+              alt="Mörkömetsä"
               class="card__img"
             />
             <div class="card__content">
@@ -592,7 +750,7 @@
                 <svg class="height-limit">
                   <use xlink:href="../src/img/symbol-defs.svg#icon-child"></use>
                 </svg>
-                <p class="card__pituusraja">Alle 100cm</p>
+                <p class="card__pituusraja" data-attr="alone">Alle 100cm</p>
               </div>
               <p class="card__description">
                 Jännittävä metsäseikkailu! Halutessasi voit ostaa kioskeista
@@ -605,14 +763,24 @@
                   ></use>
                 </svg>
 
-                <p class="card__pituusraja">Alle 100cm</p>
+                <p class="card__pituusraja" data-attr="parent">Alle 100cm</p>
               </div>
+              <p class="info">
+                Mörkömetsä on hauska ja jännittävä seikkailu aarniometsän
+                siimeksessä. Se soveltuu kaikille lapsille ja lapsenmielisille.
+                Voit ostaa halutessasi hienon Mörkömetsäkartan (2€)
+                lipunmyyntipisteistä. Kerää karttaan leimat radan varrelta ja
+                selvitä salasana, ja voita palkinto!
+              </p>
             </div>
           </div>
-          <div class="card stacked">
+          <div
+            class="card stacked"
+            data-img="../src/img/laitteet/kummitusjuna-large.jpg"
+          >
             <img
               src="../src/img/laitteet/kummitusjuna.jpg"
-              alt="cyclon"
+              alt="kummitusjuna"
               class="card__img"
             />
             <div class="card__content">
@@ -621,7 +789,7 @@
                 <svg class="height-limit">
                   <use xlink:href="../src/img/symbol-defs.svg#icon-child"></use>
                 </svg>
-                <p class="card__pituusraja">100cm</p>
+                <p class="card__pituusraja" data-attr="alone">100cm</p>
               </div>
               <p class="card__description">
                 Tuskin kukaan voi sanoa vastaan jos väitän että suomen
@@ -634,14 +802,18 @@
                   ></use>
                 </svg>
 
-                <p class="card__pituusraja">Alle 100cm</p>
+                <p class="card__pituusraja" data-attr="parent">Alle 100cm</p>
               </div>
+              <p class="info">uskallatko kyytiin?</p>
             </div>
           </div>
-          <div class="card stacked">
+          <div
+            class="card stacked"
+            data-img="../src/img/laitteet/peppi-large.jpg"
+          >
             <img
               src="../src/img/laitteet/peppikaruselli.jpg"
-              alt="cyclon"
+              alt="peppikaruselli"
               class="card__img"
             />
             <div class="card__content">
@@ -650,10 +822,10 @@
                 <svg class="height-limit">
                   <use xlink:href="../src/img/symbol-defs.svg#icon-child"></use>
                 </svg>
-                <p class="card__pituusraja">Alle 100cm</p>
+                <p class="card__pituusraja" data-attr="alone">Alle 100cm</p>
               </div>
               <p class="card__description">
-                Nostalgisessä hevoskarusellissa pääset ratsastamaan hepoilla!
+                Nostalgisessa hevoskarusellissa pääset ratsastamaan hevosilla!
               </p>
               <div>
                 <svg class="height-limit">
@@ -662,14 +834,23 @@
                   ></use>
                 </svg>
 
-                <p class="card__pituusraja">Alle 100cm</p>
+                <p class="card__pituusraja" data-attr="parent">Alle 100cm</p>
               </div>
+              <p class="info">
+                Puiston ulkonäöltään ehkä hienoin laite on nostalginen
+                hevoskaruselli 1950-luvulta. Hevosten lisäksi laitteessa on
+                erilaisia ajonauvoja. Hevosissa on laukkamekanismi, eli ne
+                nousevat ja laskevat ajon aikana.
+              </p>
             </div>
           </div>
-          <div class="card stacked">
+          <div
+            class="card stacked"
+            data-img="../src/img/laitteet/scrambler-large.jpg"
+          >
             <img
               src="../src/img/laitteet/scrambler.JPG"
-              alt="cyclon"
+              alt="scrambler"
               class="card__img"
             />
             <div class="card__content">
@@ -678,7 +859,7 @@
                 <svg class="height-limit">
                   <use xlink:href="../src/img/symbol-defs.svg#icon-child"></use>
                 </svg>
-                <p class="card__pituusraja">120cm</p>
+                <p class="card__pituusraja" data-attr="alone">120cm</p>
               </div>
               <p class="card__description">
                 Scrambler on nokkakiven vauhdikkain pyörittäjä!Tämä ei jätä
@@ -691,9 +872,43 @@
                   ></use>
                 </svg>
 
-                <p class="card__pituusraja">100cm</p>
+                <p class="card__pituusraja" data-attr="parent">100cm</p>
+              </div>
+              <p class="info">
+                Scrambler on puiston vauhdikkain pyörityslaite. Siinä 12 vaunua
+                pyörii ja liikkuu siksakkia vain hieman maanpinnan yläpuolella.
+                Yhteen vaunuun mahtuu kerrallaan 3 ihmistä, eli yhteen ajoon
+                mahtuu peräti 36 matkustajaa kerrallaan
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- ////////////////////////////////MODAL///////////////////////////////////////////// -->
+      <div class="modal">
+        <div class="modal-content">
+          <img src="" class="modal-img" alt="Laitekuva" />
+          <div class="modal-text-container">
+            <h2 class="modal-title"></h2>
+
+            <div class="modal-heightlimits__container">
+              <div class="pituus__yksin">
+                <svg class="height-limit">
+                  <use xlink:href="../src/img/symbol-defs.svg#icon-child"></use>
+                </svg>
+                <p class="card__pituusraja" data-attr="modal-alone"></p>
+              </div>
+              <div class="pituus__vanhempi">
+                <svg class="height-limit">
+                  <use
+                    xlink:href="../src/img/symbol-defs.svg#icon-escalator_warning"
+                  ></use>
+                </svg>
+
+                <p class="card__pituusraja" data-attr="modal-parent"></p>
               </div>
             </div>
+            <p class="modal-info modal-description"></p>
           </div>
         </div>
       </div>
