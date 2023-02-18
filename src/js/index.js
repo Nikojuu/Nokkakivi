@@ -172,6 +172,10 @@ const modalHeightParent = modal.querySelector('[data-attr="modal-parent"]')
 
 cards.forEach(card => {
   card.addEventListener('click', () => {
+
+    // Clears image between clicks //
+    modalImg.setAttribute('src', '');
+    
     // Get the data for the clicked card
     const title = card.querySelector('.card__title').textContent;
     
@@ -196,3 +200,64 @@ modal.addEventListener('click', () => {
   // Hide the modal window when it is clicked
   modal.style.display = 'none';
 });
+
+////////////////////////////CAROUSEL//////////////////////////
+/////////////////////////// ////////////////////////////////////////////
+
+let slidePosition = 0;
+
+const slides = document.getElementsByClassName('carousel__item');
+const totalSlides = slides.length;
+let timerId = null;
+
+document.getElementById('carousel__button--next').addEventListener("click", function(){
+ moveToNextSlide();
+ resetTimer();
+});
+
+document.getElementById('carousel__button--prev').addEventListener("click", function(){
+  moveToPrevSlide();
+  resetTimer();
+ });
+
+ function updateSlidePosition(){
+  for (let slide of slides){
+    slide.classList.remove('carousel__item--visible')
+    slide.classList.add('carousel__item--hidden')
+  }
+  slides[slidePosition].classList.add('carousel__item--visible')
+ }
+
+ function moveToNextSlide(){
+  
+
+  if (slidePosition === totalSlides -1){
+    slidePosition = 0;
+  }else{
+    slidePosition++;
+  }
+  updateSlidePosition();
+ }
+ function moveToPrevSlide(){
+  
+
+  if (slidePosition === 0){
+    slidePosition =totalSlides -1;
+  }else{
+    slidePosition--;
+  }
+  updateSlidePosition();
+ }
+
+ 
+ function resetTimer() {
+  if (timerId) {
+    clearInterval(timerId);
+  }
+  timerId = setInterval(function() {
+    moveToNextSlide();
+  }, 5000);
+}
+
+
+resetTimer();
