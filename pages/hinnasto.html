@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" type="image/png" href="src/img/favicon.ico" />
+
+    <title>Nokkakivi</title>
+    <link rel="stylesheet" href="../src/css/styles.css" />
+    <script src="../src/js/index.js" defer></script>
+  </head>
+  <body>
+    <!-- ///////////////////////////////////WHOLEPAGE GRID CONTAINER/////////////////////////////////////////////////////// -->
+    <div class="container-grid container-grid-pricing">
+      <!-- ///////////////////////////////////NAVIGATION/////////////////////////////////////////////////////// -->
+
+      <label for="toggle">&#9776;</label>
+      <input type="checkbox" id="toggle" />
+      <nav class="navigation-bar">
+        <div class="logo">
+          <a href="../">
+            <img
+              src="../src/img/nokkakiven_puisto_logo1_color.svg"
+              alt="Logo"
+            />
+          </a>
+        </div>
+        <ul>
+          <li>
+            <a href="laitteet.html">
+              Laitteet ja pelit
+              <span>
+                <svg class="nav-arrow">
+                  <use
+                    xlink:href="../src/img/symbol-defs.svg#icon-chevron-right"
+                  ></use>
+                </svg> </span
+            ></a>
+            <div class="dropdown-menu">
+              <ul>
+                <li><a href="laitteet.html">Laitteet</a></li>
+                <li><a href="#">Ulkopelit</a></li>
+                <li><a href="#">Laitevuokraus</a></li>
+                <li><a href="#">Arcadepelit</a></li>
+              </ul>
+            </div>
+          </li>
+          <li><a href="../index.html#ruoka"> Ruoka ja kioskit</a></li>
+          <li>
+            <a href="../index.html#kalenteri"> Aukiolo</a>
+          </li>
+          <li><a href="hinnasto.html"> Hinnasto</a></li>
+          <li>
+            <a href="#">
+              Info
+              <span>
+                <svg class="nav-arrow">
+                  <use
+                    xlink:href="../src/img/symbol-defs.svg#icon-chevron-right"
+                  ></use>
+                </svg>
+              </span>
+            </a>
+            <div class="dropdown-menu">
+              <ul>
+                <li><a href="#">yhteystiedot</a></li>
+                <li><a href="#">Saapuminen</a></li>
+                <li><a href="#">Hyvä tietää</a></li>
+                <li><a href="#">Avoimet työpaikat</a></li>
+              </ul>
+            </div>
+          </li>
+        </ul>
+      </nav>
+      <!-- ////////////////////////////////////////////////////////////////////////////////////////// -->
+      <!-- //////////////////////HEADER/////////////////////////////////////////////////////////// -->
+      <div class="header-container">
+        <h1 class="heading-primary">Hinnasto</h1>
+        <img
+          class="heading-background"
+          src="../src/img/huvipuisto.svg"
+          alt=""
+        />
+      </div>
+
+      <div class="container">
+        <h3 class="heading-secondary margin-top-small">Rannekkeet ja liput</h3>
+      </div>
+      <section class="container-pricing-table margin-top-small">
+        <div class="price__card">
+          <div class="price__card-top price__card-top-blue">
+            <h4 class="price__card-heading">
+              Ranneke <br> yli 100cm <br>
+              <span class="price__card-price">29 &euro;</span>
+            </h4>
+          </div>
+
+          <div class="price__card-bottom">
+            <h4 class="price__card-heading">
+              2 Päivän ranneke <br />
+              <span class="price__card-price">38 &euro;</span>
+            </h4>
+          </div>
+        </div>
+        <div class="price__card">
+          <div class="price__card-top">
+            <h4 class="price__card-heading">
+              Ranneke <br />alle 100cm <br />
+              <span class="price__card-price">21 &euro;</span>
+            </h4>
+          </div>
+
+          <div class="price__card-bottom">
+            <h4 class="price__card-heading">
+              2 Päivän ranneke <br />
+              <span class="price__card-price">30 &euro;</span>
+            </h4>
+          </div>
+        </div>
+        <div class="price__card">
+          <div class="price__card-top price__card-top-green">
+            <h4 class="price__card-heading">
+              Kertalippu <br /><br />
+              <span class="price__card-price">5 &euro;</span>
+            </h4>
+          </div>
+
+          <div class="price__card-bottom">
+            <h4 class="price__card-heading">
+              10 Kertalippua <br />
+              <span class="price__card-price">39 &euro;</span>
+            </h4>
+          </div>
+        </div>
+        <div class="price__card">
+          <div class="price__card-top price__card-top-yellow">
+            <h4 class="price__card-heading">
+              <!-- kommentoi ale pois jos ei ole alennusta! -->
+              Kausikortti <br />  <span>ale -20% !!! nyt</span><br> 
+              <span class="price__card-price">72 &euro;</span>
+            </h4>
+          </div>
+
+          <div class="price__card-bottom">
+            <p>Kausikortilla voit huvitella koko kesän vaikka joka päivä.Voit ostaa niitä huvipuiston kioskista. Tarvitset mukaasi ainoastaan valokuvan <a href="#kausikortti">Ohjeet&rarr;</a></p>
+            </h4>
+          </div>
+        </div>
+      </section>
+      <div class="container">
+        <h3 class="heading-secondary margin-top-medium">Ryhmärannekkeet</h3>
+      </div>
+      <section class="container-pricing-table margin-top-medium">
+
+        <div class="price__card">
+          <div class="price__card-top price__card-top-orange">
+            <h4 class="price__card-heading">
+              4 <br />ranneketta <br />
+              <span class="price__card-price">110 &euro;</span>
+            </h4>
+          </div>
+
+          <div class="price__card-bottom">
+            <h4 class="price__card-heading">
+              2 päivän rannekkeet <br />
+              <span class="price__card-price">150 &euro;</span>
+            </h4>
+          </div>
+        </div>
+        <div class="price__card">
+          <div class="price__card-top price__card-top-orange">
+            <h4 class="price__card-heading">
+              5 <br />ranneketta <br />
+              <span class="price__card-price">135 &euro;</span>
+            </h4>
+          </div>
+
+          <div class="price__card-bottom">
+            <h4 class="price__card-heading">
+              2 päivän rannekkeet <br />
+              <span class="price__card-price">180 &euro;</span>
+            </h4>
+          </div>
+        </div>
+        <div class="price__card">
+          <div class="price__card-top price__card-top-orange">
+            <h4 class="price__card-heading">
+              6<br /> ranneketta <br />
+              <span class="price__card-price">155 &euro;</span>
+            </h4>
+          </div>
+
+          <div class="price__card-bottom">
+            <h4 class="price__card-heading">
+              2 päivän rannekkeet <br />
+              <span class="price__card-price">210 &euro;</span>
+            </h4>
+          </div>
+        </div>
+        <div class="price__card">
+          <div class="price__card-top price__card-top-orange">
+            <h4 class="price__card-heading">
+              7<br /> ranneketta <br />
+              <span class="price__card-price">175 &euro;</span>
+            </h4>
+          </div>
+
+          <div class="price__card-bottom">
+            <h4 class="price__card-heading">
+              2 päivän rannekkeet <br />
+              <span class="price__card-price">240 &euro;</span>
+            </h4>
+          </div>
+        </div>
+        <div class="price__card">
+          <div class="price__card-top price__card-top-orange">
+            <h4 class="price__card-heading">
+              8 <br />ranneketta <br />
+              <span class="price__card-price">199 &euro;</span>
+            </h4>
+          </div>
+
+          <div class="price__card-bottom">
+            <h4 class="price__card-heading">
+              2 päivän rannekkeet <br />
+              <span class="price__card-price">270 &euro;</span>
+            </h4>
+          </div>
+        </div>
+        <div class="price__card">
+          <div class="price__card-top price__card-top-orange">
+            <h4 class="price__card-heading">
+              9 <br />ranneketta <br />
+              <span class="price__card-price">215 &euro;</span>
+            </h4>
+          </div>
+
+          <div class="price__card-bottom">
+            <h4 class="price__card-heading">
+              2 päivän rannekkeet <br />
+              <span class="price__card-price">300 &euro;</span>
+            </h4>
+          </div>
+        </div>
+        <div class="price__card">
+          <div class="price__card-top price__card-top-orange">
+            <h4 class="price__card-heading">
+              10 <br />ranneketta <br />
+              <span class="price__card-price">235 &euro;</span>
+            </h4>
+          </div>
+
+          <div class="price__card-bottom">
+            <h4 class="price__card-heading">
+              2 päivän rannekkeet <br />
+              <span class="price__card-price">330 &euro;</span>
+            </h4>
+          </div>
+        </div>
+
+      </section>
+<section class="info__entryfee-container" id="kausikortti">
+<div class="entryfee">
+  <h2 class="heading-tertiary">pääsymaksut ja pysäköinti</h2>
+        <p class=" margin-top-small">Pääsymaksu puiston alueelle on ILMAINEN kuin myös pysäköinti.mörkometsä, leikkialue, pelihalli/leikkitehdas.</p>
+      </div>
+      <div class="entryfee">
+        <h2 class="heading-tertiary ">Maksuvälineet</h2>
+        <p class="margin-top-small">Kaikissa myyntipisteissä voi maksaa myös pankkikorteilla, sekä Visa-, Mastercard- ja Visa Electron-luottokorteilla. Lähin pankkiautomaatti sijaitsee Lievestuoreen keskustassa osoitteessa Liepeentie 9.</p>
+      </div>
+      <div class="entryfee">
+        <h2 class="heading-tertiary">Ryhmärannekkeet</h2>
+        <p class="margin-top-small">Ryhmäranneke myönnetään saman ryhmän jäsenille, jotka ostavat yhdessä rannekkeet. Ryhmäranneke on aina edullisin tapa ostaa rannekkeet, mikäli samalla kertaa ostetaan vähintään neljä yli 100cm ranneketta.</p>
+        <p class="margin-top-small">Huom! Keltaiset kertaliput sekä vihreät vapaaliput ovat voimassa ilman takarajaa, myös tulevina kausina.</p>
+        </div>
+</section>
+      <section class="pricing__info margin-top-small">
+        
+
+        <h2 class="heading-tertiary margin-top-small" >HANKI NYT NOKKAKIVEN HUVIPUISTON KAUSIKORTTI</h2>
+        <p class="paragraph-secondary margin-top-small">KAUSIKORTTI TOUKOKUUN AJAN ENNAKKOVARAUKSELLA 20% ALENNUKSELLA</p>
+        <p class="paragraph-secondary margin-top-small">Kausikortilla saat rannekkeen vaikka joka ikinen puiston aukiolopäivä, joten voit huvitella edullisesti huvipuistossa koko kesän.</p>
+
+
+
+        
+        <h2 class="heading-tertiary margin-top-small" >näin se toimii</h2>
+<ol class="kausikortti-kayttöehdot" >
+    <li> <p class="paragraph-secondary">  Ota mukaan passikuva tai vastaava kuva, jota voi käyttää kausikortissa. Tarrapohjainen pieni kuva nopeuttaa tekemistä.</p></li>
+    <li> <p class="paragraph-secondary">  Kortin saat huvipuiston auettua huvipuiston kioskista, jonne sen voi myös samalla maksaa.</p></li>
+    <li> <p class="paragraph-secondary">  Voit maksaa kausikortin käteisellä tai pankkikortilla.</p></li>
+    <li> <p class="paragraph-secondary">  Saat kausikortin välittömästi mukaasi, mikäli sinulla on mukana sopivan kokoinen valokuva. Kausikorttiin mahtuu max 30mm korkuinen kuva, joten naama ei saisi olla tätä isompi.</p></li>
+    <li> <p class="paragraph-secondary">  Voit tuoda myös isompia kuvia tai lähettää kuvat sähköpostilla. Tällöin saamme kortin tyypillisesti valmiiksi seuraavaksi päiväksi.</p></li>
+    <li> <p class="paragraph-secondary">  Pidä hauskaa koko kesä!</p></li>
+</ol>
+
+
+<h2 class="heading-tertiary margin-top-small">Käyttöehdot</h2>
+<ol class="kausikortti-kayttöehdot">
+  <li><p class="paragraph-secondary">Kausikortin saa nyt kevään ennakkovarauksella hintaan 72€ (normaalisti 90€). Ennakkotarjous on voimassa 31.5. saakka. Lähetä kortinhaltijoiden tiedot sähköpostilla osoitteeseen info@nokkakivi.fi. Teemme kortin valmiiksi jo etukäteen, mikäli toimitat samalla kuvat sähköisesti. Kortti maksetaan noudettaessa.</p></li>
+  <li><p class="paragraph-secondary">Kausikortti on henkilökohtainen.</p></li>
+  <li><p class="paragraph-secondary">Kausikorttia ei lunasteta takaisin.</p></li>
+  <li><p class="paragraph-secondary">Kausikortti on voimassa vain korttiin merkittynä vuotena.</p></li>
+  <li><p class="paragraph-secondary">Kausikortilla kortin haltija saa huvipuiston normaaleina aukioloaikoina itselleen yhden maksuttoman rannekkeen kutakin päivää kohti. Ranneketta ei voi antaa muille.</p></li>
+  <li><p class="paragraph-secondary">Ranneke on aina noudettava huvipuiston päälipunmyyntipisteestä (ns. sininen kioski).</p></li>
+  <li><p class="paragraph-secondary">Rannekkeella pääsee turvarajojen puitteissa maksutta kaikkiin huvipuiston laitteisiin ja käyntikohteisiin.</p></li>
+  <li><p class="paragraph-secondary">Ranneke ei kelpaa pelipisteissä.</p></li>
+  <li><p class="paragraph-secondary">Ranneke on henkilökohtainen ja käytettävä itse. Sitä ei voi luovuttaa toiselle osapuolelle.</p></li>
+  <li><p class="paragraph-secondary">Kausikortti ei ole voimassa yksityistilaisuuksissa, luokkaretkillä tai muissa normaalien aukioloaikojen ulkopuolella järjestetyissä tilaisuuksissa.</p></li>
+  <li><p class="paragraph-secondary">Kausikortti otetaan pois, mikäli sitä käytetään väärin. Kortin hankintakuluja ei tällöin palauteta.</p></li>
+</ol>
+
+      </section>
+      <div class="divider-wrapper">
+
+        <div class="shape-divider-footer">
+          <svg
+            data-name="Layer 1"
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 1200 120"
+            preserveAspectRatio="none"
+          >
+            <path
+              d="M985.66,92.83C906.67,72,823.78,31,743.84,14.19c-82.26-17.34-168.06-16.33-250.45.39-57.84,11.73-114,31.07-172,41.86A600.21,600.21,0,0,1,0,27.35V120H1200V95.8C1132.19,118.92,1055.71,111.31,985.66,92.83Z"
+              class="shape-fill"
+            ></path>
+          </svg>
+        </div>
+      </div>
+      
+      <!-- ///////////////////////////////////////////////////FOOTER///////////////////////////////////////// 
+    
+      <!-- ////////////////////////////////////////////////////////////////////////////////////////// -->
+      <!-- ////////////////////////////////////////////////////////////////////////////////////////// -->
+
+      <footer class="footer">
+        <div class="container-footer">
+          <div class="row">
+            <div class="footer-col">
+              <div class="logo-footer">
+                <a href="/">
+                  <img
+                    class="logo-svg"
+                    src="../src/img/nokkakiven_puisto_logo2_color.svg"
+                    alt="Logo"
+                /></a>
+              </div>
+            </div>
+            <div class="footer-col">
+              <h4>huvipuisto</h4>
+              <ul>
+                <li>
+                  <a href="#">laitteet</a>
+                </li>
+                <li>
+                  <a href="#">ruoka ja kioskit</a>
+                </li>
+                <li>
+                  <a href="#">arcadepelit</a>
+                </li>
+                <li>
+                  <a href="#">aukiolo</a>
+                </li>
+              </ul>
+            </div>
+            <div class="footer-col">
+              <h4>info</h4>
+              <ul>
+                <li>
+                  <a href="#">hinnasto</a>
+                </li>
+                <li>
+                  <a href="#">saapuminen</a>
+                </li>
+                <li>
+                  <a href="#">Avoimet työpaikat</a>
+                </li>
+                <li>
+                  <a href="#"> </a>
+                </li>
+              </ul>
+            </div>
+            <div class="footer-col">
+              <h4>Yhteystiedot</h4>
+              <div class="social-links">
+                <a href="https://www.facebook.com/Nokkakivi/"
+                  ><svg class="social-icons">
+                    <use href="../src/img/symbol-defs.svg#icon-facebook"></use>
+                  </svg>
+                </a>
+                <!-- ////////////////////UNCOMMENT FOR TWITTER ICON  ///////////////////////// -->
+                <!-- <a href="#"
+                  ><svg class="social-icons">
+                    <use href="../src/img/symbol-defs.svg#icon-twitter"></use>
+                  </svg>
+                </a> -->
+                <a href="https://www.instagram.com/nokkakivi/"
+                  ><svg class="social-icons">
+                    <use href="../src/img/symbol-defs.svg#icon-instagram"></use>
+                  </svg>
+                </a>
+
+                <!-- ////////////////////UNCOMMENT FOR YOUTUBE ICON  ///////////////////////// -->
+                <!-- <a href="#"
+                  ><svg class="social-icons">
+                    <use href="../src/img/symbol-defs.svg#icon-youtube"></use>
+                  </svg>
+                </a> -->
+              </div>
+              <ul class="contact-info">
+                <li>
+                  <span
+                    ><svg class="social-icons info-icons">
+                      <use
+                        href="../src/img/symbol-defs.svg#icon-location"
+                      ></use></svg
+                  ></span>
+                  <a href="#">sijainti</a>
+                </li>
+                <li>
+                  <span
+                    ><svg class="social-icons info-icons">
+                      <use
+                        href="../src/img/symbol-defs.svg#icon-mail4"
+                      ></use></svg
+                  ></span>
+                  <p>info@nokkakivi.fi</p>
+                </li>
+                <li>
+                  <span
+                    ><svg class="social-icons info-icons">
+                      <use
+                        href="../src/img/symbol-defs.svg#icon-phone"
+                      ></use></svg
+                  ></span>
+                  <p>Puh: 045-270 5920</p>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>

@@ -434,6 +434,7 @@ label {
   left: 50%;
   z-index: 10;
   transform: translate(-50%, -50%);
+  letter-spacing: 3px;
 }
 @media only screen and (max-width: 950px) {
   .heading-primary {
@@ -651,14 +652,15 @@ label {
   transition: all 0.4s;
   border-radius: 1rem;
   position: absolute;
+  border: 13px solid rgb(255, 255, 255);
 
   filter: brightness(1.3);
 }
 .composition-photo:hover {
-  outline: 1px solid rgba(17, 15, 3, 0.3);
   transform: scale(1.2) translateY(-0.5rem);
   box-shadow: var(--shadow-dark);
   z-index: 20;
+  outline: 10px solid rgba(255, 255, 255, 0.3);
 }
 
 .container-img:hover .container-img:not(:hover) {
@@ -861,10 +863,11 @@ label {
   grid-template-columns: repeat(auto-fit, minmax(48%, 1fr));
   gap: 4rem;
   justify-items: center;
+  padding-bottom: 8rem;
 }
 .kioski-img {
   border-radius: 50%;
-  min-width: 45rem;
+  min-width: 40rem;
   max-height: 40rem;
   object-fit: cover;
 
@@ -879,7 +882,7 @@ label {
   text-align: center;
   padding: 7rem;
   min-width: 36rem;
-  max-width: 25vw;
+  max-width: 22vw;
   gap: 4rem;
 }
 
@@ -918,6 +921,48 @@ label {
 .divider .shape-fill-1 {
   fill: #b7a170;
 }
+.custom-shape-divider-bottom-1676110006 {
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  transform: rotate(180deg);
+}
+
+.custom-shape-divider-bottom-1676110006 svg {
+  position: relative;
+  display: block;
+  width: calc(137% + 1.3px);
+  height: 167px;
+  transform: rotateY(180deg);
+}
+
+.custom-shape-divider-bottom-1676110006 .shape-fill-1 {
+  fill: #f7f7f7;
+}
+.divider-wrapper {
+  position: relative;
+  grid-column: 1 / -1;
+}
+.shape-divider-footer {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+}
+
+.shape-divider-footer svg {
+  position: relative;
+  display: block;
+  width: calc(100% + 1.3px);
+  height: 122px;
+}
+
+.shape-divider-footer .shape-fill {
+  fill: var(--color-primary-grey);
+}
+
 /* /////////////////////////////// FOOTER/////////////////////////////////////////////////////////// */
 footer * {
   margin: 0;
@@ -930,7 +975,6 @@ footer * {
   grid-column: full-start / full-end;
   z-index: 1;
   background-color: var(--color-primary-grey);
-  padding: 30rem 0;
 }
 .container-footer {
   max-width: 117rem;
@@ -965,7 +1009,7 @@ ul {
   background-color: #e91e63;
   height: 2px;
   box-sizing: border-box;
-  width: 5rem;
+  width: 11rem;
 }
 .footer-col ul li:not(:last-child) {
   margin-bottom: 10px;
@@ -1040,30 +1084,10 @@ ul {
   }
 }
 
-.custom-shape-divider-bottom-1676110006 {
-  width: 100%;
-  overflow: hidden;
-  line-height: 0;
-  transform: rotate(180deg);
-}
-
-.custom-shape-divider-bottom-1676110006 svg {
-  position: relative;
-  display: block;
-  width: calc(137% + 1.3px);
-  height: 167px;
-  transform: rotateY(180deg);
-}
-
-.custom-shape-divider-bottom-1676110006 .shape-fill-1 {
-  fill: #f7f7f7;
-}
 /* //////////////////////////////////////////////////////////////////////////////////////////////
-//////////////////////////////////////////////////////////////////////////////////////////////
+
 
 ////////////////////////////////  RIDES (ENTIRE PAGE)/////////////////////////////////////
-//////////////////////////////////////////////////////////////////////////////////////////////
-////////////////////////////////////////////////////////////////////////////////////////////// 
 
 */
 .stacked {
@@ -1257,6 +1281,7 @@ ul {
   grid-column: 1 / -1;
   text-align: center;
   background-image: linear-gradient(to right, #ff9d1f, #fff, #ff9d1f);
+  position: relative;
 }
 .gallery {
   display: grid;
@@ -1419,4 +1444,102 @@ ul {
     opacity: 1;
     transform: opacity linear;
   }
+}
+
+.container-grid-pricing {
+  background-color: #f8ffc1;
+}
+.container-pricing-table {
+  grid-column: 2 / 10;
+  display: flex;
+  flex-wrap: wrap;
+  min-width: 80vw;
+  justify-content: center;
+  gap: 3rem;
+}
+.price__card {
+  width: 30rem;
+  height: 50rem;
+  position: relative;
+  border: 4px solid rgb(255, 255, 255);
+  border-radius: 10px;
+  overflow: hidden;
+  background-color: #ffff;
+  box-shadow: var(--shadow-dark);
+}
+
+.price__card-top {
+  background-image: linear-gradient(to right bottom, #f00, #fffcfb);
+  clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+  height: 60%;
+  padding-top: 2rem;
+}
+.price__card-top.price__card-top-blue {
+  background-image: linear-gradient(to right bottom, rgb(0, 4, 255), #fffcfb);
+}
+
+.price__card-top.price__card-top-yellow {
+  background-image: linear-gradient(to right bottom, #ffd700, #fffcfb);
+}
+.price__card-top.price__card-top-green {
+  background-image: linear-gradient(to right bottom, #0bb830, #fffcfb);
+}
+
+.price__card-top.price__card-top-orange {
+  background-image: linear-gradient(to right bottom, #ff8f00, #fffcfb);
+}
+
+.price__card-bottom {
+  height: 40%;
+
+  padding-top: 2rem;
+}
+.price__card-bottom p {
+  text-align: center;
+  font-weight: 400;
+  font-size: 1.7rem;
+}
+.price__card-heading {
+  font-family: "Alfa Slab One", cursive, sans-serif;
+  font-size: 2rem;
+  text-align: center;
+  color: #000;
+  text-shadow: 1px 0px 16px #fff;
+
+  line-height: 7rem;
+
+  text-transform: uppercase;
+}
+
+.price__card-price {
+  font-size: 4.5rem;
+  color: #fba200;
+  text-shadow: 1px 0px 16px #000;
+}
+.info__entryfee-container {
+  grid-column: 2 / 10;
+  display: flex;
+  gap: 2rem;
+  margin-top: 7rem;
+}
+.entryfee {
+  font-size: 24px;
+  background-color: #ffce60;
+  padding: 3rem;
+  border: 2px solid black;
+  box-shadow: var(--shadow-dark);
+  border-radius: 5px;
+}
+.pricing__info {
+  grid-column: 4 / 8;
+  padding: 3rem;
+  border: 2px solid black;
+  background-color: #ffce60;
+  box-shadow: var(--shadow-dark);
+  border-radius: 5px;
+  margin-bottom: 15rem;
+}
+.kausikortti-kayttöehdot li {
+  font-size: 2.8rem;
+  margin-top: 3rem;
 }

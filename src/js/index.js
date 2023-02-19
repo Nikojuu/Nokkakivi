@@ -161,6 +161,8 @@ toggle.addEventListener('change', () => {
 /////////////////////////// ////////////////////////////////////////////
 ////////////////////////////RIDESLIST-POPUP//////////////////////////
 /////////////////////////// ////////////////////////////////////////////
+
+if (window.location.pathname.endsWith('/laitteet.html')) {
 const cards = document.querySelectorAll('.card');
 const modal = document.querySelector('.modal');
 const modalTitle = modal.querySelector('.modal-title');
@@ -261,3 +263,5 @@ document.getElementById('carousel__button--prev').addEventListener("click", func
 
 
 resetTimer();
+
+}
