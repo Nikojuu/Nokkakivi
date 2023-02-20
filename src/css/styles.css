@@ -377,7 +377,7 @@ label {
   display: flex;
   align-items: center;
   flex-direction: column;
-
+  margin-left: 7rem;
   width: 67%;
   z-index: 20;
 }
@@ -1280,7 +1280,7 @@ ul {
 .section-pelihalli {
   grid-column: 1 / -1;
   text-align: center;
-  background-image: linear-gradient(to right, #ff9d1f, #fff, #ff9d1f);
+  background-image: linear-gradient(to right, #ffcc8b, #fff, #fff);
   position: relative;
 }
 .gallery {
@@ -1289,7 +1289,7 @@ ul {
   grid-template-rows: repeat(7, 7vw);
   gap: 1.5rem;
   padding: 1.5rem;
-  margin-top: 8vh;
+  margin: 8vh;
 }
 .gallery__item {
   overflow: hidden;
@@ -1542,4 +1542,161 @@ ul {
 .kausikortti-kayttöehdot li {
   font-size: 2.8rem;
   margin-top: 3rem;
+}
+
+/* /////////////////////////INFO/////////////////////////////////////////// */
+.container-grid-info {
+  background-image: radial-gradient(#bfbfff, white);
+}
+.section-info {
+  grid-column: 2 / 10;
+  margin: 10rem;
+}
+.container-map {
+  display: flex;
+  width: 70vw;
+  justify-content: space-between;
+  align-items: start;
+  flex-wrap: wrap;
+}
+.saapuminen-text {
+  flex-basis: 50%;
+}
+.map-image {
+  flex-basis: 50%;
+}
+.map-image img {
+  width: 100%;
+  border-radius: 50px;
+  box-shadow: var(--shadow-dark);
+}
+.map-image ul li {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+}
+.google-maps {
+  border-radius: 10px;
+  box-shadow: var(--shadow-dark);
+  border: 3px solid black;
+}
+.contact__info-icons {
+  width: 4rem;
+  height: 4rem;
+}
+
+.section-faq {
+  grid-column: 2 / 10;
+
+  margin-top: 5rem;
+
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.faq-container {
+  width: 100%;
+  max-width: 150rem;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+.accordion {
+  max-width: 100%;
+}
+.accordion-item {
+  margin-bottom: 1rem;
+  padding: 1rem;
+}
+
+.accordion-link {
+  font-size: 1.6rem;
+  color: #0e0e0e;
+  text-decoration: none;
+  background-color: #a5d5e4;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 1rem;
+  height: 5rem;
+  border-radius: 3px;
+}
+
+.accordion-link span {
+  color: #0e0e0e;
+  padding: 0.5rem;
+  font-size: 3rem;
+}
+
+.ansver {
+  max-height: 0;
+  overflow: hidden;
+  position: relative;
+  background-color: #fff;
+  transition: 650ms;
+}
+
+.ansver.open {
+  max-height: 20rem;
+}
+
+.ansver::before {
+  content: "";
+  position: absolute;
+  width: 0.6rem;
+  height: 90%;
+  background-color: #ff9de5;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+}
+
+.ansver p {
+  padding: 2rem;
+  font-size: 1.4rem;
+  color: black;
+}
+
+.accordion-item:target .ansver {
+  max-height: 30rem;
+}
+
+.job-positions {
+  grid-column: 1 /-1;
+
+  text-align: center;
+}
+.job-info {
+  box-shadow: var(--shadow-light);
+  border-radius: 5px;
+  padding: 2rem;
+  margin-top: 5rem;
+}
+.card__container-jobs {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  margin: 10rem;
+}
+.card__job {
+  box-shadow: var(--shadow-dark);
+  padding: 3rem;
+  border-radius: 5px;
+  width: 65rem;
+}
+.card__job img {
+  border-radius: 5px;
+  height: 39rem;
+  width: 58rem;
+  object-fit: cover;
+}
+.heading-job {
+  font-size: 25px;
+  font-weight: 500;
+}
+.paragraph-job {
+  font-size: 22px;
+  text-align: left;
 }

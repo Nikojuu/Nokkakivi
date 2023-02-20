@@ -1,0 +1,545 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" type="image/png" href="../src/img/favicon.ico" />
+
+    <title>Nokkakivi</title>
+    <link rel="stylesheet" href="../src/css/styles.css" />
+    <script src="../src/js/index.js" defer></script>
+  </head>
+  <body>
+    <div class="container-grid container-grid-info">
+      <!-- ///////////////////////////////////NAVIGATION/////////////////////////////////////////////////////// -->
+
+      <label for="toggle">&#9776;</label>
+      <input type="checkbox" id="toggle" />
+      <nav class="navigation-bar">
+        <div class="logo">
+          <a href="../">
+            <img
+              src="../src/img/nokkakiven_puisto_logo1_color.svg"
+              alt="Logo"
+            />
+          </a>
+        </div>
+        <ul>
+          <li>
+            <a href="laitteet.html">
+              Laitteet ja pelit
+              <span>
+                <svg class="nav-arrow">
+                  <use
+                    xlink:href="../src/img/symbol-defs.svg#icon-chevron-right"
+                  ></use>
+                </svg> </span
+            ></a>
+            <div class="dropdown-menu">
+              <ul>
+                <li><a href="laitteet.html">Laitteet</a></li>
+                <li><a href="laitteet.html#ulkopelit">Ulkopelit</a></li>
+                <li><a href="#">Laitevuokraus</a></li>
+                <li><a href="laitteet.html#pelihalli">Arcadepelit</a></li>
+              </ul>
+            </div>
+          </li>
+          <li><a href="../index.html#ruoka"> Ruoka ja kioskit</a></li>
+          <li>
+            <a href="../index.html#kalenteri"> Aukiolo</a>
+          </li>
+          <li><a href="hinnasto.html"> Hinnasto</a></li>
+          <li>
+            <a href="#">
+              Info
+              <span>
+                <svg class="nav-arrow">
+                  <use
+                    xlink:href="../src/img/symbol-defs.svg#icon-chevron-right"
+                  ></use>
+                </svg>
+              </span>
+            </a>
+            <div class="dropdown-menu">
+              <ul>
+                <li><a href="#yhteystiedot">yhteystiedot</a></li>
+                <li><a href="#yhteystiedot">Saapuminen</a></li>
+                <li><a href="#faq">Hyvä tietää</a></li>
+                <li><a href="#rekry">Avoimet työpaikat</a></li>
+              </ul>
+            </div>
+          </li>
+        </ul>
+      </nav>
+      <!-- ////////////////////////////////////////////////////////////////////////////////////////// -->
+      <!-- //////////////////////HEADER/////////////////////////////////////////////////////////// -->
+      <div class="header-container">
+        <h1 class="heading-primary">info</h1>
+        <img
+          class="heading-background"
+          src="../src/img/huvipuisto.svg"
+          alt=""
+        />
+      </div>
+      <div class="container">
+        <h3 class="heading-secondary margin-top-small">
+          Saapuminen ja pysäköinti
+        </h3>
+      </div>
+      <section class="section-info" id="sijainti">
+        <div class="container-map">
+          <div class="saapuminen-text">
+            <h2 class="heading-tertiary"id="yhteystiedot">Saapuminen</h2>
+            <p class="paragraph-secondary margin-top-small">
+              Nokkakivi sijaitsee 9-tien varrella n.20min ajomatkan päästä
+              Jyväskylästä.
+            </p>
+            <h2 class="heading-tertiary margin-top-small">Pysäköinti</h2>
+            <p class="paragraph-secondary margin-top-small">
+              Koko Laukaanhovin parkkialue on huvipuistovieraiden käytettävissä.
+              Pysäköinti on ilmainen, tilaa on runsaasti isoillekin autoille,
+              eikä parkkikiekkoa tarvita.
+            </p>
+            <h2 class="heading-tertiary margin-top-small">Kartta</h2>
+
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14867.606573840698!2d26.152296329947845!3d62.2380973592235!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x9ca976317f063ede!2sNokkakiven%20Huvipuisto!5e0!3m2!1sfi!2sfi!4v1676824046986!5m2!1sfi!2sfi"
+              width="600"
+              height="450"
+              class="margin-top-small google-maps"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </div>
+          <div class="map-image">
+            <img src="../src/img/kartta.jpg" alt="saapumuminen kartta" />
+
+            <h2 class="heading-tertiary margin-top-small" ">yhteystiedot</h2>
+            <ul class="paragraph-secondary">
+              <li class="margin-top-small">
+                <span
+                  ><svg class="contact__info-icons">
+                    <use
+                      href="../src/img/symbol-defs.svg#icon-location"
+                    ></use></svg
+                ></span>
+                Postiosoite: Nokkakiven puisto ruuhimäentie 3 41400 Lievestuore
+              </li>
+              <li class="margin-top-small">
+                <span
+                  ><svg class="contact__info-icons">
+                    <use
+                      href="../src/img/symbol-defs.svg#icon-phone"
+                    ></use></svg
+                ></span>
+                Puh: 0408358370
+              </li>
+              <li class="margin-top-small">
+                <span
+                  ><svg class="contact__info-icons">
+                    <use
+                      href="../src/img/symbol-defs.svg#icon-mail4"
+                    ></use></svg
+                ></span>
+                Sähköposti: info@nokkakivi.fi
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <div class="container">
+        <h3 class="heading-secondary margin-top-small" id="faq">
+          usein kysytyt kysymykset
+        </h3>
+        <p class="paragraph-secondary margin-top-medium">
+          Tästä osiosta löydät vastauksia usein kysyttyihin kysymyksiin ja
+          tietoa puistosta!
+        </p>
+      </div>
+      <section class="section-faq">
+        <div class="faq-container">
+          <div class="accordion">
+            <div class="accordion-item">
+              <a class="accordion-link" href="#"
+                >Saako puistosta ruokaa? <span class="plus">+</span>
+              </a>
+              <div class="ansver">
+                <p>
+                  Aivan huvipuiston vieressä palvelee ravintola Laukaanhovi
+                  josta saa isommankin nälän pois. Pienempää suolaista ja makeaa
+                  saa myös puiston kioskeista. Ja puistoon saa myös tuoda ovat
+                  eväät ja meillä on paljon picnik pöytiä joissa voi nauttia
+                  kesäpäivää eväillä!
+                </p>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <a class="accordion-link" href="#"
+                >Missä Nokkakivi sijaitsee? <span class="plus">+</span>
+              </a>
+              <div class="ansver">
+                <p>
+                  Nokkakivi sijaitsee n.20km päässä jyväskylästä kuopioon päin
+                  9tien varrella! tarkemman sijainnin löydät
+                  <a href="#sijainti">täältä &rarr;</a>
+                </p>
+              </div>
+            </div>
+            <div class="accordion-item" ">
+            <a class="accordion-link" href="#"
+              >Milloin olette avoinna? <span class="plus">+</span>
+            </a>
+            <div class="ansver">
+              <p>
+                Olemme pääsääntöisesti auki kesä-elokuun tarkemmat aukiolot
+                löydät <a href="../index.html#kalenteri">täältä &rarr;</a>
+              </p>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <a class="accordion-link" href="#"
+              >Mitkä maksuvälineet puistossa käy? <span class="plus">+</span>
+            </a>
+            <div class="ansver">
+              <p>
+                Kaikissa myyntipisteissä voi maksaa myös pankkikorteilla, sekä
+                Visa-, Mastercard- ja Visa Electron-luottokorteilla. Lähin
+                pankkiautomaatti sijaitsee Lievestuoreen keskustassa osoitteessa
+                Liepeentie 9.
+              </p>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <a class="accordion-link" href="#"
+              >Mistä näen teidän hinnaston? <span class="plus">+</span>
+            </a>
+            <div class="ansver">
+              <p>hinnastot löydät <a href="hinnasto.html">täältä &rarr;</a></p>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <a class="accordion-link" href="#"
+              >Onko puistossa laitteita pienille lapsille?
+              <span class="plus">+</span>
+            </a>
+            <div class="ansver">
+              <p>
+                Kyllä! Alle 100cm mittaisetkin lapset pääsevät lähes kaikkiin
+                lastenlaitteisiin jossa kyyti on rauhallisempaa ja
+                henkilökuntamme iloista ja huomioonottavaa. Tarkempaa tietoa
+                laitteista <a href="laitteet.html">täältä &rarr;</a>
+              </p>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <a class="accordion-link" href="#"
+              >Maksaako pysäköinti? <span class="plus">+</span>
+            </a>
+            <div class="ansver">
+              <p>
+                Ei koko Laukaanhovin parkkialue on huvipuistovieraiden
+                käytettävissä. Pysäköinti on ilmainen,tilaa on runsaasti
+                isoillekin autoille, eikä parkkikiekkoa tarvita. Meillä ei vielä
+                ole sähköautojen latauspistettä.
+              </p>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <a class="accordion-link" href="#"
+              >Esteetön kulku <span class="plus">+</span>
+            </a>
+            <div class="ansver">
+              <p>
+                Puiston alueella ei ole mainittavia korkeuseroja. Lastenvaunujen
+                ja rattaiden kanssa pääsee vaivattomasti kaikkialle ja jokaisen
+                lastenlaitteen viereen. Suurin osa puiston kulkuväylistä on
+                asvaltoitu. Pyörätuolilla pääsee suoraan myös isojen laitteiden
+                lastausalueelle, josta henkilökuntamme auttaa kyytiin. Isoista
+                laitteista Round Up ei kuitenkaan sovellu liikuntarajoitteisille
+                laitteen luonteen vuoksi.Liikuntarajoitteisille on myös varattu
+                parkkitilaa aivan sisäänkäynnin edestä.
+              </p>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <a class="accordion-link" href="#"
+              >Voiko Nokkakivessä maksaa liikunta- ja kulttuuriseteleillä?
+              <span class="plus">+</span>
+            </a>
+            <div class="ansver">
+              <p>
+                Liikunta- ja kulttuuriseteleitä ei voi hyödyntää
+                huvipuistorannekkeisiin.
+              </p>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <a class="accordion-link" href="#"
+              >Saako puistoon tulla koiran kanssa? <span class="plus">+</span>
+            </a>
+            <div class="ansver">
+              <p>
+                Koiria ei saa pitää laitteiden tai ruokapaikkojen lähellä, mutta
+                ne voi kuljettaa kytkettynä puiston läpi sopivaan varjoisaan
+                paikkaan jaloittelemaan. Vettä voi hakea lemmikeille esim.
+                WC-tiloista tai lastenhoitohuoneen vesipisteistä.
+              </p>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <a class="accordion-link" href="#"
+              >Voiko puistossa Tupakoida? <span class="plus">+</span>
+            </a>
+            <div class="ansver">
+              <p>Tupakointi on sallittu vain merkityillä alueilla.</p>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <a class="accordion-link" href="#"
+              >Onko erillistä lastenhoitopaikkaa? <span class="plus">+</span>
+            </a>
+            <div class="ansver">
+              <p>
+                Lastenhoitotilat löytyvät WC-rakennuksesta pensassokkelon
+                vierestä. Tilavassa, viihtyisässä ja valoisessa hoitohuoneessa
+                on myös mikro lastenruokien lämmitykseen. Lasten ruokailua
+                varten on lisäksi varattu syöttötuoleja paviljonkiin
+                kahvikioskin viereen.
+              </p>
+            </div>
+            
+        </div>
+        <div class="accordion-item">
+          <a class="accordion-link" href="#"
+            >Löytötavarat <span class="plus">+</span>
+          </a>
+          <div class="ansver">
+            <p>
+              Kadonneita tavaroita voi kysellä puiston lipunmyyntipisteistä, jonne löytötavarat toimitetaan. Jos katoamisesta on kulunut enemmän aikaa, kannattaa soittaa palvelunumeroomme 045-270 5920.
+            </p>
+          </div>
+      </div>
+      </section>
+
+      <div class="container">
+        <h3 class="heading-secondary margin-top-small" id="rekry">
+          Avoimet työpaikat
+        </h3>
+        <div class="job-info">
+        <p class="paragraph-job">
+          Nokkakiven huvipuisto avataan tänä vuonna yleisölle keskiviikkona 7. kesäkuuta. Etsimme nyt reippaita, työtä pelkäämättömiä koululaisia, opiskelijoita ja myös kokeneempaakin henkilöstöä kesätöihin laitekuskeiksi, kioskimyyjiksi, lipunmyyjiksi, kahvilatyöntekijöiksi, pelinhoitajiksi ja möröksi kummitusjunaan.
+
+Huvipuisto sijaitsee Lievestuoreella, ysitien varrella, reilun varttitunnin matkan päässä Jyväskylästä. Huvipuistoon pääsee myös julkisilla kulkuvälineillä, mutta aikaisempina vuosina käytännössä kaikki ovat päässeet työpaikalle työntekijöiden keskinäisillä kimppakyydeillä, sillä valtaosa kesätyöläisistä saapuu Jyväskylän suunnasta. 
+        </p>
+      </div>
+</div>
+
+<section class="job-positions">
+
+  <div class="card__container-jobs">
+    <div class="card__job">
+      <img src="../src/img/kioskityo.jpg" alt="kioskityöntekiä">
+      <div class="job-description">
+        <h2 class="heading-tertiary margin-top-small">Kioskityöntekiä</h2>
+        <h3 class="heading-job margin-top-small">Tehtävänkuvaus:</h3>
+        <p class="paragraph-job margin-top-small">Haemme kioski- ja myyntipuolen tehtäviin kymmentä henkilöä. Työ sisältää puiston keskellä olevien puistokioskien ylläpidon. Kioskeista myydään pääsyliput kaikkiin ajolaitteisiin sekä käyntikohteisiin. Niistä myydään mm. kahvia, teetä, virvoitusjuomia, jäätelöä, sekä perinteisiä huvipuistoherkkuja, kuten popcornia. Hiljaisina hetkinä saatat vastata kioskin ylläpidosta yksin, ruuhkapäivinä työpisteessä on kaksi työntekijää. Kioski- ja lipunmyyjät muodostavat oman itsenäisen ryhmänsä, joka vaihtelee työtehtäviä. Kioskiryhmän työntekijät saavat koulutuksen myös lastenlaitteiden hoitajiksi, joten pääset välillä myös niiden pariin kesän aikana..</p>
+        <p class="paragraph-job margin-top-small">Lisäksi haemme kahta kahvilatyöntekijää Laukaanhovin ravintolaan, joka sijaitsee huvipuiston vieressä. Tehtävänäsi on avustaa kahvila- ja ravintolatöissä. Palkkaus on ravintola-alan työehtosopimuksen mukainen.
+        </p>
+
+      </div>
+      
+    </div>
+    <div class="card__job">
+      <img src="../src/img/laitekuski.jpg" alt="kioskityöntekiä">
+      <div class="job-description">
+        <h2 class="heading-tertiary margin-top-small">Laitekuski</h2>
+        <h3 class="heading-job margin-top-small">Tehtävänkuvaus:</h3>
+        <p class="paragraph-job margin-top-small">Tehtävänkuvasi sisältää pääasiassa huvipuistolaitteiden ohjaamista ja laitteiden turvallisuudesta vastaamista. Työtehtäviisi kuuluu myös huvipuiston yleisen siisteyden ylläpito ja ympäristön ylläpito, kuten kaikissa muissa tehtävissä puistossa. Pienessä puistossamme tehtäväsi tulee olemaan monipuolinen. Suurimman osan ajasta vietät kuitenkin huvipuistolaitteiden ohjaimissa ja tarjoat asiakkaille vauhdikkaan, mutta turvallisen elämyksen. Ennen kauden alkua järjestämme koulutuksen, jossa opit käyttämään kaikkia laitteita ja ohjaamaan niitä varmasti.</p>
+        
+
+      </div>
+      
+    </div>
+
+    <div class="card__job">
+      <img src="../src/img/pelinhoitaja.jpg" alt="pelinhoitaja">
+      <div class="job-description">
+        <h2 class="heading-tertiary margin-top-small">pelinhoitajia</h2>
+        <h3 class="heading-job margin-top-small">Tehtävänkuvaus:</h3>
+        <p class="paragraph-job margin-top-small"> Työ sisältää puiston alueella olevien pelikoneiden ja peliautomaattien hoitoa. Vastaat siitä, että koneet ovat pelattavissa ja ratkaiset mahdolliset yksinkertaiset vikatilanteet. Vaikeammat tapaukset ohjaat puiston huolto-ryhmälle.
+
+          Puiston alueella on useita maksullisia palkintoautomaatteja. Laukaanhovin puolella on kymmeniä maksuttomassa käytössä olevia ns. arcade-pelikoneita, joiden toimivuudesta myöskin vastaat. Saat koulutuksen koneiden saloihin, joten arvostamme kiinnostusta tekniikkaan, peliautomaatteihin sekä videopeleihin.
+          
+          Tarvittaessa pääset myös harjoittamaan puiston keskellä olevien pelikojujen ylläpitoa. Kojuissa on tyypillisiä tivolipelejä, kuten narunveto, pallonheitto ja ankkaonginta.
+          
+          Kaikki pelinhoitajat saavat koulutuksen kiinnostuksesta riippuen myös joko ajolaitteiden käyttöön tai kioskimyyjäksi, joten osa työvuoroista on muuta asiakaspalvelutyötä kuin pelinhoitoa. </p>
+        
+
+      </div>
+      
+    </div>
+<div class="card__job">
+      <img src="../src/img/huoltomies.jpg" alt="huoltomies">
+      <div class="job-description">
+        <h2 class="heading-tertiary margin-top-small">Huoltomies</h2>
+        <h3 class="heading-job margin-top-small">Tehtävänkuvaus:</h3>
+        <p class="paragraph-job margin-top-small">
+          Tämä on puiston vaativin tehtävä jossa ei heikot pärjää! Vaadimme että pystyt juoksemaan paikasta A paikkaan B n.2000 km/h vauhtia mikä vastaa noin f16 hävittäjä lentokonetta.Jos puistoa uhkaa ulkoavaruudesta tuleva asteroidi pystyt kymmenessä minuutissa rakentamaan katapultin joka on tarpeeksi vahva suistaakseen asteroidin maan kiertoradalta.Näiden rutiinihommien ohessa se haastava osuus tässä työssä jossa pitäisi pystyä pitämään vaatekaupan täti tyytyväisenä. 
+        </p>
+        
+
+      </div>
+      
+    </div>
+
+
+
+
+
+  </div>
+
+
+</section>
+    
+
+
+      <div class="divider-wrapper">
+        <div class="shape-divider-footer">
+          <svg
+            data-name="Layer 1"
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 1200 120"
+            preserveAspectRatio="none"
+          >
+            <path
+              d="M985.66,92.83C906.67,72,823.78,31,743.84,14.19c-82.26-17.34-168.06-16.33-250.45.39-57.84,11.73-114,31.07-172,41.86A600.21,600.21,0,0,1,0,27.35V120H1200V95.8C1132.19,118.92,1055.71,111.31,985.66,92.83Z"
+              class="shape-fill"
+            ></path>
+          </svg>
+        </div>
+      </div>
+      <!-- ///////////////////////////////////////////////////FOOTER///////////////////////////////////////// 
+    
+      <!-- ////////////////////////////////////////////////////////////////////////////////////////// -->
+      <!-- ////////////////////////////////////////////////////////////////////////////////////////// -->
+
+      <footer class="footer">
+        <div class="container-footer">
+          <div class="row">
+            <div class="footer-col">
+              <div class="logo-footer">
+                <a href="/">
+                  <img
+                    class="logo-svg"
+                    src="../src/img/nokkakiven_puisto_logo2_color.svg"
+                    alt="Logo"
+                /></a>
+              </div>
+            </div>
+            <div class="footer-col">
+              <h4>huvipuisto</h4>
+              <ul>
+                <li>
+                  <a href="#">laitteet</a>
+                </li>
+                <li>
+                  <a href="#">ruoka ja kioskit</a>
+                </li>
+                <li>
+                  <a href="#">arcadepelit</a>
+                </li>
+                <li>
+                  <a href="#">aukiolo</a>
+                </li>
+              </ul>
+            </div>
+            <div class="footer-col">
+              <h4>info</h4>
+              <ul>
+                <li>
+                  <a href="#">hinnasto</a>
+                </li>
+                <li>
+                  <a href="#">saapuminen</a>
+                </li>
+                <li>
+                  <a href="#">Avoimet työpaikat</a>
+                </li>
+                <li>
+                  <a href="#"> </a>
+                </li>
+              </ul>
+            </div>
+            <div class="footer-col">
+              <h4>Yhteystiedot</h4>
+              <div class="social-links">
+                <a href="https://www.facebook.com/Nokkakivi/"
+                  ><svg class="social-icons">
+                    <use href="../src/img/symbol-defs.svg#icon-facebook"></use>
+                  </svg>
+                </a>
+                <!-- ////////////////////UNCOMMENT FOR TWITTER ICON  ///////////////////////// -->
+                <!-- <a href="#"
+                  ><svg class="social-icons">
+                    <use href="../src/img/symbol-defs.svg#icon-twitter"></use>
+                  </svg>
+                </a> -->
+                <a href="https://www.instagram.com/nokkakivi/"
+                  ><svg class="social-icons">
+                    <use href="../src/img/symbol-defs.svg#icon-instagram"></use>
+                  </svg>
+                </a>
+
+                <!-- ////////////////////UNCOMMENT FOR YOUTUBE ICON  ///////////////////////// -->
+                <!-- <a href="#"
+                  ><svg class="social-icons">
+                    <use href="../src/img/symbol-defs.svg#icon-youtube"></use>
+                  </svg>
+                </a> -->
+              </div>
+              <ul class="contact-info">
+                <li>
+                  <span
+                    ><svg class="social-icons info-icons">
+                      <use
+                        href="../src/img/symbol-defs.svg#icon-location"
+                      ></use></svg
+                  ></span>
+                  <a href="#">sijainti</a>
+                </li>
+                <li>
+                  <span
+                    ><svg class="social-icons info-icons">
+                      <use
+                        href="../src/img/symbol-defs.svg#icon-mail4"
+                      ></use></svg
+                  ></span>
+                  <p>info@nokkakivi.fi</p>
+                </li>
+                <li>
+                  <span
+                    ><svg class="social-icons info-icons">
+                      <use
+                        href="../src/img/symbol-defs.svg#icon-phone"
+                      ></use></svg
+                  ></span>
+                  <p>Puh: 045-270 5920</p>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>

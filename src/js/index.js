@@ -265,3 +265,26 @@ document.getElementById('carousel__button--prev').addEventListener("click", func
 resetTimer();
 
 }
+
+// get all accordion links
+const accordionLinks = document.querySelectorAll('.accordion-link');
+
+// add click event listener to each link
+accordionLinks.forEach(link => {
+  link.addEventListener('click', function(event) {
+
+    
+      event.preventDefault(); // prevent default link behavior
+    
+    const ansver = this.parentNode.querySelector('.ansver');
+    ansver.classList.toggle('open');
+    
+
+    const plusMinus = this.querySelector('.plus');
+    if (ansver.classList.contains('open')) {
+      plusMinus.textContent = '-';
+    } else {
+      plusMinus.textContent = '+';
+    }
+  });
+});
