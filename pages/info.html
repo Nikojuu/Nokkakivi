@@ -17,7 +17,7 @@
     <script src="../src/js/index.js" defer></script>
   </head>
   <body>
-    <div class="container-grid container-grid-info">
+    <div class="container-grid">
       <!-- ///////////////////////////////////NAVIGATION/////////////////////////////////////////////////////// -->
 
       <label for="toggle">&#9776;</label>
@@ -88,13 +88,12 @@
           alt=""
         />
       </div>
-      <div class="container">
+     
+      <section class="section-container" id="sijainti">
         <h3 class="heading-secondary margin-top-small">
           Saapuminen ja pysäköinti
         </h3>
-      </div>
-      <section class="section-info" id="sijainti">
-        <div class="container-map">
+        <div class="container-map margin-top-medium">
           <div class="saapuminen-text">
             <h2 class="heading-tertiary"id="yhteystiedot">Saapuminen</h2>
             <p class="paragraph-secondary margin-top-small">
@@ -107,7 +106,7 @@
               Pysäköinti on ilmainen, tilaa on runsaasti isoillekin autoille,
               eikä parkkikiekkoa tarvita.
             </p>
-            <h2 class="heading-tertiary margin-top-small">Kartta</h2>
+            <h2 class="heading-tertiary margin-top-medium">Kartta</h2>
 
             <iframe
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14867.606573840698!2d26.152296329947845!3d62.2380973592235!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x9ca976317f063ede!2sNokkakiven%20Huvipuisto!5e0!3m2!1sfi!2sfi!4v1676824046986!5m2!1sfi!2sfi"
@@ -123,7 +122,7 @@
           <div class="map-image">
             <img src="../src/img/kartta.jpg" alt="saapumuminen kartta" />
 
-            <h2 class="heading-tertiary margin-top-small" ">yhteystiedot</h2>
+            <h2 class="heading-tertiary margin-top-medium" ">yhteystiedot</h2>
             <ul class="paragraph-secondary">
               <li class="margin-top-small">
                 <span
@@ -155,17 +154,16 @@
             </ul>
           </div>
         </div>
-      </section>
-      <div class="container">
-        <h3 class="heading-secondary margin-top-small" id="faq">
+      
+      <!-- ///////////////////////////////FAQ/////////////////////////////////////////////////////////// -->
+      
+        <h3 class="heading-secondary margin-top-medium" id="faq">
           usein kysytyt kysymykset
+          
         </h3>
-        <p class="paragraph-secondary margin-top-medium">
-          Tästä osiosta löydät vastauksia usein kysyttyihin kysymyksiin ja
-          tietoa puistosta!
-        </p>
-      </div>
-      <section class="section-faq">
+        
+      
+      <section class="section-faq margin-top-medium">
         <div class="faq-container">
           <div class="accordion">
             <div class="accordion-item">
@@ -330,16 +328,15 @@
           </div>
       </div>
       </section>
-
+    </section>
+<!-- ///////////////////////////////////////////KESÄTYÖ/REKRY/////////////////////////////////////////////// -->
       <div class="container">
         <h3 class="heading-secondary margin-top-small" id="rekry">
           Avoimet työpaikat
         </h3>
         <div class="job-info">
         <p class="paragraph-job">
-          Nokkakiven huvipuisto avataan tänä vuonna yleisölle keskiviikkona 7. kesäkuuta. Etsimme nyt reippaita, työtä pelkäämättömiä koululaisia, opiskelijoita ja myös kokeneempaakin henkilöstöä kesätöihin laitekuskeiksi, kioskimyyjiksi, lipunmyyjiksi, kahvilatyöntekijöiksi, pelinhoitajiksi ja möröksi kummitusjunaan.
-
-Huvipuisto sijaitsee Lievestuoreella, ysitien varrella, reilun varttitunnin matkan päässä Jyväskylästä. Huvipuistoon pääsee myös julkisilla kulkuvälineillä, mutta aikaisempina vuosina käytännössä kaikki ovat päässeet työpaikalle työntekijöiden keskinäisillä kimppakyydeillä, sillä valtaosa kesätyöläisistä saapuu Jyväskylän suunnasta. 
+          Nokkakiven huvipuisto avataan tänä vuonna yleisölle keskiviikkona 7. kesäkuuta. Etsimme nyt reippaita, työtä pelkäämättömiä koululaisia, opiskelijoita ja myös kokeneempaakin henkilöstöä kesätöihin laitekuskeiksi, kioskimyyjiksi, lipunmyyjiksi, kahvilatyöntekijöiksi, pelinhoitajiksi ja möröksi kummitusjunaan. Huvipuisto sijaitsee Lievestuoreella, ysitien varrella, reilun varttitunnin matkan päässä Jyväskylästä. Huvipuistoon pääsee myös julkisilla kulkuvälineillä, mutta aikaisempina vuosina käytännössä kaikki ovat päässeet työpaikalle työntekijöiden keskinäisillä kimppakyydeillä, sillä valtaosa kesätyöläisistä saapuu Jyväskylän suunnasta. 
         </p>
       </div>
 </div>
@@ -351,67 +348,155 @@ Huvipuisto sijaitsee Lievestuoreella, ysitien varrella, reilun varttitunnin matk
       <img src="../src/img/kioskityo.jpg" alt="kioskityöntekiä">
       <div class="job-description">
         <h2 class="heading-tertiary margin-top-small">Kioskityöntekiä</h2>
-        <h3 class="heading-job margin-top-small">Tehtävänkuvaus:</h3>
-        <p class="paragraph-job margin-top-small">Haemme kioski- ja myyntipuolen tehtäviin kymmentä henkilöä. Työ sisältää puiston keskellä olevien puistokioskien ylläpidon. Kioskeista myydään pääsyliput kaikkiin ajolaitteisiin sekä käyntikohteisiin. Niistä myydään mm. kahvia, teetä, virvoitusjuomia, jäätelöä, sekä perinteisiä huvipuistoherkkuja, kuten popcornia. Hiljaisina hetkinä saatat vastata kioskin ylläpidosta yksin, ruuhkapäivinä työpisteessä on kaksi työntekijää. Kioski- ja lipunmyyjät muodostavat oman itsenäisen ryhmänsä, joka vaihtelee työtehtäviä. Kioskiryhmän työntekijät saavat koulutuksen myös lastenlaitteiden hoitajiksi, joten pääset välillä myös niiden pariin kesän aikana..</p>
+        <h3 class="heading-job">Tehtävänkuvaus:</h3>
+        <p class="paragraph-job margin-top-small">Työ sisältää puiston keskellä olevien puistokioskien ylläpidon. Kioskeista myydään pääsyliput kaikkiin ajolaitteisiin sekä käyntikohteisiin. Niistä myydään mm. kahvia, teetä, virvoitusjuomia, jäätelöä, sekä perinteisiä huvipuistoherkkuja, kuten popcornia.</p>
+          
+          <p class="paragraph-job margin-top-small">Hiljaisina hetkinä saatat vastata kioskin ylläpidosta yksin, ruuhkapäivinä työpisteessä on kaksi työntekijää. Kioski- ja lipunmyyjät muodostavat oman itsenäisen ryhmänsä, joka vaihtelee työtehtäviä. Kioskiryhmän työntekijät saavat koulutuksen myös lastenlaitteiden hoitajiksi, joten pääset välillä myös niiden pariin kesän aikana.</p>
+          
         <p class="paragraph-job margin-top-small">Lisäksi haemme kahta kahvilatyöntekijää Laukaanhovin ravintolaan, joka sijaitsee huvipuiston vieressä. Tehtävänäsi on avustaa kahvila- ja ravintolatöissä. Palkkaus on ravintola-alan työehtosopimuksen mukainen.
         </p>
-
+        
       </div>
       
     </div>
     <div class="card__job">
-      <img src="../src/img/laitekuski.jpg" alt="kioskityöntekiä">
+      <img src="../src/img/laitekuski.jpg" alt="laitekuski">
       <div class="job-description">
         <h2 class="heading-tertiary margin-top-small">Laitekuski</h2>
-        <h3 class="heading-job margin-top-small">Tehtävänkuvaus:</h3>
-        <p class="paragraph-job margin-top-small">Tehtävänkuvasi sisältää pääasiassa huvipuistolaitteiden ohjaamista ja laitteiden turvallisuudesta vastaamista. Työtehtäviisi kuuluu myös huvipuiston yleisen siisteyden ylläpito ja ympäristön ylläpito, kuten kaikissa muissa tehtävissä puistossa. Pienessä puistossamme tehtäväsi tulee olemaan monipuolinen. Suurimman osan ajasta vietät kuitenkin huvipuistolaitteiden ohjaimissa ja tarjoat asiakkaille vauhdikkaan, mutta turvallisen elämyksen. Ennen kauden alkua järjestämme koulutuksen, jossa opit käyttämään kaikkia laitteita ja ohjaamaan niitä varmasti.</p>
+        <h3 class="heading-job">Tehtävänkuvaus:</h3>
+        <p class="paragraph-job margin-top-small">Tehtävänkuvasi sisältää pääasiassa huvipuistolaitteiden ohjaamista ja laitteiden turvallisuudesta vastaamista. 
+        </p><p class="paragraph-job margin-top-small">
+          
+          Työtehtäviisi kuuluu myös huvipuiston yleisen siisteyden ylläpito ja ympäristön ylläpito, kuten kaikissa muissa tehtävissä puistossa. Pienessä puistossamme tehtäväsi tulee olemaan monipuolinen. Suurimman osan ajasta vietät kuitenkin huvipuistolaitteiden ohjaimissa ja tarjoat asiakkaille vauhdikkaan, mutta turvallisen elämyksen.</p><p class="paragraph-job margin-top-small"> Ennen kauden alkua järjestämme koulutuksen, jossa opit käyttämään kaikkia laitteita ja ohjaamaan niitä varmasti.</p>
+         
         
 
       </div>
       
     </div>
+    
 
     <div class="card__job">
       <img src="../src/img/pelinhoitaja.jpg" alt="pelinhoitaja">
       <div class="job-description">
         <h2 class="heading-tertiary margin-top-small">pelinhoitajia</h2>
-        <h3 class="heading-job margin-top-small">Tehtävänkuvaus:</h3>
-        <p class="paragraph-job margin-top-small"> Työ sisältää puiston alueella olevien pelikoneiden ja peliautomaattien hoitoa. Vastaat siitä, että koneet ovat pelattavissa ja ratkaiset mahdolliset yksinkertaiset vikatilanteet. Vaikeammat tapaukset ohjaat puiston huolto-ryhmälle.
-
+        <h3 class="heading-job">Tehtävänkuvaus:</h3>
+        <p class="paragraph-job margin-top-small"> Työ sisältää puiston alueella olevien pelikoneiden ja peliautomaattien hoitoa. Vastaat siitä, että koneet ovat pelattavissa ja ratkaiset mahdolliset yksinkertaiset vikatilanteet. Vaikeammat tapaukset ohjaat puiston huolto-ryhmälle.</p>
+          <p class="paragraph-job margin-top-small"> 
           Puiston alueella on useita maksullisia palkintoautomaatteja. Laukaanhovin puolella on kymmeniä maksuttomassa käytössä olevia ns. arcade-pelikoneita, joiden toimivuudesta myöskin vastaat. Saat koulutuksen koneiden saloihin, joten arvostamme kiinnostusta tekniikkaan, peliautomaatteihin sekä videopeleihin.
-          
+          </p><p class="paragraph-job margin-top-small"> 
           Tarvittaessa pääset myös harjoittamaan puiston keskellä olevien pelikojujen ylläpitoa. Kojuissa on tyypillisiä tivolipelejä, kuten narunveto, pallonheitto ja ankkaonginta.
-          
+          </p><p class="paragraph-job margin-top-small"> 
           Kaikki pelinhoitajat saavat koulutuksen kiinnostuksesta riippuen myös joko ajolaitteiden käyttöön tai kioskimyyjäksi, joten osa työvuoroista on muuta asiakaspalvelutyötä kuin pelinhoitoa. </p>
         
 
       </div>
       
     </div>
-<div class="card__job">
+ <div class="card__job">
       <img src="../src/img/huoltomies.jpg" alt="huoltomies">
       <div class="job-description">
         <h2 class="heading-tertiary margin-top-small">Huoltomies</h2>
-        <h3 class="heading-job margin-top-small">Tehtävänkuvaus:</h3>
+        <h3 class="heading-job">Tehtävänkuvaus:</h3>
         <p class="paragraph-job margin-top-small">
-          Tämä on puiston vaativin tehtävä jossa ei heikot pärjää! Vaadimme että pystyt juoksemaan paikasta A paikkaan B n.2000 km/h vauhtia mikä vastaa noin f16 hävittäjä lentokonetta.Jos puistoa uhkaa ulkoavaruudesta tuleva asteroidi pystyt kymmenessä minuutissa rakentamaan katapultin joka on tarpeeksi vahva suistaakseen asteroidin maan kiertoradalta.Näiden rutiinihommien ohessa se haastava osuus tässä työssä jossa pitäisi pystyä pitämään vaatekaupan täti tyytyväisenä. 
+         Työ sisältää pääasiassa huvipuistolaitteiden tarkastusta,huoltoa,kunnossapitoa ja myös kasaamista. Vastaat laitteiden turvallisesta toimivuudesta ympäri kauden aamulla tarkastaen laitteet ja huoltamalla viikoittain tai tarpeen vaatiessa. <p/><p class="paragraph-job margin-top-small"> Olet myös aina valmiina menemään laitekuskin avuksi jos ongelmia laitteessa tai jossain ilmenee. Tässä tehtävässä saatat joutua likaamaan kätesi! Mutta huoltomiehen tehtävät ovat hyvin monipuolisia ja joudut käyttämään paljon ongelman ratkaisukykyjä selvitäksesi!.</p><p class="paragraph-job margin-top-small">
+          Tehtävään koulutukseen ei yksi päivä riitä joten työ on opeteltava tekemisen kautta.
         </p>
-        
-
-      </div>
-      
+         
+      </div>     
     </div>
 
-
-
-
-
   </div>
+  <div class="accordion__job-container">
+  <div class="accordion-item accordion-item-job">
+    <a class="accordion-link" href="#"
+      >Hae kesätöihin tästä! <span class="plus">+</span>
+    </a>
+    <div class="ansver">
+      <p>
+        Kesätöiden hakukaavakkeen löydät <a href="../src/kaavakkeet/nokkakivi_hakukaavake_2023">täältä &rarr; Excel-taulukkona</a> tai <a href="../src/kaavakkeet/nokkakivi_hakukaavake_2023"> täältä &rarr; tulostettavana versiona.</a> <br>
+        <br>
+        Lähetä se joko sähköpostin liitteenä osoitteeseen info@nokkakivi.fi tai postitse osoitteeseen Nokkakiven Huvipuisto, Ruuhimäentie 1, 41400 LIEVESTUORE. Muista tallentaa kaavake xls-muotoon ennen sen lähetystä sähköpostilla. Voit myös lähettää kaavakkeen tulostettuna pdf-muotoon tai vastaavat tiedot tavallisena sähköpostina ilman liitetiedostoa mikäli taulukon kanssa on ongelmia. Hakemuksen mukaan voit halutessasi liittää myös valokuvasi. Mahdolliset lisätietoja koskevat kyselyt voi lähettää sähköpostitse yllä näkyvään osoitteeseen.
 
+Huom! Edelliskausien koko kesän työskenneiltä työntekijöiltä riittää lyhyt vapaamuotoinen hakemus.
+      </p>
+    </div>
+    
+</div>
+
+<div class="accordion-item accordion-item-job">
+  <a class="accordion-link" href="#"
+    >Kesätyö Info!! <span class="plus">+</span>
+  </a>
+  <div class="ansver">
+    <p>
+      Puistosta löytyy mielenkiintoisia tehtäviä myös alle 18-vuotiaille hakijoille. Isojen huvipuistolaitteiden ajamiseen vaaditaan kuitenkin 18 vuoden ikä. Alle 16-vuotiaita pystymme työllistämään etupäässä vain osan työviikosta.
+
+      Edellytämme, että olet valmis työskentelemään myös viikonloppuisin, sillä se on huvipuistojen kiireisintä aikaa. Vapaapäiväsi osuvat siis pääosin arkipäiville. Toivomme myös, että olet käytettävissämme koko kauden ajan, eli 7.6. - 26.8.2023. Mikäli haluat työskennellä vain osan kaudesta, lisää työvoimaa tarvitaan typillisesti heinäkuussa sekä loppukaudesta. Jos sinulla on esimerkiksi opiskelun takia rajoituksia tietyille päiville tai päivittäiseen työaikaan, kerro kyseinen asia hakukaavakkeessa. Loppukaudesta huvipuisto on avoinna vain viikonloppuisin.
+    </p>
+  </div>
+  
+</div>
+
+<div class="accordion-item accordion-item-job">
+  <a class="accordion-link" href="#"
+    >Koulutuspäivä 5.kesäkuuta! <span class="plus">+</span>
+  </a>
+  <div class="ansver">
+    <p>
+      Varsinaisen työn lisäksi järjestetään ennen avajaisia erillisiä koulutuspäiviä sekä valmistelupäiviä, joihin työntekijöiksi valittujen tulee osallistua. Nämä pidetään uusille työntekijöille maanantaina 5. kesäkuuta. 
+    </p>
+  </div>
+  
+</div>
+<div class="accordion-item accordion-item-job">
+  <a class="accordion-link" href="#"
+    >Työajat ja työpäivä <span class="plus">+</span>
+  </a>
+  <div class="ansver">
+    <p>
+      Puisto on avoinna tiistaista sunnuntaihin koko kesäkauden ajan. Päivittäinen työaika on tyypillisesti 6.5 tuntia välillä klo 11-18, jona aikana sinulla on 30 minuutin ruokatauko, sekä työehtosopimuksen mukainen kahvitauko. Päivittäinen ja viikottainen työaika saattaa kuitenkin vaihdella asiakasmäärien mukaan. Maanantaisin puisto on suljettuna, kuten myös juhannuksena 23.-24.6. Olemme suljettuna myös 6.8., jolloin MM-ralli ajetaan puiston vieressä.
+    </p>
+  </div>
+  
+</div>
+
+<div class="accordion-item accordion-item-job">
+  <a class="accordion-link" href="#"
+    >Palkkaus <span class="plus">+</span>
+  </a>
+  <div class="ansver">
+    <p>
+      Nokkakiven huvipuistossa noudatetaan huvipuistoalan työehtosopimusta. Tuntiperusteinen palkka on puistossa ensimmäistä kesää työskenteleville koeajan jälkeen 8.00 eur/tunti (koeajalla työehtosopimuksen mukainen 7.75 eur/tunti.) Huvipuistoalan työkokemuksen ylittäessä 6kk (tyypillisesti 3. kesän työntekijät) palkka nousee 8.52 euroon/tunti, ja työkokemuksen ylittäessä 12kk palkka nousee 9.52 euroon/tunti. Sunnuntaipäiviltä maksetaan 100% korotettu palkka. Palkkapäiviä on kaksi kuukaudessa. Palkan päälle maksetaan 9% lomakorvaus, joka suoritetaan viimeisen palkanmaksun yhteydessä.
+    </p>
+  </div>
+</div>
+</div>
 
 </section>
-    
+<div class="container">
+  <div class="job-info">
+    <p class="paragraph-job">
+      Työ on vastuullista, joskus vaativaakin, eikä joka päivä paista aurinko. Tarjolla on kuitenkin monipuolinen, mielenkiintoinen, hauska ja palkitsevakin työympäristö. Jos osaat asennoitua siten, että juuri sinun tehtävänäsi on tarjota asiakkaalle elämyksiä eikä toisinpäin, laita ihmeessä hakemuksesi tulemaan! <br> <br>
 
+      Haku alkaa 01.02.2023 ja päättyy 28.02.2023, jonka jälkeen kutsumme osan hakijoista erikseen haastatteluun maaliskuun puolesta välistä lähtien. Pitkämatkalaisille voimme tarvittaessa järjestää videohaastattelun. Tehtäviin valituille ilmoitamme henkilökohtaisesti heti valinnan jälkeen. Lisää paikkoja aukeaa tyypillisesti vielä myöhemmin keväällä, joten aktiivisuus kannattaa! <br> <br>
+    </p>
+     <h3 class="heading-job">HUOMIOI HAKIESSA...</h3> 
+     <p class="paragraph-job">
+Valinnoissa etusijalla ovat henkilöt, jotka voivat työskennellä puistossa koko kauden. <br> <br>
+
+Jos lähetät hakukaavakkeen sähköpostilla, muista tallentaa hakukaavake perus Excel- tai pdf-muotoon. Emme voi huomioida hakemustasi, mikäli emme saa sitä avattua! <br> <br>
+
+Mikäli asut hakuhetkellä muualla Suomessa, tai muuten vain kesällä hankalan matkan päässä, kerro lyhyesti miten aiot hoitaa asumisen tai liikkumisen, koska emme valitettavasti voi auttaa asunnon hankinnassa tai kuljetuksissa. Jyväskylästä tai muilta lähialueilta on aikaisempina kesinä päässyt kätevästi puistoon työntekijöiden omilla kimppakyydeillä, eli hae rohkeasti vaikka sinulla ei olisi kulkuvälinettä.
+<br> <br>
+Muista mainita, mikäli sinulla on voimassa oleva järjestyksenvalvojan kortti, hygieniapassi tai ensiapukoulutus. Näistä saa hakiessa lisäpisteitä.
+     
+    </p>
+  </div>
+  </div>
+
+    
+<!-- /////////////////////////////////////////////DIVIDER///////////////////////////////////////////// -->
 
       <div class="divider-wrapper">
         <div class="shape-divider-footer">
