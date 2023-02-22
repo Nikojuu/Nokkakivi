@@ -114,6 +114,10 @@
             />
           </figure>
         </div>
+
+        <div class="marquee">
+          <div>Kesätyönhaku päättynyt! Nokkakivi Aukeaa Taas 7.6.2023</div>
+        </div>
       </section>
 
       <!-- //////////////////////////////////SECTION-ABOUT/////////////////////////////////////////////////////// -->
@@ -197,55 +201,61 @@
         >
           <g transform="translate(-18.298844,-77.973964)">
             <path
-              style="fill: #f7f7f7"
+              style="fill: #ffef81"
               d="M 18.441597,78.106256 H 198.58126 v 39.288614 c 0,0 -43.10672,-27.825245 -73.47599,-19.687823 -30.369264,8.137423 -46.832208,12.548653 -46.832208,12.548653 0,0 -32.775418,8.05972 -46.735258,0 C 17.577964,102.19598 18.441597,78.106256 18.441597,78.106256 Z"
             />
           </g>
         </svg>
         <!-- ////////////////////////////////////////////////////////////////////////////////////// -->
         <h2 class="heading-secondary margin-top-medium">Aukioloajat</h2>
-        <div class="container-calendar margin-top-medium">
-          <figure class="nokkis-figure">
+        <div class="background">
+          <div class="container-openings margin-top-medium">
             <p class="open-text">
               Olemme tänään auki! Tervetuloa huvittelemaan!
             </p>
-            <img
-              src="src/img/nokkakiven_puisto_nokkislogo_color.svg"
-              alt="nokkis-aukiolo-kuva"
-            />
-          </figure>
-          <div class="calendar-info">
-            <p class="paragraph-secondary">
-              Tervetuloa Nokkakiveen! 7.6.2023-22.6-2023 olemme auki klo 11-17
-              ja loppukesän klo 11-18!! Maanantaisin puisto on suljettu.
-            </p>
-          </div>
-        </div>
-        <!-- ///////////////////////////////////////////////////KALENTERI///////////////////////////////////////// -->
-        <div class="calendar">
-          <div class="month">
-            <img
-              class="calendar-img"
-              src="src/img/nokkakiven_puisto_tekstilogo_color.svg"
-              alt=""
-            />
-            <i class="prev">&lt;</i>
-            <div class="date">
-              <h1></h1>
-              <p></p>
+            <div class="calendar-info">
+              <p class="paragraph-secondary">
+                Tervetuloa Nokkakiveen! 7.6.2023-22.6-2023 olemme auki klo 11-17
+                ja loppukesän klo 11-18!! Maanantaisin puisto on suljettu.
+              </p>
             </div>
-            <i class="next"> &gt;</i>
           </div>
-          <div class="weekdays">
-            <div>su</div>
-            <div>ma</div>
-            <div>ti</div>
-            <div>ke</div>
-            <div>to</div>
-            <div>pe</div>
-            <div>la</div>
+          <!-- ///////////////////////////////////////////////////KALENTERI///////////////////////////////////////// -->
+          <div class="calendar-container">
+            <figure class="nokkis-figure">
+              <img
+                src="src/img/nokkakiven_puisto_nokkislogo_color.svg"
+                alt="nokkis-aukiolo-kuva"
+              />
+            </figure>
+            <div>
+              <div class="calendar">
+                <div class="month">
+                  <img
+                    class="calendar-img"
+                    src="src/img/nokkakiven_puisto_tekstilogo_color.svg"
+                    alt=""
+                  />
+                  <i class="prev">&lt;</i>
+                  <div class="date">
+                    <h1></h1>
+                    <p></p>
+                  </div>
+                  <i class="next"> &gt;</i>
+                </div>
+                <div class="weekdays">
+                  <div>su</div>
+                  <div>ma</div>
+                  <div>ti</div>
+                  <div>ke</div>
+                  <div>to</div>
+                  <div>pe</div>
+                  <div>la</div>
+                </div>
+                <div class="days"></div>
+              </div>
+            </div>
           </div>
-          <div class="days"></div>
         </div>
       </section>
 
@@ -368,7 +378,9 @@
               <div class="footer-col">
                 <h4>Yhteystiedot</h4>
                 <div class="social-links">
-                  <a href="https://www.facebook.com/Nokkakivi/"
+                  <a
+                    href="https://www.facebook.com/Nokkakivi/"
+                    aria-label="Facebook"
                     ><svg class="social-icons">
                       <use href="src/img/symbol-defs.svg#icon-facebook"></use>
                     </svg>
@@ -379,7 +391,9 @@
                     <use href="src/img/symbol-defs.svg#icon-twitter"></use>
                   </svg>
                 </a> -->
-                  <a href="https://www.instagram.com/nokkakivi/"
+                  <a
+                    href="https://www.instagram.com/nokkakivi/"
+                    aria-label="instagram"
                     ><svg class="social-icons">
                       <use href="src/img/symbol-defs.svg#icon-instagram"></use>
                     </svg>
