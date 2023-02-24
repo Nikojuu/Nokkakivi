@@ -230,12 +230,14 @@ html {
 
   transition: all 0.3s;
 }
-.navigation-bar ul li a:hover {
+.navigation-bar ul li a:hover,
+.navigation-bar ul li a:focus {
   color: #ffffff;
   text-shadow: var(--shadow-dark-white);
   transition: all 0.3s;
 }
-.navigation-bar ul li:hover .nav-arrow {
+.navigation-bar ul li:hover .nav-arrow,
+.navigation-bar ul li:focus .nav-arrow {
   transform: rotate(90deg);
   transition: all 0.2s;
 }
@@ -262,11 +264,13 @@ html {
   background-color: #080808;
 }
 
-.navigation-bar ul li:hover .dropdown-menu ul {
+.navigation-bar ul li:hover .dropdown-menu ul,
+.navigation-bar ul li:focus .dropdown-menu ul {
   display: block;
   margin: 10px;
 }
-.navigation-bar ul li:hover .dropdown-menu ul li {
+.navigation-bar ul li:hover .dropdown-menu ul li,
+.navigation-bar ul li:focus .dropdown-menu ul li {
   padding: 15px;
 }
 
@@ -908,7 +912,11 @@ ul {
   align-items: center;
   gap: 10px;
 }
-
+.copyright {
+  padding-bottom: 2rem;
+  color: #fff;
+  font-size: 12px;
+}
 /* //////////////////////////////////////////////////////////////////////////////////////////////
 
 
@@ -1018,7 +1026,7 @@ ul {
 
 /* ////////////////////////////MODAL POPUP///////////////////////////////////// */
 .modal {
-  z-index: 1000;
+  z-index: 11000;
   display: none;
   position: fixed;
 
@@ -1030,8 +1038,8 @@ ul {
 }
 .modal-content {
   position: absolute;
-  width: 40vw;
-
+  width: 57vh;
+  max-width: 90vw;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -1087,6 +1095,15 @@ ul {
 .modal-text-container {
   padding: 3rem 2rem;
   position: relative;
+}
+.close-modal {
+  position: absolute;
+  top: 0.5rem;
+  right: 2.5rem;
+
+  font-size: 5rem;
+  cursor: pointer;
+  color: black;
 }
 
 /* ////////////////////////////SECTION-PELIHALLLI/////////////////////////////////// */
@@ -1668,6 +1685,10 @@ ul {
     min-width: 23rem;
   }
 
+  .navigation-bar ul li:focus-within .dropdown-menu ul {
+    display: block;
+    margin: 10px;
+  }
   #toggle:checked + .navigation-bar {
     display: flex;
     flex-direction: column;
@@ -1684,7 +1705,8 @@ ul {
     flex-direction: column;
     padding-left: 0;
   }
-  #toggle:checked + .navigation-bar ul li:hover .dropdown-menu {
+  #toggle:checked + .navigation-bar ul li:hover .dropdown-menu,
+  #toggle:checked + .navigation-bar ul li:focus .dropdown-menu {
     position: relative;
   }
 }
@@ -1769,6 +1791,9 @@ ul {
   }
   .section-container {
     padding: 0;
+  }
+  .modal-description {
+    font-size: 14px;
   }
 }
 

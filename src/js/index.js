@@ -142,14 +142,16 @@ renderCalendar();
 
 const links = document.querySelectorAll('.navigation-bar');
 const toggle = document.getElementById('toggle');
+const label = document.querySelector('label');
 
 links.forEach(link => {
   link.addEventListener('click', () => {
-    toggle.checked = false;
+    if (toggle.checked) {
+      toggle.checked = false;
+      label.innerHTML = "&#9776;";
+    }
   });
 });
-
-const label = document.querySelector('label');
 
 toggle.addEventListener('change', () => {
   if (toggle.checked) {
@@ -158,6 +160,22 @@ toggle.addEventListener('change', () => {
     label.innerHTML = "&#9776;";
   }
 });
+
+const dropdownLinks = document.querySelectorAll('.dropdown-link');
+
+dropdownLinks.forEach(link => {
+  link.addEventListener('click', event => {
+    if (window.matchMedia("(max-width: 60em)").matches){
+      console.log('Clicked element:', event.target);
+      console.log('Handling element:', event.currentTarget);
+      event.stopPropagation();
+      event.preventDefault();
+      // your code here
+      
+    }
+  });
+});
+
 
 /////////////////////////// ////////////////////////////////////////////
 ////////////////////////////RIDESLIST-POPUP//////////////////////////
@@ -199,9 +217,17 @@ cards.forEach(card => {
   });
 });
 
-modal.addEventListener('click', () => {
-  // Hide the modal window when it is clicked
-  modal.style.display = 'none';
+modal.addEventListener('click', (event) => {
+  const modalContent = event.target.closest('.modal-content');
+  const closeButton = event.target.closest('.close-modal');
+
+  if (modalContent !== null && closeButton === null) {
+    // Click was inside the modal content, don't close the modal
+    return;
+  } else {
+    // Click was outside the modal content or on the close button, close the modal
+    modal.style.display = 'none';
+  }
 });
 
 ////////////////////////////CAROUSEL//////////////////////////
@@ -294,3 +320,9 @@ accordionLinks.forEach(link => {
 });
 
 }
+
+let date = new Date().getFullYear();
+document.getElementById("year").innerHTML = date
+
+
+
