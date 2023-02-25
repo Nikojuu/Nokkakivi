@@ -1706,9 +1706,17 @@ ul {
     flex-direction: column;
     padding-left: 0;
   }
-  #toggle:checked + .navigation-bar ul li:hover .dropdown-menu,
-  #toggle:checked + .navigation-bar ul li:focus .dropdown-menu {
+
+  #toggle:checked + .navigation-bar ul li .dropdown-menu.active {
+    display: block;
     position: relative;
+    left: 24px;
+
+    border: #fff solid;
+    border-radius: 7px;
+    border-width: 2px;
+
+    background-color: #080808;
   }
 }
 @media only screen and (max-width: 48em) {

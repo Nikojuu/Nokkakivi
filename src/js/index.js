@@ -145,14 +145,16 @@ const toggle = document.getElementById('toggle');
 const label = document.querySelector('label');
 
 links.forEach(link => {
+  const dropDownMenusActive = document.querySelectorAll('.dropdown-menu.active');
   link.addEventListener('click', () => {
-    if (toggle.checked) {
+    ///////////////checks when user clicks nav-bar links and if they click link that is not active dropdown menu it closes navbar/////////////
+    if (toggle.checked && dropDownMenusActive.length > 0) {
       toggle.checked = false;
       label.innerHTML = "&#9776;";
     }
   });
 });
-
+///////////////toggles open and close buttons///////////
 toggle.addEventListener('change', () => {
   if (toggle.checked) {
     label.innerHTML = "&times;";
@@ -160,21 +162,26 @@ toggle.addEventListener('change', () => {
     label.innerHTML = "&#9776;";
   }
 });
-/////////////////THIS PREVENTS DEFAULT LINK BEHAVIOR ON DROPDOWN LINKS WHEN HAMBURGER MENU ACTIVE////////
-const dropdownLinks = document.querySelectorAll('.dropdown-link');
 
-dropdownLinks.forEach(link => {
+
+
+//this part of script activates dropdown menu on clicks insteead hover when screen width is enought low
+const dropdownLinks = document.querySelectorAll('.dropdown-link');
+const dropdownMenus = document.querySelectorAll('.dropdown-menu');
+
+dropdownLinks.forEach((link, index) => {
   link.addEventListener('click', event => {
-    if (window.matchMedia("(max-width: 60em)").matches){
-      console.log('Clicked element:', event.target);
-      console.log('Handling element:', event.currentTarget);
-      event.stopPropagation();
+    //instead of opening link this code opens dropdown menu and after its opened it restores default link behavior
+    if (!dropdownMenus[index].classList.contains('active')) {
       event.preventDefault();
-      // your code here
+      dropdownMenus.forEach(menu => menu.classList.remove('active'));
+      dropdownMenus[index].classList.add('active');
+    } else {
       
     }
   });
 });
+
 
 
 /////////////////////////// ////////////////////////////////////////////
