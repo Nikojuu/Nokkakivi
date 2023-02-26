@@ -1685,40 +1685,38 @@ ul {
   .logo img {
     min-width: 23rem;
   }
-
-  .navigation-bar ul li:focus-within .dropdown-menu ul {
-    display: block;
-    margin: 10px;
-  }
-  #toggle:checked + .navigation-bar {
-    display: flex;
-    flex-direction: column;
-    height: 100vh;
-    padding-top: 4rem;
-    width: 100%;
-    max-width: 100%;
-    line-height: 40px;
-    align-items: start;
-    font-size: 30px;
-  }
-
-  #toggle:checked + .navigation-bar ul {
-    flex-direction: column;
-    padding-left: 0;
-  }
-
-  #toggle:checked + .navigation-bar ul li .dropdown-menu.active {
-    display: block;
-    position: relative;
-    left: 24px;
-
-    border: #fff solid;
-    border-radius: 7px;
-    border-width: 2px;
-
-    background-color: #080808;
+  .navigation-bar ul li:hover .dropdown-menu {
+    display: none;
   }
 }
+#toggle:checked + .navigation-bar {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  padding-top: 4rem;
+  width: 100%;
+  max-width: 100%;
+  line-height: 37px;
+  align-items: start;
+  font-size: 26px;
+}
+
+#toggle:checked + .navigation-bar ul {
+  flex-direction: column;
+  padding-left: 0;
+}
+
+#toggle:checked + .navigation-bar ul li .dropdown-menu.active {
+  display: block;
+  position: relative;
+
+  border: #fff solid;
+  border-radius: 7px;
+  border-width: 2px;
+
+  background-color: #080808;
+}
+
 @media only screen and (max-width: 48em) {
   #toggle:checked + .navigation-bar {
     font-size: 3rem;

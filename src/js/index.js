@@ -147,13 +147,27 @@ const label = document.querySelector('label');
 links.forEach(link => {
   const dropDownMenusActive = document.querySelectorAll('.dropdown-menu.active');
   link.addEventListener('click', () => {
+    
     ///////////////checks when user clicks nav-bar links and if they click link that is not active dropdown menu it closes navbar/////////////
-    if (toggle.checked && dropDownMenusActive.length > 0) {
+    if (toggle.checked && dropDownMenusActive.length > 0 ) {
       toggle.checked = false;
       label.innerHTML = "&#9776;";
     }
   });
 });
+
+const soloLinks = document.querySelectorAll('[data-class="singleLink"]');
+soloLinks.forEach(link => {
+  link.addEventListener('click', () => {
+    if (toggle.checked) {
+      toggle.checked = false;
+      label.innerHTML = "&#9776;";
+    }
+  });
+});
+
+
+
 ///////////////toggles open and close buttons///////////
 toggle.addEventListener('change', () => {
   if (toggle.checked) {
@@ -171,14 +185,18 @@ const dropdownMenus = document.querySelectorAll('.dropdown-menu');
 
 dropdownLinks.forEach((link, index) => {
   link.addEventListener('click', event => {
-    //instead of opening link this code opens dropdown menu and after its opened it restores default link behavior
-    if (!dropdownMenus[index].classList.contains('active')) {
+    // Check if the link's parent li element has a dropdown menu
+    const hasDropdownMenu = link.parentNode.querySelector('.dropdown-menu');
+  
+    
+    // Only prevent default if the link has a dropdown menu
+    if (hasDropdownMenu && !dropdownMenus[index].classList.contains('active')) {
       event.preventDefault();
       dropdownMenus.forEach(menu => menu.classList.remove('active'));
       dropdownMenus[index].classList.add('active');
-    } else {
-      
+ 
     }
+   
   });
 });
 
