@@ -136,6 +136,39 @@ document.querySelector(".next").addEventListener("click", () => {
 
 renderCalendar();
 }
+
+//////////////////HERE WE CHECK IF CLICKED DAYS IS BELOW JUNE 22 AND IF DAY IS OPEN THEN SAY IT BY DISPLAYING DIV/////////////////////////////////////////////////////////////
+const clickedDays = document.querySelector(".days");
+const clickedDay = document.querySelector(".clicked-day");
+clickedDays.addEventListener("click", (event) => {
+  if (event.target.classList.contains("open")) {
+    // Code to handle click on an open day // tästä säädät klikatun tekstin riippuen onko juhannusaukioloajat ym tai suljettu
+    
+    if (document.querySelector(".date h1").innerHTML === "Kesäkuu" && event.target.innerText < 23 && event.target.innerText != 1 ) {
+      // Code to handle click on an open day in June
+      clickedDay.style.display = 'block';
+      clickedDay.style.backgroundColor = '#7ef596';
+      clickedDay.textContent = "Avoinna klo 11-17! Tervetuloa";
+      console.log("You clicked on an open day in June!");
+    
+    }else{
+      clickedDay.style.display = 'block';
+      clickedDay.style.backgroundColor = '#7ef596';
+      clickedDay.textContent = "Avoinna klo 11-18! Tervetuloa";
+      console.log(`You clicked on an open day: ${event.target.innerText}`);
+    }
+    
+  } else {
+    // Code to handle click on a non-open day
+    clickedDay.style.display = 'block';
+    clickedDay.style.backgroundColor = 'rgb(249 163 255)';
+    clickedDay.textContent = "Valitsemasi päivä olemme suljettu";
+    console.log("You clicked on a day that is not open.");
+  }
+  setTimeout(() => {
+    clickedDay.style.display = 'none';
+  }, 9000);
+});
 /////////////////////////// ////////////////////////////////////////////
 //////////////////////////// NAVIGATION SCRIPT//////////////////////////
 /////////////////////////// ////////////////////////////////////////////
