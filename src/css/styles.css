@@ -389,7 +389,7 @@ label {
 
   text-shadow: -6px 3px #000;
   position: relative;
-  z-index: 10;
+  z-index: 2;
   text-transform: capitalize;
 
   letter-spacing: 3px;
@@ -924,6 +924,42 @@ ul {
 ////////////////////////////////  RIDES (ENTIRE PAGE)/////////////////////////////////////
 
 */
+
+.btn {
+  font-family: "Alfa Slab One", cursive, sans-serif;
+  padding: 0.3em 2em;
+  font-size: 22px;
+  text-transform: uppercase;
+  letter-spacing: 2.5px;
+
+  color: var(--color-text-1);
+  background-color: #000;
+  border: none;
+  border-radius: 45px;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease 0s;
+  cursor: pointer;
+  outline: none;
+  margin-left: 3rem;
+  transition: all 0.3s;
+}
+
+.btn:hover {
+  background-color: var(--color-text-1);
+  box-shadow: 0px 15px 20px var(--color-text-1);
+  color: #fff;
+  transform: translateY(-7px);
+}
+
+.btn:active {
+  transform: translateY(-1px);
+}
+
+.height-limits-combined {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
 .stacked {
   display: grid;
 }
@@ -949,7 +985,7 @@ ul {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(26em, 1fr));
   gap: 2.8rem;
-  margin-top: 10rem;
+  margin-top: 3rem;
   padding: 0 8rem;
   text-align: left;
 }
@@ -1037,6 +1073,35 @@ ul {
   bottom: 0;
   background-color: rgba(0, 0, 0, 0.5);
 }
+.modal__heightlimits {
+  z-index: 11000;
+  display: none;
+  position: fixed;
+
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.heightlimits__img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 80vh;
+  max-height: 80vh;
+  max-width: 80vw;
+  overflow: auto;
+}
+
+.heightlimits__img img {
+  width: 100%;
+  height: 100%;
+  user-select: none;
+  object-fit: contain;
+}
+
 .modal-content {
   position: absolute;
   width: 57vh;
@@ -1101,7 +1166,7 @@ ul {
   position: absolute;
   top: 0.5rem;
   right: 2.5rem;
-
+  user-select: none;
   font-size: 5rem;
   cursor: pointer;
   color: black;
@@ -1230,14 +1295,13 @@ ul {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  margin: 10rem;
+  margin-bottom: 1rem;
+  background-image: radial-gradient(#fecbff, white);
+  padding-top: 4rem;
 }
 .container-ulkopelit {
   width: 100%;
   margin-top: 5rem;
-  box-shadow: var(--shadow-light);
-
-  background-image: radial-gradient(#fecbff, white);
 
   padding: 4rem;
   border-radius: 5px;
@@ -1802,6 +1866,18 @@ ul {
   .modal-description {
     font-size: 14px;
   }
+  .heightlimits__img {
+    height: 70%;
+    width: 70%;
+    max-height: 100%;
+    max-width: 100%;
+  }
+  .heightlimits__img img {
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+    background-color: white;
+  }
 }
 
 @media only screen and (max-width: 48em) {
@@ -1841,6 +1917,9 @@ ul {
   .accordion__job-container {
     width: 100%;
   }
+  .btn {
+    font-size: 15px;
+  }
 }
 
 @media only screen and (max-width: 34em) {
@@ -1867,6 +1946,10 @@ ul {
   }
   .paragraph-job {
     font-size: 15px;
+  }
+  .heightlimits__img {
+    height: 56%;
+    width: 100%;
   }
 }
 @media only screen and (max-width: 28em) {

@@ -182,7 +182,7 @@ toggle.addEventListener('change', () => {
 //this part of script activates dropdown menu on clicks insteead hover when screen width is enought low
 const dropdownLinks = document.querySelectorAll('.dropdown-link');
 const dropdownMenus = document.querySelectorAll('.dropdown-menu');
-
+if (window.matchMedia('(max-width: 60em)').matches) {
 dropdownLinks.forEach((link, index) => {
   link.addEventListener('click', event => {
     // Check if the link's parent li element has a dropdown menu
@@ -199,7 +199,7 @@ dropdownLinks.forEach((link, index) => {
    
   });
 });
-
+}
 
 
 /////////////////////////// ////////////////////////////////////////////
@@ -242,6 +242,8 @@ cards.forEach(card => {
   });
 });
 
+
+
 modal.addEventListener('click', (event) => {
   const modalContent = event.target.closest('.modal-content');
   const closeButton = event.target.closest('.close-modal');
@@ -254,6 +256,30 @@ modal.addEventListener('click', (event) => {
     modal.style.display = 'none';
   }
 });
+
+const modalBtn = document.querySelector(".btn-heightlimits")
+ const heightModal= document.querySelector(".modal__heightlimits");
+
+ modalBtn.addEventListener('click',() =>{
+  
+  heightModal.style.display = 'block'
+ } );
+
+ heightModal.addEventListener('click' ,(event) =>{
+
+  const modalTable = event.target.closest ('.heightlimits__img')
+  const closeTable = event.target.closest ('.close-modal')
+  if (modalTable !== null && closeTable === null){
+    return;
+  }else{
+    heightModal.style.display ='none'
+  }
+ } )
+
+
+
+
+
 
 ////////////////////////////CAROUSEL//////////////////////////
 /////////////////////////// ////////////////////////////////////////////
@@ -317,6 +343,29 @@ document.getElementById('carousel__button--prev').addEventListener("click", func
 resetTimer();
 
 }
+if (window.location.pathname.endsWith('/hinnasto.html')) {
+const modalBtn = document.querySelector(".btn-heightlimits")
+ const heightModal= document.querySelector(".modal__heightlimits");
+
+ modalBtn.addEventListener('click',() =>{
+  
+  heightModal.style.display = 'block'
+ } );
+
+ heightModal.addEventListener('click' ,(event) =>{
+
+  const modalTable = event.target.closest ('.heightlimits__img')
+  const closeTable = event.target.closest ('.close-modal')
+  if (modalTable !== null && closeTable === null){
+    return;
+  }else{
+    heightModal.style.display ='none'
+  }
+ } )
+
+}
+
+
 
 /////////////////////////FAQ JA TYÖNHAKU////////////////////////////////
 if (window.location.pathname.endsWith('/info.html')) {
