@@ -135,7 +135,7 @@ document.querySelector(".next").addEventListener("click", () => {
 });
 
 renderCalendar();
-}
+
 
 //////////////////HERE WE CHECK IF CLICKED DAYS IS BELOW JUNE 22 AND IF DAY IS OPEN THEN SAY IT BY DISPLAYING DIV/////////////////////////////////////////////////////////////
 const clickedDays = document.querySelector(".days");
@@ -169,6 +169,7 @@ clickedDays.addEventListener("click", (event) => {
     clickedDay.style.display = 'none';
   }, 9000);
 });
+}
 /////////////////////////// ////////////////////////////////////////////
 //////////////////////////// NAVIGATION SCRIPT//////////////////////////
 /////////////////////////// ////////////////////////////////////////////
