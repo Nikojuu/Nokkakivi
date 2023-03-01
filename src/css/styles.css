@@ -459,7 +459,7 @@ th {
   font-size: 6rem;
   text-transform: uppercase;
   font-weight: 700;
-  background-image: linear-gradient(to right, var(--color-text-1), #000);
+  background-image: linear-gradient(to right, #ff2b21, #fff942);
   background-clip: text;
   -webkit-background-clip: text;
   color: transparent;
@@ -524,7 +524,7 @@ th {
 .section-about {
   grid-column: 1 / -1;
 
-  background-color: #ffef81;
+  background-color: #55a0ed;
   position: relative;
 }
 
@@ -548,7 +548,7 @@ th {
 .col-about-4,
 .col-about-1 {
   padding: 11rem;
-  background-color: #129f9f;
+  background-color: #ffef81;
   border-radius: 5px;
 }
 
@@ -1264,15 +1264,16 @@ ul {
   background-image: linear-gradient(
     to right,
     #000,
-    #ffd22f,
+    #121007,
     var(--color-text-1)
   );
   position: relative;
 }
 .gallery {
   display: grid;
-  grid-template-columns: repeat(8, 1fr);
-  grid-template-rows: repeat(7, 7vw);
+  grid-template-columns: repeat(8, minmax(150px, 1fr));
+  grid-template-rows: repeat(7, minmax(100px, 7vw));
+  overflow-x: scroll;
   gap: 1.5rem;
   padding: 1.5rem;
   margin: 8vh;
@@ -1760,7 +1761,8 @@ ul {
 }
 
 .marquee {
-  margin-left: 10rem;
+  margin-left: auto;
+  margin-right: auto;
   width: 85%;
   position: relative;
   z-index: 100;
@@ -1822,6 +1824,8 @@ ul {
     display: none;
   }
   .logo img {
+    width: 100%;
+    height: 100%;
     min-width: 23rem;
   }
   .navigation-bar ul li:hover .dropdown-menu {
@@ -1888,6 +1892,9 @@ ul {
   .marquee {
     margin-top: 2rem;
     margin-bottom: 4rem;
+  }
+  .calendar-container {
+    gap: 0;
   }
 }
 @media only screen and (max-width: 68.5em) {
@@ -1981,6 +1988,9 @@ ul {
   .background-calendar {
     width: 100%;
   }
+  .gallery {
+    margin: 1rem;
+  }
   .section-calendar {
     padding-bottom: 0;
   }
@@ -2018,10 +2028,9 @@ ul {
     font-size: 15px;
   }
   .btn.btn-cookie {
-    white-space: pre-wrap;
-    margin-left: 0;
+    flex-grow: 0;
     letter-spacing: 1.8px;
-    padding: 6px;
+    padding: 10px;
     flex-basis: 50%;
   }
   #cookie-banner {
@@ -2072,5 +2081,13 @@ ul {
   .paragraph-tertiary {
     font-size: 12px;
     letter-spacing: 1px;
+  }
+  .btn.btn-cookie {
+    margin-left: 0;
+    font-size: 11px;
+    padding: 5px;
+  }
+  #cookie-banner {
+    height: 140px;
   }
 }
