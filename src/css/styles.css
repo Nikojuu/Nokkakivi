@@ -415,7 +415,7 @@ label {
 .section-container {
   grid-column: 2 / 10;
   margin-top: -10vw;
-  min-width: 55vw;
+  min-width: 64vw;
   box-shadow: var(--shadow-light);
 
   padding: 5rem;

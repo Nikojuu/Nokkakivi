@@ -12,22 +12,22 @@ window.onload = function() {
   function handleCookieConsent(){
     cookieBanner.style.display = 'none';
     // Allow cookies from Google Analytics
-    // (function(i,s,o,g,r,a,m){
-    //   i['GoogleAnalyticsObject']=r;
-    //   i[r]=i[r]||function(){
-    //     (i[r].q=i[r].q||[]).push(arguments)
-    //   },i[r].l=1*new Date();
-    //   a=s.createElement(o),
-    //   m=s.getElementsByTagName(o)[0];
-    //   a.async=1;
-    //   a.setAttribute('data-cookieconsent', 'accepted'); // add cookie consent attribute
-    //   a.src=g;
-    //   m.parentNode.insertBefore(a,m)
-    // })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+    (function(i,s,o,g,r,a,m){
+      i['GoogleAnalyticsObject']=r;
+      i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)
+      },i[r].l=1*new Date();
+      a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];
+      a.async=1;
+      a.setAttribute('data-cookieconsent', 'accepted'); // add cookie consent attribute
+      a.src=g;
+      m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
-    // ga('create', 'UA-40122070-1', 'nokkakivi.fi');
-    // ga('send', 'pageview');
-    // 
+    ga('create', 'UA-40122070-1', 'nokkakivi.fi');
+    ga('send', 'pageview');
+    
     // Allow cookies from YouTube video embed
     var youtubeEmbeds = document.querySelectorAll('iframe[src*="youtube.com"]');
     youtubeEmbeds.forEach(function(embed){
@@ -212,8 +212,8 @@ clickedDays.addEventListener("click", (event) => {
   if (event.target.classList.contains("open")) {
     // Code to handle click on an open day // tästä säädät klikatun tekstin riippuen onko juhannusaukioloajat ym tai suljettu
     
-    if (document.querySelector(".date h1").innerHTML === "Kesäkuu" && event.target.innerText < 23 && event.target.innerText != 1 ) {
-      // Code to handle click on an open day in June
+    if (document.querySelector(".date h1").innerHTML === "Kesäkuu" && event.target.innerText < 23 && event.target.innerText > 5 ) {
+      // koodi ennen juhannusta olevalle aukiololle    kesäkuu       pienempi kuin 23 päivä eli juhannus 22päivä &&(ja) suurempi kuin 5 päivä
       clickedDay.style.display = 'block';
       clickedDay.style.backgroundColor = '#7ef596';
       clickedDay.textContent = "Avoinna klo 11-17! Tervetuloa";
