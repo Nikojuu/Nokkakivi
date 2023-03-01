@@ -302,7 +302,7 @@ label {
       rgba(255, 255, 255, 0.86),
       rgba(255, 255, 255)
     ),
-    url(../img/puisto-tausta.jpg);
+    url(../img/puisto-tausta-small.jpg);
   background-size: cover;
   background-position: center;
 }
