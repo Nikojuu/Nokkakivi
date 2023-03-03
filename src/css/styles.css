@@ -2115,7 +2115,9 @@ ul {
   .month {
     background-image: linear-gradient(to left, #000000, #2a2c28);
   }
-  .container-grid {
+  .container-grid,
+  .carousel-container,
+  .section-laitevuokra {
     background-image: radial-gradient(#000000, #838383);
   }
   .price__card-heading {
@@ -2126,5 +2128,22 @@ ul {
   }
   .accordion-link {
     background-color: #60145b;
+  }
+  .paragraph-secondary {
+    color: #fff;
+  }
+  .paragraph-tertiary {
+    color: #fff;
+  }
+  .section-container {
+    background-image: radial-gradient(#545454, black);
+  }
+
+  .entryfee,
+  .pricing__info {
+    background-color: #141414;
+  }
+  .kausikortti-kayttöehdot li {
+    color: #fff;
   }
 }
