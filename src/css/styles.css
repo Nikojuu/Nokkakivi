@@ -295,7 +295,7 @@ label {
 
 .section-header {
   grid-column: full-start / full-end;
-
+  min-height: 100vh;
   background-image: linear-gradient(
       to top,
       rgba(144, 242, 0, 0.52),
@@ -2089,5 +2089,42 @@ ul {
   }
   #cookie-banner {
     height: 140px;
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  .section-about {
+    background-color: #4a4a4a;
+  }
+  .marquee div {
+    text-shadow: 2px -3px 1px #000;
+  }
+  .heading-secondary {
+    background-image: linear-gradient(to right, #ff2b21, #c5c01c);
+  }
+  .col-about-4,
+  .col-about-1 {
+    background-color: #000;
+  }
+  .background-calendar {
+    background-image: radial-gradient(#cfcfcb, #000000);
+  }
+  .calendar-info {
+    background-image: linear-gradient(to right, #1a1c16, #2d2e2b);
+  }
+  .month {
+    background-image: linear-gradient(to left, #000000, #2a2c28);
+  }
+  .container-grid {
+    background-image: radial-gradient(#000000, #838383);
+  }
+  .price__card-heading {
+    text-shadow: 1px 0px 16px #000;
+  }
+  .header-container {
+    background-color: var(--color-text-1);
+  }
+  .accordion-link {
+    background-color: #60145b;
   }
 }
