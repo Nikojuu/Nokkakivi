@@ -2012,6 +2012,12 @@ ul {
   .row {
     justify-content: start;
   }
+  .footer-col {
+    flex-basis: 50%;
+  }
+  .copyright {
+    margin: 0 auto;
+  }
   .container {
     grid-column: 1 / -1;
   }
@@ -2043,9 +2049,6 @@ ul {
 }
 
 @media only screen and (max-width: 34em) {
-  .footer-col {
-    width: 51%;
-  }
   .heading-primary-logo {
     min-width: 49rem;
   }
@@ -2090,44 +2093,53 @@ ul {
   #cookie-banner {
     height: 140px;
   }
+  .food-snacks {
+    margin-bottom: 2rem;
+  }
 }
 
 @media (prefers-color-scheme: dark) {
   .section-about {
-    background-color: #4a4a4a;
+    background-color: #55a0ed;
   }
   .marquee div {
     text-shadow: 2px -3px 1px #000;
+    color: #fff;
   }
   .heading-secondary {
     background-image: linear-gradient(to right, #ff2b21, #c5c01c);
   }
   .col-about-4,
   .col-about-1 {
-    background-color: #000;
+    background-color: #114f9d;
   }
   .background-calendar {
-    background-image: radial-gradient(#cfcfcb, #000000);
+    background-image: radial-gradient(#f3cb04, #d9cc34);
   }
   .calendar-info {
     background-image: linear-gradient(to right, #1a1c16, #2d2e2b);
   }
-  .month {
-    background-image: linear-gradient(to left, #000000, #2a2c28);
+  .calendar {
+    background-color: #000000;
+  }
+  .days {
+    color: #fff;
+  }
+  .days div {
+    text-shadow: none;
   }
   .container-grid,
   .carousel-container,
   .section-laitevuokra {
     background-image: radial-gradient(#000000, #838383);
   }
-  .price__card-heading {
-    text-shadow: 1px 0px 16px #000;
-  }
+
   .header-container {
     background-color: var(--color-text-1);
   }
   .accordion-link {
-    background-color: #60145b;
+    background-color: #780d32;
+    color: #fff;
   }
   .paragraph-secondary {
     color: #fff;
@@ -2138,12 +2150,17 @@ ul {
   .section-container {
     background-image: radial-gradient(#545454, black);
   }
-
+  .pelihalli-info {
+    background-image: radial-gradient(#ffa92869, #000000);
+  }
   .entryfee,
   .pricing__info {
     background-color: #141414;
   }
   .kausikortti-kayttöehdot li {
     color: #fff;
+  }
+  .contact__info-icons {
+    fill: #fff;
   }
 }
