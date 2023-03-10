@@ -1018,6 +1018,7 @@ ul {
   outline: none;
   margin-left: 3rem;
   transition: all 0.3s;
+  z-index: 1;
 }
 
 .btn:hover {
@@ -1056,6 +1057,7 @@ ul {
   margin: 5rem;
   text-align: center;
   position: relative;
+  z-index: 1;
 }
 .product-grid {
   display: grid;
@@ -1475,6 +1477,44 @@ ul {
 .container-grid-pricing {
   background-color: #fae8ff;
 }
+.mask-backgroundimg {
+  position: absolute;
+  left: 0;
+  top: 0;
+
+  -webkit-mask-image: url(/src/img/maski.svg);
+  mask-image: url(/src/img/maski.svg);
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
+  -webkit-mask-size: contain;
+}
+.mask-backgroundimg img {
+  width: 100%;
+}
+.mask-backgroundimg2 {
+  position: absolute;
+  right: 0;
+  top: 70rem;
+
+  -webkit-mask-image: url(/src/img/maski2.svg);
+  mask-image: url(/src/img/maski2.svg);
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
+  -webkit-mask-size: contain;
+  -webkit-mask-position: right;
+  mask-position: right;
+}
+.mask-backgroundimg2 img {
+  width: 100%;
+  position: relative;
+  right: -20%;
+}
+.mask-backgroundimg,
+.mask-backgroundimg2 {
+  opacity: 0.7;
+  width: 49vw;
+  overflow: hidden;
+}
 .container-pricing-table {
   grid-column: 2 / 10;
 
@@ -1494,6 +1534,7 @@ ul {
   overflow: hidden;
   background-color: #ffff;
   box-shadow: var(--shadow-dark);
+  opacity: 0.9;
 }
 
 .price__card-top {
@@ -1939,6 +1980,10 @@ ul {
   .btn.btn-cookie {
     font-size: 12px;
   }
+  .mask-backgroundimg,
+  .mask-backgroundimg2 {
+    width: 70vw;
+  }
 }
 @media only screen and (max-width: 60em) {
   .header-content {
@@ -2004,6 +2049,9 @@ ul {
   .heading-secondary {
     font-size: 4rem;
   }
+  .heading-tertiary {
+    padding: 0 2rem;
+  }
   .paragraph-tertiary {
     font-size: 1.7rem;
   }
@@ -2047,6 +2095,13 @@ ul {
     line-height: 15px;
     flex-wrap: wrap;
   }
+  .mask-backgroundimg,
+  .mask-backgroundimg2 {
+    width: 100vw;
+  }
+  .mask-backgroundimg2 {
+    top: 116rem;
+  }
 }
 
 @media only screen and (max-width: 34em) {
@@ -2079,6 +2134,12 @@ ul {
     font-size: 18px;
     height: 70px;
     left: 5%;
+  }
+  .mask-backgroundimg,
+  .mask-backgroundimg2 {
+    width: 100vw;
+  }
+  .mask-backgroundimg {
   }
 }
 @media only screen and (max-width: 28em) {
