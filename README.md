@@ -7,6 +7,13 @@ site uses html, css and javascript
 muistilista:
 
 muista vaihtaa kausikortin hinta oikeaksi!
+kuvat
+miniautot
+kanoottijoki
+lastenMp
+peppi
+
+scrambler
 
 # Nettisivujen ohjeet!
 

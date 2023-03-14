@@ -265,7 +265,10 @@ if (
   let timeoutId;
 
   clickedDays.addEventListener("click", (event) => {
-    if (event.target.classList.contains("open")) {
+    // immediatly return if click doesnt contain day /
+    if (event.target === clickedDays) return;
+    //
+    else if (event.target.classList.contains("open")) {
       // Code to handle click on an open day // tästä säädät klikatun tekstin riippuen onko juhannusaukioloajat ym tai suljettu
 
       if (
