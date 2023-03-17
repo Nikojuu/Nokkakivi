@@ -1495,8 +1495,8 @@ ul {
   left: 0;
   top: 0;
 
-  -webkit-mask-image: url(/src/img/maski.svg);
-  mask-image: url(/src/img/maski.svg);
+  -webkit-mask-image: url(../img/maski.svg);
+  mask-image: url(../img/maski.svg);
   -webkit-mask-repeat: no-repeat;
   mask-repeat: no-repeat;
   mask-size: contain;
@@ -1510,8 +1510,8 @@ ul {
   right: 0;
   top: 70rem;
 
-  -webkit-mask-image: url(/src/img/maski2.svg);
-  mask-image: url(/src/img/maski2.svg);
+  -webkit-mask-image: url(../img/maski2.svg);
+  mask-image: url(../img/maski2.svg);
   -webkit-mask-repeat: no-repeat;
   mask-repeat: no-repeat;
   mask-size: contain;
