@@ -342,25 +342,42 @@ toggle.addEventListener("change", () => {
 //this part of script activates dropdown menu on clicks insteead hover when screen width is enought low
 const dropdownLinks = document.querySelectorAll(".dropdown-link");
 const dropdownMenus = document.querySelectorAll(".dropdown-menu");
-if (window.matchMedia("(max-width: 60em)").matches) {
-  dropdownLinks.forEach((link, index) => {
-    link.addEventListener("click", (event) => {
-      // Check if the link's parent li element has a dropdown menu
-      const hasDropdownMenu = link.parentNode.querySelector(".dropdown-menu");
+//
+//   dropdownLinks.forEach((link, index) => {
+//     link.addEventListener("click", (event) => {
+//       // Check if the link's parent li element has a dropdown menu
+//       const hasDropdownMenu = link.parentNode.querySelector(".dropdown-menu");
 
-      // Only prevent default if the link has a dropdown menu
-      if (
-        hasDropdownMenu &&
-        !dropdownMenus[index].classList.contains("active")
-      ) {
-        event.preventDefault();
-        dropdownMenus.forEach((menu) => menu.classList.remove("active"));
-        dropdownMenus[index].classList.add("active");
-      }
-    });
+//       // Only prevent default if the link has a dropdown menu
+//       if (
+//         hasDropdownMenu &&
+//         !dropdownMenus[index].classList.contains("active")
+//       ) {
+//         event.preventDefault();
+//         dropdownMenus.forEach((menu) => menu.classList.remove("active"));
+//         dropdownMenus[index].classList.add("active");
+//       }
+//     });
+//   });
+//
+if (window.matchMedia("(max-width: 60em)").matches) {
+  const navbar = document.querySelector(".navigation-bar");
+  navbar.addEventListener("click", function (e) {
+    const dropdownMenu = e.target.nextElementSibling;
+
+    if (!e.target.classList.contains("dropdown-link")) {
+      return;
+    }
+
+    if (e.target.classList.contains("dropdown-link")) {
+      e.preventDefault();
+      dropdownMenus.forEach(function (menu) {
+        menu.classList.remove("active");
+      });
+    }
+    dropdownMenu.classList.add("active");
   });
 }
-
 /////////////////////////// ////////////////////////////////////////////
 ////////////////////////////RIDESLIST-POPUP//////////////////////////
 /////////////////////////// ////////////////////////////////////////////
