@@ -342,33 +342,22 @@ toggle.addEventListener("change", () => {
 //this part of script activates dropdown menu on clicks insteead hover when screen width is enought low
 const dropdownLinks = document.querySelectorAll(".dropdown-link");
 const dropdownMenus = document.querySelectorAll(".dropdown-menu");
-//
-//   dropdownLinks.forEach((link, index) => {
-//     link.addEventListener("click", (event) => {
-//       // Check if the link's parent li element has a dropdown menu
-//       const hasDropdownMenu = link.parentNode.querySelector(".dropdown-menu");
 
-//       // Only prevent default if the link has a dropdown menu
-//       if (
-//         hasDropdownMenu &&
-//         !dropdownMenus[index].classList.contains("active")
-//       ) {
-//         event.preventDefault();
-//         dropdownMenus.forEach((menu) => menu.classList.remove("active"));
-//         dropdownMenus[index].classList.add("active");
-//       }
-//     });
-//   });
-//
+// 60em or smaller screen size menu changes
 if (window.matchMedia("(max-width: 60em)").matches) {
   const navbar = document.querySelector(".navigation-bar");
-  navbar.addEventListener("click", function (e) {
+  //click and touchstart eventlisteners to ensure it works the same with mouseclicks and mobile clicks
+  navbar.addEventListener("click", toggleDropdownMenu);
+  navbar.addEventListener("touchstart", toggleDropdownMenu);
+  // function to add active class to dropdown links
+  function toggleDropdownMenu(e) {
+    // to target the correct element
     const dropdownMenu = e.target.nextElementSibling;
-
+    // if click wasnt inside dropdown-link class immediatly end function
     if (!e.target.classList.contains("dropdown-link")) {
       return;
     }
-
+    // but if it does prevent default link behavior and remove all existing class "active" then apply new class "active" to clicked element
     if (e.target.classList.contains("dropdown-link")) {
       e.preventDefault();
       dropdownMenus.forEach(function (menu) {
@@ -376,8 +365,9 @@ if (window.matchMedia("(max-width: 60em)").matches) {
       });
     }
     dropdownMenu.classList.add("active");
-  });
+  }
 }
+
 /////////////////////////// ////////////////////////////////////////////
 ////////////////////////////RIDESLIST-POPUP//////////////////////////
 /////////////////////////// ////////////////////////////////////////////
