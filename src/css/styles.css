@@ -511,7 +511,7 @@ th {
   font-size: 3rem;
   position: relative;
   color: var(--color-text-1);
-  text-shadow: rgb(0 0 0) -3px -2px 0px;
+  text-shadow: #000 -3px -2px 0px;
 }
 .item h3::before {
   content: "";
