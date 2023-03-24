@@ -4,10 +4,10 @@ window.onload = function () {
   var cookieBanner = document.getElementById("cookie-banner");
   var acceptButton = document.getElementById("cookie-accept");
   var rejectButton = document.getElementById("cookie-reject");
-  var consentCookie = localStorage.getItem("cookie_consent");
-  let cookie = document.cookie;
 
-  if (consentCookie === "accepted" && cookie === "cookie_consent=accepted") {
+  let cookie = document.cookie;
+  console.log(cookie);
+  if (cookie === "cookie_consent=accepted") {
     cookieBanner.style.display = "none";
     // Allow cookies from Google Analytics
     (function (i, s, o, g, r, a, m) {
@@ -39,10 +39,7 @@ window.onload = function () {
     youtubeEmbeds.forEach(function (embed) {
       embed.setAttribute("data-cookieconsent", "accepted");
     });
-  } else if (
-    consentCookie === "rejected" ||
-    cookie === "cookie_consent=rejected"
-  ) {
+  } else if (cookie === "cookie_consent=rejected") {
     cookieBanner.style.display = "none";
   } else {
     cookieBanner.style.display = "flex";
@@ -50,7 +47,7 @@ window.onload = function () {
 
   acceptButton.addEventListener("click", function () {
     // Set cookie consent to accepted and hide banner
-    localStorage.setItem("cookie_consent", "accepted");
+
     cookieBanner.style.display = "none";
 
     // Set cookie to expire in 1 year
@@ -64,12 +61,81 @@ window.onload = function () {
 
   rejectButton.addEventListener("click", function () {
     // Set cookie consent to rejected and hide banner
-    // localStorage.setItem("cookie_consent", "rejected");
+
     document.cookie = "cookie_consent=rejected; path=/; SameSite=None; Secure";
     cookieBanner.style.display = "none";
   });
 };
 
+// window.onload = function () {
+//   var cookieBanner = document.getElementById("cookie-banner");
+//   var acceptButton = document.getElementById("cookie-accept");
+//   var rejectButton = document.getElementById("cookie-reject");
+//   var consentCookie = localStorage.getItem("cookie_consent");
+//   let cookie = document.cookie;
+
+//   if (consentCookie === "accepted" && cookie === "cookie_consent=accepted") {
+//     cookieBanner.style.display = "none";
+//     // Allow cookies from Google Analytics
+//     (function (i, s, o, g, r, a, m) {
+//       i["GoogleAnalyticsObject"] = r;
+//       (i[r] =
+//         i[r] ||
+//         function () {
+//           (i[r].q = i[r].q || []).push(arguments);
+//         }),
+//         (i[r].l = 1 * new Date());
+//       (a = s.createElement(o)), (m = s.getElementsByTagName(o)[0]);
+//       a.async = 1;
+//       a.setAttribute("data-cookieconsent", "accepted"); // add cookie consent attribute
+//       a.src = g;
+//       m.parentNode.insertBefore(a, m);
+//     })(
+//       window,
+//       document,
+//       "script",
+//       "//www.google-analytics.com/analytics.js",
+//       "ga"
+//     );
+
+//     ga("create", "UA-40122070-1", "nokkakivi.fi");
+//     ga("send", "pageview");
+
+//     // Allow cookies from YouTube video embed
+//     var youtubeEmbeds = document.querySelectorAll('iframe[src*="youtube.com"]');
+//     youtubeEmbeds.forEach(function (embed) {
+//       embed.setAttribute("data-cookieconsent", "accepted");
+//     });
+//   } else if (
+//     consentCookie === "rejected" ||
+//     cookie === "cookie_consent=rejected"
+//   ) {
+//     cookieBanner.style.display = "none";
+//   } else {
+//     cookieBanner.style.display = "flex";
+//   }
+
+//   acceptButton.addEventListener("click", function () {
+//     // Set cookie consent to accepted and hide banner
+//     localStorage.setItem("cookie_consent", "accepted");
+//     cookieBanner.style.display = "none";
+
+//     // Set cookie to expire in 1 year
+//     var expiryDate = new Date();
+//     expiryDate.setFullYear(expiryDate.getFullYear() + 1);
+//     document.cookie =
+//       "cookie_consent=accepted; expires=" +
+//       expiryDate.toUTCString() +
+//       "; path=/; SameSite=None; Secure";
+//   });
+
+//   rejectButton.addEventListener("click", function () {
+//     // Set cookie consent to rejected and hide banner
+//     // localStorage.setItem("cookie_consent", "rejected");
+//     document.cookie = "cookie_consent=rejected; path=/; SameSite=None; Secure";
+//     cookieBanner.style.display = "none";
+//   });
+// };
 /////////////////////////////////////////////KALENTERI
 if (
   window.location.pathname.endsWith("/index.html") ||
