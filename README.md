@@ -50,7 +50,7 @@ en osaa tehdä helppokäyttöisempää tästä. Ensiksi säädät kesäkuun jonk
 
 jos haluat vaihtaa ponnahdusikkunoiden tekstiä se onnistuu clickedDay.textContent = "Avoinna klo 11-17! Tervetuloa"; "" sisällä olevan tekstin muokkauksella
 
-# 4. uuden laitteen lisääminen on helppoa se onnistuu tiedostosta laitteet.html
+# 4. uuden laitteen lisääminen onnistuu tiedostosta laitteet.html
 
 käytä alla olevaa mallia esim
 data-img = laita tähän popup ikkunaan tuleva kuva (~900px leveä)
