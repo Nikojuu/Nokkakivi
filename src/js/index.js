@@ -6,9 +6,10 @@ window.onload = function () {
   var rejectButton = document.getElementById("cookie-reject");
 
   let cookie = document.cookie;
-  console.log(cookie);
-  if (cookie === "cookie_consent=accepted") {
+
+  if (cookie.includes("cookie_consent=accepted")) {
     cookieBanner.style.display = "none";
+    console.log("ssss");
     // Allow cookies from Google Analytics
     (function (i, s, o, g, r, a, m) {
       i["GoogleAnalyticsObject"] = r;
@@ -39,7 +40,7 @@ window.onload = function () {
     youtubeEmbeds.forEach(function (embed) {
       embed.setAttribute("data-cookieconsent", "accepted");
     });
-  } else if (cookie === "cookie_consent=rejected") {
+  } else if (cookie.includes("cookie_consent=rejected")) {
     cookieBanner.style.display = "none";
   } else {
     cookieBanner.style.display = "flex";
