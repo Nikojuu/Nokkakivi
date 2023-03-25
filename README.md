@@ -29,9 +29,7 @@ valmiina on google analytics ja youtube evästeet, mutta jos lisäät sivuille j
 
 onnistuu index.html tiedoston alkupäästä heti youtube videon jälkeen
 
- // <div class="marquee"><div>MUOKKAA TÄTÄ KOHTAA INDEX.HTML TIEDOSTOSTA</div>
-
-</div> //
+ ![cookie-banneri](/src/img/marquee.PNG)
 
 # 3. Kalenteri! (päivitettävä joka kevät)
 
