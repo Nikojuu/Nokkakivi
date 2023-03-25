@@ -21,7 +21,7 @@ scrambler
 
 index.js tiedosto javascript
 
-valmiina on google analytics ja youtube evästeet, mutta jos lisäät sivuille jotain muita esim 3 osapuolen liitteitä jotka käyttävät evästeitä on sinun vietävä "scripti" "cookie-concent" bannerin läpi
+valmiina on google analytics ja youtube evästeet, mutta jos lisäät sivuille jotain muita esim 3 osapuolen liitteitä jotka käyttävät evästeitä on sinun vietävä "scripti" "cookie-concent" bannerin läpi. Eli esim //allow cookies from Google analytics tai //Allow cookies from Youtube rivin yläpuolelle.
 
 ![cookie-banneri](/src/img/cookie-ohje.PNG)
 
@@ -29,9 +29,9 @@ valmiina on google analytics ja youtube evästeet, mutta jos lisäät sivuille j
 
 onnistuu index.html tiedoston alkupäästä heti youtube videon jälkeen
 
-<!--  <div class="marquee"><div>MUOKKAA TÄTÄ KOHTAA INDEX.HTML TIEDOSTOSTA</div>
+ <div class="marquee"><div>MUOKKAA TÄTÄ KOHTAA INDEX.HTML TIEDOSTOSTA</div>
 
-</div> -->
+</div> 
 
 # 3. Kalenteri! (päivitettävä joka kevät)
 
